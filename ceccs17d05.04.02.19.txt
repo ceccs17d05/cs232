@@ -1,0 +1,223 @@
+Script started on 2019-02-04 21:06:23+0530
+]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ ls
+a.txt  ceccs17d05.04.02.19.txt  [0m[01;34mDocuments[0m  [01;34mMusic[0m     [01;34mPublic[0m     [01;34mVideos[0m
+b.txt  [01;34mDesktop[0m                  [01;34mDownloads[0m  [01;34mPictures[0m  [01;34mTemplates[0m
+]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ ls -l
+total 40
+-rw-r--r-- 1 s4d1 s4d1   26 Feb  4 20:43 a.txt
+-rw-r--r-- 1 s4d1 s4d1    9 Feb  4 20:44 b.txt
+-rw-r--r-- 1 s4d1 s4d1    0 Feb  4 21:06 ceccs17d05.04.02.19.txt
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [0m[01;34mDesktop[0m
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mDocuments[0m
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mDownloads[0m
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mMusic[0m
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mPictures[0m
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mPublic[0m
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mTemplates[0m
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mVideos[0m
+]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ ls -lt
+total 40
+-rw-r--r-- 1 s4d1 s4d1    0 Feb  4 21:06 ceccs17d05.04.02.19.txt
+-rw-r--r-- 1 s4d1 s4d1    9 Feb  4 20:44 b.txt
+-rw-r--r-- 1 s4d1 s4d1   26 Feb  4 20:43 a.txt
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [0m[01;34mDesktop[0m
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mDocuments[0m
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mDownloads[0m
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mMusic[0m
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mPictures[0m
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mPublic[0m
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mTemplates[0m
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mVideos[0m
+]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ ls -ltr
+total 40
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [0m[01;34mVideos[0m
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mTemplates[0m
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mPublic[0m
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mPictures[0m
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mMusic[0m
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mDownloads[0m
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mDocuments[0m
+drwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mDesktop[0m
+-rw-r--r-- 1 s4d1 s4d1   26 Feb  4 20:43 a.txt
+-rw-r--r-- 1 s4d1 s4d1    9 Feb  4 20:44 b.txt
+-rw-r--r-- 1 s4d1 s4d1    0 Feb  4 21:06 ceccs17d05.04.02.19.txt
+]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ l[Kcat>a.txt
+a
+b
+c
+d
+^Z
+[1]+  Stopped                 cat > a.txt
+]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ cat>?[Kb.txt
+1
+2
+3
+4
+^Z
+[2]+  Stopped                 cat > b.txt
+]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ paste a.txt b,[K.txt
+a	1
+b	2
+c	3
+d	4
+]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ l[Kalias
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ alias|\[K[K ||='ls-al' s-al'[1Ps-al'[C -al'
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ grep a.txt
+grep a a.txt
+grep a [01;31m[Ka.txt[m[K
+^Z
+[3]+  Stopped                 grep --color=auto a.txt
+]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ greep[K[Kp a a.txt
+[01;31m[Ka[m[K
+]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ greop[K[Kp a b.txt
+]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ grep  ?[K[Ka ? ^?[K[K.txt
+[35m[Ka.txt[m[K[36m[K:[m[K[01;31m[Ka[m[K
+]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ grep a *.txt
+[35m[Ka.txt[m[K[36m[K:[m[K[01;31m[Ka[m[K
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[KScript st[01;31m[Ka[m[Krted on 2019-02-04 21:06:23+0530
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[Ka[m[K.txt  ceccs17d05.04.02.19.txt  [0m[01;34mDocuments[0m  [01;34mMusic[0m     [01;34mPublic[0m     [01;34mVideos[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kb.txt  [01;34mDesktop[0m                  [01;34mDownlo[01;31m[Ka[m[Kds[0m  [01;34mPictures[0m  [01;34mTempl[01;31m[Ka[m[Ktes[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Ktot[01;31m[Ka[m[Kl 40
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K-rw-r--r-- 1 s4d1 s4d1   26 Feb  4 20:43 [01;31m[Ka[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kdrwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mDownlo[01;31m[Ka[m[Kds[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kdrwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mTempl[01;31m[Ka[m[Ktes[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Ktot[01;31m[Ka[m[Kl 40
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K-rw-r--r-- 1 s4d1 s4d1   26 Feb  4 20:43 [01;31m[Ka[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kdrwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mDownlo[01;31m[Ka[m[Kds[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kdrwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mTempl[01;31m[Ka[m[Ktes[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Ktot[01;31m[Ka[m[Kl 40
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kdrwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mTempl[01;31m[Ka[m[Ktes[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kdrwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mDownlo[01;31m[Ka[m[Kds[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K-rw-r--r-- 1 s4d1 s4d1   26 Feb  4 20:43 [01;31m[Ka[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ l[Kc[01;31m[Ka[m[Kt>[01;31m[Ka[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[Ka[m[K
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[1]+  Stopped                 c[01;31m[Ka[m[Kt > [01;31m[Ka[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ c[01;31m[Ka[m[Kt>?[Kb.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[2]+  Stopped                 c[01;31m[Ka[m[Kt > b.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ p[01;31m[Ka[m[Kste [01;31m[Ka[m[K.txt b,[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[Ka[m[K	1
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ l[K[01;31m[Ka[m[Kli[01;31m[Ka[m[Ks
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[Ka[m[Kli[01;31m[Ka[m[Ks [01;31m[Ka[m[Klert='notify-send --urgency=low -i "$([ $? = 0 ] && echo termin[01;31m[Ka[m[Kl || echo error)" "$(history|t[01;31m[Ka[m[Kil -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*[01;31m[Ka[m[Klert$//'\'')"'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[Ka[m[Kli[01;31m[Ka[m[Ks egrep='egrep --color=[01;31m[Ka[m[Kuto'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[Ka[m[Kli[01;31m[Ka[m[Ks fgrep='fgrep --color=[01;31m[Ka[m[Kuto'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[Ka[m[Kli[01;31m[Ka[m[Ks grep='grep --color=[01;31m[Ka[m[Kuto'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[Ka[m[Kli[01;31m[Ka[m[Ks l='ls -CF'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[Ka[m[Kli[01;31m[Ka[m[Ks l[01;31m[Ka[m[K='ls -A'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[Ka[m[Kli[01;31m[Ka[m[Ks ll='ls -[01;31m[Ka[m[KlF'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[Ka[m[Kli[01;31m[Ka[m[Ks ls='ls --color=[01;31m[Ka[m[Kuto'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ [01;31m[Ka[m[Kli[01;31m[Ka[m[Ks|\[K[K ||='ls-[01;31m[Ka[m[Kl' s-[01;31m[Ka[m[Kl'[1Ps-[01;31m[Ka[m[Kl'[C -[01;31m[Ka[m[Kl'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[Ka[m[Kli[01;31m[Ka[m[Ks [01;31m[Ka[m[Klert='notify-send --urgency=low -i "$([ $? = 0 ] && echo termin[01;31m[Ka[m[Kl || echo error)" "$(history|t[01;31m[Ka[m[Kil -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*[01;31m[Ka[m[Klert$//'\'')"'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[Ka[m[Kli[01;31m[Ka[m[Ks egrep='egrep --color=[01;31m[Ka[m[Kuto'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[Ka[m[Kli[01;31m[Ka[m[Ks fgrep='fgrep --color=[01;31m[Ka[m[Kuto'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[Ka[m[Kli[01;31m[Ka[m[Ks grep='grep --color=[01;31m[Ka[m[Kuto'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[Ka[m[Kli[01;31m[Ka[m[Ks l='ls -CF'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[Ka[m[Kli[01;31m[Ka[m[Ks l[01;31m[Ka[m[K='ls -A'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[Ka[m[Kli[01;31m[Ka[m[Ks ll='ls -[01;31m[Ka[m[KlF'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[Ka[m[Kli[01;31m[Ka[m[Ks ls='ls --color=[01;31m[Ka[m[Kuto'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ grep [01;31m[Ka[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kgrep [01;31m[Ka[m[K [01;31m[Ka[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kgrep [01;31m[Ka[m[K [01;31m[K[01;31m[Ka[m[K.txt[m[K
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[3]+  Stopped                 grep --color=[01;31m[Ka[m[Kuto [01;31m[Ka[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ greep[K[Kp [01;31m[Ka[m[K [01;31m[Ka[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[Ka[m[K[m[K
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ greop[K[Kp [01;31m[Ka[m[K b.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ grep  ?[K[K[01;31m[Ka[m[K ? ^?[K[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[K[01;31m[Ka[m[K.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[Ka[m[K[m[K
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ grep [01;31m[Ka[m[K *.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[K[01;31m[Ka[m[K.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[Ka[m[K[m[K
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[KScript st[01;31m[K[01;31m[Ka[m[K[m[Krted on 2019-02-04 21:06:23+0530
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[Ka[m[K[m[K.txt  ceccs17d05.04.02.19.txt  [0m[01;34mDocuments[0m  [01;34mMusic[0m     [01;34mPublic[0m     [01;34mVideos[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kb.txt  [01;34mDesktop[0m                  [01;34mDownlo[01;31m[K[01;31m[Ka[m[K[m[Kds[0m  [01;34mPictures[0m  [01;34mTempl[01;31m[K[01;31m[Ka[m[K[m[Ktes[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Ktot[01;31m[K[01;31m[Ka[m[K[m[Kl 40
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K-rw-r--r-- 1 s4d1 s4d1   26 Feb  4 20:43 [01;31m[K[01;31m[Ka[m[K[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kdrwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mDownlo[01;31m[K[01;31m[Ka[m[K[m[Kds[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kdrwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mTempl[01;31m[K[01;31m[Ka[m[K[m[Ktes[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Ktot[01;31m[K[01;31m[Ka[m[K[m[Kl 40
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K-rw-r--r-- 1 s4d1 s4d1   26 Feb  4 20:43 [01;31m[K[01;31m[Ka[m[K[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kdrwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mDownlo[01;31m[K[01;31m[Ka[m[K[m[Kds[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kdrwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mTempl[01;31m[K[01;31m[Ka[m[K[m[Ktes[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Ktot[01;31m[K[01;31m[Ka[m[K[m[Kl 40
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kdrwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mTempl[01;31m[K[01;31m[Ka[m[K[m[Ktes[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kdrwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mDownlo[01;31m[K[01;31m[Ka[m[K[m[Kds[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K-rw-r--r-- 1 s4d1 s4d1   26 Feb  4 20:43 [01;31m[K[01;31m[Ka[m[K[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ l[Kc[01;31m[K[01;31m[Ka[m[K[m[Kt>[01;31m[K[01;31m[Ka[m[K[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[Ka[m[K[m[K
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[1]+  Stopped                 c[01;31m[K[01;31m[Ka[m[K[m[Kt > [01;31m[K[01;31m[Ka[m[K[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ c[01;31m[K[01;31m[Ka[m[K[m[Kt>?[Kb.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[2]+  Stopped                 c[01;31m[K[01;31m[Ka[m[K[m[Kt > b.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ p[01;31m[K[01;31m[Ka[m[K[m[Kste [01;31m[K[01;31m[Ka[m[K[m[K.txt b,[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[Ka[m[K[m[K	1
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ l[K[01;31m[K[01;31m[Ka[m[K[m[Kli[01;31m[K[01;31m[Ka[m[K[m[Ks
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[Ka[m[K[m[Kli[01;31m[K[01;31m[Ka[m[K[m[Ks [01;31m[K[01;31m[Ka[m[K[m[Klert='notify-send --urgency=low -i "$([ $? = 0 ] && echo termin[01;31m[K[01;31m[Ka[m[K[m[Kl || echo error)" "$(history|t[01;31m[K[01;31m[Ka[m[K[m[Kil -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*[01;31m[K[01;31m[Ka[m[K[m[Klert$//'\'')"'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[Ka[m[K[m[Kli[01;31m[K[01;31m[Ka[m[K[m[Ks egrep='egrep --color=[01;31m[K[01;31m[Ka[m[K[m[Kuto'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[Ka[m[K[m[Kli[01;31m[K[01;31m[Ka[m[K[m[Ks fgrep='fgrep --color=[01;31m[K[01;31m[Ka[m[K[m[Kuto'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[Ka[m[K[m[Kli[01;31m[K[01;31m[Ka[m[K[m[Ks grep='grep --color=[01;31m[K[01;31m[Ka[m[K[m[Kuto'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[Ka[m[K[m[Kli[01;31m[K[01;31m[Ka[m[K[m[Ks l='ls -CF'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[Ka[m[K[m[Kli[01;31m[K[01;31m[Ka[m[K[m[Ks l[01;31m[K[01;31m[Ka[m[K[m[K='ls -A'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[Ka[m[K[m[Kli[01;31m[K[01;31m[Ka[m[K[m[Ks ll='ls -[01;31m[K[01;31m[Ka[m[K[m[KlF'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[Ka[m[K[m[Kli[01;31m[K[01;31m[Ka[m[K[m[Ks ls='ls --color=[01;31m[K[01;31m[Ka[m[K[m[Kuto'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ [01;31m[K[01;31m[Ka[m[K[m[Kli[01;31m[K[01;31m[Ka[m[K[m[Ks|\[K[K ||='ls-[01;31m[K[01;31m[Ka[m[K[m[Kl' s-[01;31m[K[01;31m[Ka[m[K[m[Kl'[1Ps-[01;31m[K[01;31m[Ka[m[K[m[Kl'[C -[01;31m[K[01;31m[Ka[m[K[m[Kl'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[Ka[m[K[m[Kli[01;31m[K[01;31m[Ka[m[K[m[Ks [01;31m[K[01;31m[Ka[m[K[m[Klert='notify-send --urgency=low -i "$([ $? = 0 ] && echo termin[01;31m[K[01;31m[Ka[m[K[m[Kl || echo error)" "$(history|t[01;31m[K[01;31m[Ka[m[K[m[Kil -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*[01;31m[K[01;31m[Ka[m[K[m[Klert$//'\'')"'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[Ka[m[K[m[Kli[01;31m[K[01;31m[Ka[m[K[m[Ks egrep='egrep --color=[01;31m[K[01;31m[Ka[m[K[m[Kuto'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[Ka[m[K[m[Kli[01;31m[K[01;31m[Ka[m[K[m[Ks fgrep='fgrep --color=[01;31m[K[01;31m[Ka[m[K[m[Kuto'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[Ka[m[K[m[Kli[01;31m[K[01;31m[Ka[m[K[m[Ks grep='grep --color=[01;31m[K[01;31m[Ka[m[K[m[Kuto'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[Ka[m[K[m[Kli[01;31m[K[01;31m[Ka[m[K[m[Ks l='ls -CF'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[Ka[m[K[m[Kli[01;31m[K[01;31m[Ka[m[K[m[Ks l[01;31m[K[01;31m[Ka[m[K[m[K='ls -A'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[Ka[m[K[m[Kli[01;31m[K[01;31m[Ka[m[K[m[Ks ll='ls -[01;31m[K[01;31m[Ka[m[K[m[KlF'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[Ka[m[K[m[Kli[01;31m[K[01;31m[Ka[m[K[m[Ks ls='ls --color=[01;31m[K[01;31m[Ka[m[K[m[Kuto'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ grep [01;31m[K[01;31m[Ka[m[K[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kgrep [01;31m[K[01;31m[Ka[m[K[m[K [01;31m[K[01;31m[Ka[m[K[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kgrep [01;31m[K[01;31m[Ka[m[K[m[K [01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K.txt[m[K
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[3]+  Stopped                 grep --color=[01;31m[K[01;31m[Ka[m[K[m[Kuto [01;31m[K[01;31m[Ka[m[K[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ greep[K[Kp [01;31m[K[01;31m[Ka[m[K[m[K [01;31m[K[01;31m[Ka[m[K[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[K
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ greop[K[Kp [01;31m[K[01;31m[Ka[m[K[m[K b.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ grep  ?[K[K[01;31m[K[01;31m[Ka[m[K[m[K ? ^?[K[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[K[01;31m[K[01;31m[Ka[m[K[m[K.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[K
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ grep [01;31m[K[01;31m[Ka[m[K[m[K *.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[K[01;31m[K[01;31m[Ka[m[K[m[K.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[K
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[KScript st[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Krted on 2019-02-04 21:06:23+0530
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[K.txt  ceccs17d05.04.02.19.txt  [0m[01;34mDocuments[0m  [01;34mMusic[0m     [01;34mPublic[0m     [01;34mVideos[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kb.txt  [01;34mDesktop[0m                  [01;34mDownlo[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kds[0m  [01;34mPictures[0m  [01;34mTempl[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Ktes[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Ktot[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kl 40
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K-rw-r--r-- 1 s4d1 s4d1   26 Feb  4 20:43 [01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kdrwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mDownlo[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kds[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kdrwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mTempl[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Ktes[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Ktot[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kl 40
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K-rw-r--r-- 1 s4d1 s4d1   26 Feb  4 20:43 [01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kdrwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mDownlo[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kds[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kdrwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mTempl[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Ktes[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Ktot[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kl 40
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kdrwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mTempl[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Ktes[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[Kdrwxr-xr-x 2 s4d1 s4d1 4096 Feb  4 20:24 [01;34mDownlo[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kds[0m
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K-rw-r--r-- 1 s4d1 s4d1   26 Feb  4 20:43 [01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ l[Kc[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kt>[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[K
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[1]+  Stopped                 c[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kt > [01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ c[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kt>?[Kb.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[2]+  Stopped                 c[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kt > b.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ p[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kste [01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[K.txt b,[K.txt
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[K	1
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K]0;s4d1@tpc-Veriton-Series: ~[01;32ms4d1@tpc-Veriton-Series[00m:[01;34m~[00m$ l[K[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kli[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Ks
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kli[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Ks [01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Klert='notify-send --urgency=low -i "$([ $? = 0 ] && echo termin[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kl || echo error)" "$(history|t[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kil -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Klert$//'\'')"'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kli[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Ks egrep='egrep --color=[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kuto'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kli[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Ks fgrep='fgrep --color=[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kuto'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kli[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Ks grep='grep --color=[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kuto'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kli[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Ks l='ls -CF'
+[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[35m[Kceccs17d05.04.02.19.txt[m[K[36m[K:[m[K[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Kli[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[Ks l[01;31m[K[01;31m[K[01;31m[Ka[m[K[m[K[m[K
