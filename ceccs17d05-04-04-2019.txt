@@ -1,0 +1,69 @@
+Script started on Thursday 04 April 2019 10:29:58 AM IST
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ ssh ceccs17d05@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+ceccs17d05@192.168.0.30's password: 
+Permission denied, please try again.
+
+ceccs17d05@192.168.0.30's password: 
+Permission denied, please try again.
+
+ceccs17d05@192.168.0.30's password: 
+Permission denied (publickey,password).
+
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ ceccs17d05
+ceccs17d05: command not found
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ ceccs17d05ssh ceccs17d05@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+ceccs17d05@192.168.0.30's password: 
+
+[1]+  Stopped                 ssh ceccs17d05@192.168.0.30
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ ssh ceccs17d05@192.168.0.30[1Ps17d05@192.168.0.30[1Pcs17d05@192.168.0.30[1Ps17d05@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d05@192.168.0.30's password: 
+Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
+
+ * Website:  http://elementary.io/
+
+278 packages can be updated.
+0 updates are security updates.
+
+Last login: Thu Apr  4 10:14:32 2019 from 192.168.0.148
+
+$ cat>  > amrita.txt
+Amrita ? Ajith
+S4-D - 05
+College Of Engg,Chenganoor
+zz  ^Z[1] + Stopped                    cat 1>amrita.txt
+$ ls
+ammu.txt  amrita.txt  examples.desktop
+$ du
+4	./.cache
+40	./.config/plank/dock1/launchers
+44	./.config/plank/dock1
+48	./.config/plank
+52	./.config
+96	.
+$ exit exit    
+You have stopped jobs.
+$ exit
+Connection to 192.168.0.30 closed.
+
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ xit[K[K[Kexit
+exit
+There are stopped jobs.
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ exit
+exit
+
+Script done on Thursday 04 April 2019 10:35:59 AM IST
