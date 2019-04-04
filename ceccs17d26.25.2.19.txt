@@ -1,0 +1,1795 @@
+Script started on Monday 25 February 2019 10:22:16 AM IST
+]0;clab1@CC2-26: ~/Desktop[01;32mclab1@CC2-26[00m:[01;34m~/Desktop[00m$ [K]0;clab1@CC2-26: ~/Desktop[01;32mclab1@CC2-26[00m:[01;34m~/Desktop[00m$ ifconfig -a
+enp2s0    Link encap:Ethernet  HWaddr 38:d5:47:b8:d1:a8  
+          inet addr:192.168.0.216  Bcast:192.168.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::73f7:bc84:acd6:bedd/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:53015 errors:0 dropped:3 overruns:0 frame:0
+          TX packets:11136 errors:7 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:15867466 (15.8 MB)  TX bytes:1351677 (1.3 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:2382 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:2382 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1 
+          RX bytes:193483 (193.4 KB)  TX bytes:193483 (193.4 KB)
+
+]0;clab1@CC2-26: ~/Desktop[01;32mclab1@CC2-26[00m:[01;34m~/Desktop[00m$ man ifconfig -a
+[?1049h[?1h=IFCONFIG(8)Linux Programmer's ManualIFCONFIG(8)[m
+[m
+[1mNAME[0m[m
+       ifconfig - configure a network interface[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mifconfig[0m [1m[-v][0m [1m[-a][0m [1m[-s][0m [1m[interface][0m[m
+       [1mifconfig[0m [1m[-v][0m [1minterface[0m [1m[aftype][0m [1moptions[0m[m
+       [1m|[0m [1maddress[0m [1m...[0m[m
+[m
+[1mDESCRIPTION[0m[m
+       [1mIfconfig[0m is used to configure  the  ker‐[m
+       nel-resident  network interfaces.  It is[m
+       used at boot time to set  up  interfaces[m
+       as necessary.  After that, it is usually[m
+       only needed when debugging or when  sys‐[m
+       tem tuning is needed.[m
+[m
+       If no arguments are given, [1mifconfig[0m dis‐[m
+       plays the status of the currently active[m
+       interfaces.  If a single [1minterface[0m argu‐[m
+       ment is given, it displays the status of[m
+       the given interface only; if a single [1m-a[0m[m
+       argument is given, it displays the  sta‐[m
+       tus  of  all interfaces, even those that[m
+       are down.  Otherwise, it  configures  an[m
+       interface.[m
+[m
+[1mAddress[0m [1mFamilies[0m[m
+[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       If  the  first argument after the inter‐[m
+[7monfig(8) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       face name is recognized as the name of a[m
+[7monfig(8) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       supported  address  family, that address[m
+[7monfig(8) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       family is used for decoding and display‐[m
+[7monfig(8) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       ing  all  protocol addresses.  Currently[m
+[7monfig(8) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       supported address families include  [1minet[0m[m
+[7monfig(8) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       (TCP/IP,  default),  [1minet6[0m  (IPv6), [1max25[0m[m
+[7monfig(8) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       (AMPR  Packet  Radio),  [1mddp[0m   (Appletalk[m
+[7monfig(8) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Phase  2),  [1mipx[0m  (Novell IPX) and [1mnetrom[0m[m
+[7mnfig(8) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       (AMPR Packet radio).[m
+[7mnfig(8) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mnfig(8) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mOPTIONS[0m[m
+[7mnfig(8) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-a[0m     display all interfaces which  are[m
+[7mnfig(8) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              currently available, even if down[m
+[7mnfig(8) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mnfig(8) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-s[0m     display  a  short list (like net‐[m
+[7mnfig(8) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              stat -i)[m
+[7mnfig(8) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mnfig(8) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[30;1H[K[7mnfig(8) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       tem tuning is needed.[m
+[30;1H[K[7mnfig(8) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       only needed when debugging or when  sys‐[m
+[30;1H[K[7mnfig(8) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       as necessary.  After that, it is usually[m
+[30;1H[K[7mnfig(8) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       used at boot time to set  up  interfaces[m
+[30;1H[K[7mnfig(8) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       nel-resident  network interfaces.  It is[m
+[30;1H[K[7mnfig(8) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mIfconfig[0m is used to configure  the  ker‐[m
+[30;1H[K[7mnfig(8) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mDESCRIPTION[0m[m
+[30;1H[K[7mnfig(8) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[30;1H[K[7mnfig(8) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m|[0m [1maddress[0m [1m...[0m[m
+[30;1H[K[7monfig(8) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mifconfig[0m [1m[-v][0m [1minterface[0m [1m[aftype][0m [1moptions[0m[m
+[30;1H[K[7monfig(8) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mifconfig[0m [1m[-v][0m [1m[-a][0m [1m[-s][0m [1m[interface][0m[m
+[30;1H[K[7monfig(8) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mSYNOPSIS[0m[m
+[30;1H[K[7monfig(8) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[30;1H[K[7monfig(8) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       ifconfig - configure a network interface[m
+[30;1H[K[7monfig(8) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
+[30;1H[K[7monfig(8) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[30;1H[K[7monfig(8) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMIFCONFIG(8)Linux Programmer's ManualIFCONFIG(8)[m
+[30;1H[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7monfig(8) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       If  the  first argument after the inter‐[m
+[7monfig(8) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       face name is recognized as the name of a[m
+[7monfig(8) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       supported  address  family, that address[m
+[7monfig(8) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       family is used for decoding and display‐[m
+[7monfig(8) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       ing  all  protocol addresses.  Currently[m
+[7monfig(8) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       supported address families include  [1minet[0m[m
+[7monfig(8) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       (TCP/IP,  default),  [1minet6[0m  (IPv6), [1max25[0m[m
+[7monfig(8) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       (AMPR  Packet  Radio),  [1mddp[0m   (Appletalk[m
+[7monfig(8) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Phase  2),  [1mipx[0m  (Novell IPX) and [1mnetrom[0m[m
+[7mnfig(8) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       (AMPR Packet radio).[m
+[7mnfig(8) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mnfig(8) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mOPTIONS[0m[m
+[7mnfig(8) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-a[0m     display all interfaces which  are[m
+[7mnfig(8) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              currently available, even if down[m
+[7mnfig(8) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mnfig(8) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-s[0m     display  a  short list (like net‐[m
+[7mnfig(8) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              stat -i)[m
+[7mnfig(8) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mnfig(8) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-v[0m     be more verbose  for  some  error[m
+[7mnfig(8) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              conditions[m
+[7mnfig(8) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mnfig(8) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1minterface[0m[m
+[7mnfig(8) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              The  name of the interface.  This[m
+[7mnfig(8) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              is usually a driver name followed[m
+[7mnfig(8) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              by  a  unit  number,  for example[m
+[7mnfig(8) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [1meth0[0m  for  the   first   Ethernet[m
+[7mnfig(8) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              interface.  If  your  kernel sup‐[m
+[7mnfig(8) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              ports alias interfaces,  you  can[m
+[7mnfig(8) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              specify  them with [1meth0:0[0m for the[m
+[7mnfig(8) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              first alias of eth0. You can  use[m
+[7mnfig(8) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              them  to assign a second address.[m
+[7mnfig(8) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              To delete an alias interface  use[m
+[7mnfig(8) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [1mifconfig[0m  [1meth0:0[0m [1mdown[0m.  Note: for[m
+[7mnfig(8) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              every scope (i.e. same  net  with[m
+[7mnfig(8) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              address/netmask  combination) all[m
+[7mnfig(8) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              aliases  are  deleted,   if   you[m
+[7mnfig(8) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              delete the first (primary).[m
+[7mnfig(8) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mnfig(8) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mup[0m     This flag causes the interface to[m
+[7mnfig(8) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              be activated.  It  is  implicitly[m
+[7mnfig(8) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              specified   if   an   address  is[m
+[7mnfig(8) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              assigned to the interface.[m
+[7mnfig(8) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mnfig(8) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mdown[0m   This flag causes the  driver  for[m
+[7mnfig(8) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              this interface to be shut down.[m
+[7mnfig(8) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mnfig(8) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m[-]arp[0m Enable  or disable the use of the[m
+[7mnfig(8) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              ARP protocol on this interface.[m
+[7mnfig(8) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mnfig(8) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m[-]promisc[0m[m
+[7mnfig(8) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Enable or disable the [1mpromiscuous[0m[m
+[7mnfig(8) line 52 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              mode   of   the   interface.   If[m
+[7mnfig(8) line 53 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              selected, all packets on the net‐[m
+[7mnfig(8) line 54 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              work  will  be  received  by  the[m
+[7mnfig(8) line 55 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              interface.[m
+[7mnfig(8) line 56 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mnfig(8) line 57 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m[-]allmulti[0m[m
+[7mnfig(8) line 58 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Enable or  disable  [1mall-multicast[0m[m
+[7mnfig(8) line 59 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              mode.  If selected, all multicast[m
+[7mnfig(8) line 60 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              packets on the  network  will  be[m
+[7mnfig(8) line 61 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              received by the interface.[m
+[7mnfig(8) line 62 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mnfig(8) line 63 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mmetric[0m [1mN[0m[m
+[7mnfig(8) line 64 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              This parameter sets the interface[m
+[7mnfig(8) line 65 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              metric.[m
+[7mnfig(8) line 66 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mnfig(8) line 67 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mmtu[0m [1mN[0m  This parameter sets  the  Maximum[m
+[7mnfig(8) line 68 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Transfer  Unit (MTU) of an inter‐[m
+[7mnfig(8) line 69 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              face.[m
+[7mnfig(8) line 70 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mnfig(8) line 71 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mdstaddr[0m [1maddr[0m[m
+[7mnfig(8) line 72 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Set the remote IP address  for  a[m
+[7mnfig(8) line 73 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              point-to-point   link   (such  as[m
+[7mnfig(8) line 74 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              PPP).  This keyword is now  obso‐[m
+[7mnfig(8) line 75 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              lete; use the [1mpointopoint[0m keyword[m
+[7mnfig(8) line 76 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              instead.[m
+[7mnfig(8) line 77 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mnfig(8) line 78 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mnetmask[0m [1maddr[0m[m
+[7mnfig(8) line 79 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Set the IP network mask for  this[m
+[7mnfig(8) line 80 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              interface.   This  value defaults[m
+[7mnfig(8) line 81 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              to the usual class A, B or C net‐[m
+[7mnfig(8) line 82 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              work  mask  (as  derived from the[m
+[7mnfig(8) line 83 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              interface IP address), but it can[m
+[7mnfig(8) line 84 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              be set to any value.[m
+[7mnfig(8) line 85 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mnfig(8) line 86 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1madd[0m [1maddr/prefixlen[0m[m
+[7mnfig(8) line 87 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Add  an IPv6 address to an inter‐[m
+[7mnfig(8) line 88 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              face.[m
+[7mnfig(8) line 89 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mnfig(8) line 90 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mdel[0m [1maddr/prefixlen[0m[m
+[7mnfig(8) line 91 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Remove an IPv6  address  from  an[m
+[7mnfig(8) line 92 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              interface.[m
+[7mnfig(8) line 93 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mnfig(8) line 94 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+[7mnfig(8) line 95 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Create  a  new SIT (IPv6-in-IPv4)[m
+[7mnfig(8) line 96 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              device, tunnelling to  the  given[m
+[7mnfig(8) line 97 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              destination.[m
+[7mnfig(8) line 98 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mnfig(8) line 99 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mirq[0m [1maddr[0m[m
+[7mfig(8) line 100 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Set  the  interrupt  line used by[m
+[7mfig(8) line 101 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              this device.  Not all devices can[m
+[7mfig(8) line 102 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              dynamically change their IRQ set‐[m
+[7mfig(8) line 103 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              ting.[m
+[7mfig(8) line 104 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mfig(8) line 105 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mio_addr[0m [1maddr[0m[m
+[7mfig(8) line 106 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Set  the  start  address  in  I/O[m
+[7mfig(8) line 107 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              space for this device.[m
+[7mfig(8) line 108 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mfig(8) line 109 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mmem_start[0m [1maddr[0m[m
+[7mfig(8) line 110 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Set  the start address for shared[m
+[7mfig(8) line 111 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              memory used by this device.  Only[m
+[7mfig(8) line 112 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              a few devices need this.[m
+[7mfig(8) line 113 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7mfig(8) line 114 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mmedia[0m [1mtype[0m[m
+[7mfig(8) line 115 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Set  the  physical port or medium[m
+[7mfig(8) line 116 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              type to be used  by  the  device.[m
+[7mfig(8) line 117 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Not  all  devices can change this[m
+[7mfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7mnfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7monfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7mconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7mfconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7mifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7m ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7me ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7mge ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7mpage ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7ml page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7mual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7mnual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7mManual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+              setting, and those that can  vary[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+              setting, and those that can  vary[m
+              in   what  values  they  support.[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+              setting, and those that can  vary[m
+              in   what  values  they  support.[m
+              Typical  values  for   [1mtype[0m   are[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+              setting, and those that can  vary[m
+              in   what  values  they  support.[m
+              Typical  values  for   [1mtype[0m   are[m
+              [1m10base2[0m  (thin Ethernet), [1m10baseT[0m[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+              setting, and those that can  vary[m
+              in   what  values  they  support.[m
+              Typical  values  for   [1mtype[0m   are[m
+              [1m10base2[0m  (thin Ethernet), [1m10baseT[0m[m
+              (twisted-pair  10Mbps  Ethernet),[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+              setting, and those that can  vary[m
+              in   what  values  they  support.[m
+              Typical  values  for   [1mtype[0m   are[m
+              [1m10base2[0m  (thin Ethernet), [1m10baseT[0m[m
+              (twisted-pair  10Mbps  Ethernet),[m
+              [1mAUI[0m (external transceiver) and so[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+              setting, and those that can  vary[m
+              in   what  values  they  support.[m
+              Typical  values  for   [1mtype[0m   are[m
+              [1m10base2[0m  (thin Ethernet), [1m10baseT[0m[m
+              (twisted-pair  10Mbps  Ethernet),[m
+              [1mAUI[0m (external transceiver) and so[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+              setting, and those that can  vary[m
+              in   what  values  they  support.[m
+              Typical  values  for   [1mtype[0m   are[m
+              [1m10base2[0m  (thin Ethernet), [1m10baseT[0m[m
+              (twisted-pair  10Mbps  Ethernet),[m
+              [1mAUI[0m (external transceiver) and so[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+              setting, and those that can  vary[m
+              in   what  values  they  support.[m
+              Typical  values  for   [1mtype[0m   are[m
+              [1m10base2[0m  (thin Ethernet), [1m10baseT[0m[m
+              (twisted-pair  10Mbps  Ethernet),[m
+              [1mAUI[0m (external transceiver) and so[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+              setting, and those that can  vary[m
+              in   what  values  they  support.[m
+              Typical  values  for   [1mtype[0m   are[m
+              [1m10base2[0m  (thin Ethernet), [1m10baseT[0m[m
+              (twisted-pair  10Mbps  Ethernet),[m
+              [1mAUI[0m (external transceiver) and so[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+              setting, and those that can  vary[m
+              in   what  values  they  support.[m
+              Typical  values  for   [1mtype[0m   are[m
+              [1m10base2[0m  (thin Ethernet), [1m10baseT[0m[m
+              (twisted-pair  10Mbps  Ethernet),[m
+              [1mAUI[0m (external transceiver) and so[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+              setting, and those that can  vary[m
+              in   what  values  they  support.[m
+              Typical  values  for   [1mtype[0m   are[m
+              [1m10base2[0m  (thin Ethernet), [1m10baseT[0m[m
+              (twisted-pair  10Mbps  Ethernet),[m
+              [1mAUI[0m (external transceiver) and so[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+              setting, and those that can  vary[m
+              in   what  values  they  support.[m
+              Typical  values  for   [1mtype[0m   are[m
+              [1m10base2[0m  (thin Ethernet), [1m10baseT[0m[m
+              (twisted-pair  10Mbps  Ethernet),[m
+              [1mAUI[0m (external transceiver) and so[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+              setting, and those that can  vary[m
+              in   what  values  they  support.[m
+              Typical  values  for   [1mtype[0m   are[m
+              [1m10base2[0m  (thin Ethernet), [1m10baseT[0m[m
+              (twisted-pair  10Mbps  Ethernet),[m
+              [1mAUI[0m (external transceiver) and so[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[H[2J[H[m
+       [1mdel[0m [1maddr/prefixlen[0m[m
+              Remove an IPv6  address  from  an[m
+              interface.[m
+[m
+       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+              Create  a  new SIT (IPv6-in-IPv4)[m
+              device, tunnelling to  the  given[m
+              destination.[m
+[m
+       [1mirq[0m [1maddr[0m[m
+              Set  the  interrupt  line used by[m
+              this device.  Not all devices can[m
+              dynamically change their IRQ set‐[m
+              ting.[m
+[m
+       [1mio_addr[0m [1maddr[0m[m
+              Set  the  start  address  in  I/O[m
+              space for this device.[m
+[m
+       [1mmem_start[0m [1maddr[0m[m
+              Set  the start address for shared[m
+              memory used by this device.  Only[m
+              a few devices need this.[m
+[m
+       [1mmedia[0m [1mtype[0m[m
+              Set  the  physical port or medium[m
+              type to be used  by  the  device.[m
+              Not  all  devices can change this[m
+              setting, and those that can  vary[m
+              in   what  values  they  support.[m
+              Typical  values  for   [1mtype[0m   are[m
+              [1m10base2[0m  (thin Ethernet), [1m10baseT[0m[m
+              (twisted-pair  10Mbps  Ethernet),[m
+              [1mAUI[0m (external transceiver) and so[m
+[7m Manual page ifconfig(8) line 118 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              on.  The special medium  type  of[m
+[7m Manual page ifconfig(8) line 119 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [1mauto[0m  can  be  used  to  tell the[m
+[7m Manual page ifconfig(8) line 120 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              driver to auto-sense  the  media.[m
+[7m Manual page ifconfig(8) line 121 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Again,  not  all  drivers  can do[m
+[7m Manual page ifconfig(8) line 122 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              this.[m
+[7m Manual page ifconfig(8) line 123 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ifconfig(8) line 124 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m[-]broadcast[0m [1m[addr][0m[m
+[7m Manual page ifconfig(8) line 125 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              If the address argument is given,[m
+[7m Manual page ifconfig(8) line 126 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              set    the   protocol   broadcast[m
+[7m Manual page ifconfig(8) line 127 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              address for this interface.  Oth‐[m
+[7m Manual page ifconfig(8) line 128 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              erwise,   set   (or   clear)  the[m
+[7m Manual page ifconfig(8) line 129 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [1mIFF_BROADCAST[0m flag for the inter‐[m
+[7m Manual page ifconfig(8) line 130 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              face.[m
+[7m Manual page ifconfig(8) line 131 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ifconfig(8) line 132 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m[-]pointopoint[0m [1m[addr][0m[m
+[7m Manual page ifconfig(8) line 133 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              This  keyword  enables the [1mpoint-[0m[m
+[7m Manual page ifconfig(8) line 134 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              [1mto-point[0m mode  of  an  interface,[m
+[7m Manual page ifconfig(8) line 135 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              meaning  that it is a direct link[m
+[7m Manual page ifconfig(8) line 136 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              between two machines with  nobody[m
+[7m Manual page ifconfig(8) line 137 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              else listening on it.[m
+[7m Manual page ifconfig(8) line 138 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              If  the  address argument is also[m
+[7m Manual page ifconfig(8) line 139 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              given, set the  protocol  address[m
+[7m Manual page ifconfig(8) line 140 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              of  the  other  side of the link,[m
+[7m Manual page ifconfig(8) line 141 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              just like  the  obsolete  [1mdstaddr[0m[m
+[7m Manual page ifconfig(8) line 142 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              keyword  does.  Otherwise, set or[m
+[7m Manual page ifconfig(8) line 143 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              clear  the  [1mIFF_POINTOPOINT[0m  flag[m
+[7m Manual page ifconfig(8) line 144 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              for the interface.[m
+[7m Manual page ifconfig(8) line 145 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ifconfig(8) line 146 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mhw[0m [1mclass[0m [1maddress[0m[m
+[7m Manual page ifconfig(8) line 147 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Set  the hardware address of this[m
+[7m Manual page ifconfig(8) line 148 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              interface, if the  device  driver[m
+[7m Manual page ifconfig(8) line 149 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              supports   this  operation.   The[m
+[7m Manual page ifconfig(8) line 150 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              keyword must be followed  by  the[m
+[7m Manual page ifconfig(8) line 151 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              name  of  the  hardware class and[m
+[7m Manual page ifconfig(8) line 152 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              the printable ASCII equivalent of[m
+[7m Manual page ifconfig(8) line 153 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              the  hardware  address.  Hardware[m
+[7m Manual page ifconfig(8) line 154 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              classes    currently    supported[m
+[7m Manual page ifconfig(8) line 155 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              include  [1mether[0m  (Ethernet),  [1max25[0m[m
+[7m Manual page ifconfig(8) line 156 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              (AMPR AX.25), [1mARCnet[0m  and  [1mnetrom[0m[m
+[7m Manual page ifconfig(8) line 157 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              (AMPR NET/ROM).[m
+[7m Manual page ifconfig(8) line 158 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ifconfig(8) line 159 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mmulticast[0m[m
+[7m Manual page ifconfig(8) line 160 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Set  the  multicast  flag  on the[m
+[7m Manual page ifconfig(8) line 161 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              interface. This should  not  nor‐[m
+[7m Manual page ifconfig(8) line 162 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              mally  be  needed  as the drivers[m
+[7m Manual page ifconfig(8) line 163 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              set  the  flag  correctly   them‐[m
+[7m Manual page ifconfig(8) line 164 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              selves.[m
+[7m Manual page ifconfig(8) line 165 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ifconfig(8) line 166 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1maddress[0m[m
+[7m Manual page ifconfig(8) line 167 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              The  IP address to be assigned to[m
+[7m Manual page ifconfig(8) line 168 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              this interface.[m
+[7m Manual page ifconfig(8) line 169 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ifconfig(8) line 170 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtxqueuelen[0m [1mlength[0m[m
+[7m Manual page ifconfig(8) line 171 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              Set the length  of  the  transmit[m
+[7m Manual page ifconfig(8) line 172 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              queue of the device. It is useful[m
+[7m Manual page ifconfig(8) line 173 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              to set this to small  values  for[m
+[7m Manual page ifconfig(8) line 174 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              slower   devices   with   a  high[m
+[7m Manual page ifconfig(8) line 175 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              latency (modem  links,  ISDN)  to[m
+[7m Manual page ifconfig(8) line 176 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              prevent  fast bulk transfers from[m
+[7m Manual page ifconfig(8) line 177 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              disturbing  interactive   traffic[m
+[7m Manual page ifconfig(8) line 178 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              like telnet too much.[m
+[7m Manual page ifconfig(8) line 179 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ifconfig(8) line 180 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mNOTES[0m[m
+[7m Manual page ifconfig(8) line 181 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Since  kernel  release  2.2 there are no[m
+[7m Manual page ifconfig(8) line 182 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       explicit interface statistics for  alias[m
+[7m Manual page ifconfig(8) line 183 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       interfaces   anymore.   The   statistics[m
+[7m Manual page ifconfig(8) line 184 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       printed for  the  original  address  are[m
+[7m Manual page ifconfig(8) line 185 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       shared  with  all alias addresses on the[m
+[7m Manual page ifconfig(8) line 186 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       same device.  If  you  want  per-address[m
+[7m Manual page ifconfig(8) line 187 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       statistics   you   should  add  explicit[m
+[7m Manual page ifconfig(8) line 188 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       accounting rules for the  address  using[m
+[7m Manual page ifconfig(8) line 189 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       the [1mipchains[0m(8) or [1miptables[0m(8) command.[m
+[7m Manual page ifconfig(8) line 190 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ifconfig(8) line 191 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Interrupt  problems with Ethernet device[m
+[7m Manual page ifconfig(8) line 192 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       drivers fail with EAGAIN  [4m(SIOCSIIFLAGS:[24m[m
+[7m Manual page ifconfig(8) line 193 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4mResource[24m  [4mtemporarily[24m [4munavailable)[24m it is[m
+[7m Manual page ifconfig(8) line 194 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       most likely a  interrupt  conflict.  See[m
+[7m Manual page ifconfig(8) line 195 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4mhttp://www.scyld.com/expert/irq-con‐[24m[m
+[7m Manual page ifconfig(8) line 196 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4mflict.html[24m for more information.[m
+[7m Manual page ifconfig(8) line 197 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ifconfig(8) line 198 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mFILES[0m[m
+[7m Manual page ifconfig(8) line 199 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4m/proc/net/socket[24m[m
+[7m Manual page ifconfig(8) line 200 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4m/proc/net/dev[24m[m
+[7m Manual page ifconfig(8) line 201 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4m/proc/net/if_inet6[24m[m
+[7m Manual page ifconfig(8) line 202 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ifconfig(8) line 203 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mBUGS[0m[m
+[7m Manual page ifconfig(8) line 204 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       While appletalk DDP  and  IPX  addresses[m
+[7m Manual page ifconfig(8) line 205 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       will be displayed they cannot be altered[m
+[7m Manual page ifconfig(8) line 206 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       by this command.[m
+[7m Manual page ifconfig(8) line 207 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ifconfig(8) line 208 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mSEE[0m [1mALSO[0m[m
+[7m Manual page ifconfig(8) line 209 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       route(8), netstat(8),  arp(8),  rarp(8),[m
+[7m Manual page ifconfig(8) line 210 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       ipchains(8),    iptables(8),    ifup(8),[m
+[7m Manual page ifconfig(8) line 211 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       interfaces(5).[m
+[7m Manual page ifconfig(8) line 212 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       http://physics.nist.gov/cuu/Units/binary.html[m
+[7m Manual page ifconfig(8) line 213 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       - Prefixes for binary multiples[m
+[7m Manual page ifconfig(8) line 214 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ifconfig(8) line 215 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mAUTHORS[0m[m
+[7m Manual page ifconfig(8) line 216 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Fred        N.        van        Kempen,[m
+[7m Manual page ifconfig(8) line 217 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       <waltje@uwalt.nl.mugnet.org>[m
+[7m Manual page ifconfig(8) line 218 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Alan Cox, <Alan.Cox@linux.org>[m
+[7m Manual page ifconfig(8) line 219 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Phil       Blundell,       <Philip.Blun‐[m
+[7m Manual page ifconfig(8) line 220 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       dell@pobox.com>[m
+[7m Manual page ifconfig(8) line 221 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Andi Kleen[m
+[7m Manual page ifconfig(8) line 222 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Bernd                         Eckenfels,[m
+[7m Manual page ifconfig(8) line 223 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       <net-tools@lina.inka.de>[m
+[7m Manual page ifconfig(8) line 224 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ifconfig(8) line 225 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[Knet-tools          2007-12-02       IFCONFIG(8)[m
+[7m Manual page ifconfig(8) line 226 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page ifconfig(8) line 226/260 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 225/260 100% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       the [1mipchains[0m(8) or [1miptables[0m(8) command.[m
+[36;1H[K[7m Manual page ifconfig(8) line 224/260 100% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       accounting rules for the  address  using[m
+[36;1H[K[7m Manual page ifconfig(8) line 223/260 99% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       statistics   you   should  add  explicit[m
+[36;1H[K[7m Manual page ifconfig(8) line 222/260 99% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       same device.  If  you  want  per-address[m
+[36;1H[K[7m Manual page ifconfig(8) line 221/260 99% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       shared  with  all alias addresses on the[m
+[36;1H[K[7m Manual page ifconfig(8) line 220/260 98% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       printed for  the  original  address  are[m
+[36;1H[K[7m Manual page ifconfig(8) line 219/260 98% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       interfaces   anymore.   The   statistics[m
+[36;1H[K[7m Manual page ifconfig(8) line 218/260 98% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       explicit interface statistics for  alias[m
+[36;1H[K[7m Manual page ifconfig(8) line 217/260 97% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       Since  kernel  release  2.2 there are no[m
+[36;1H[K[7m Manual page ifconfig(8) line 216/260 97% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNOTES[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 215/260 97% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 214/260 97% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              like telnet too much.[m
+[36;1H[K[7m Manual page ifconfig(8) line 213/260 96% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              disturbing  interactive   traffic[m
+[36;1H[K[7m Manual page ifconfig(8) line 212/260 96% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              prevent  fast bulk transfers from[m
+[36;1H[K[7m Manual page ifconfig(8) line 211/260 95% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              latency (modem  links,  ISDN)  to[m
+[36;1H[K[7m Manual page ifconfig(8) line 210/260 95% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              slower   devices   with   a  high[m
+[36;1H[K[7m Manual page ifconfig(8) line 209/260 95% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              to set this to small  values  for[m
+[36;1H[K[7m Manual page ifconfig(8) line 208/260 94% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              queue of the device. It is useful[m
+[36;1H[K[7m Manual page ifconfig(8) line 207/260 94% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Set the length  of  the  transmit[m
+[36;1H[K[7m Manual page ifconfig(8) line 206/260 94% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mtxqueuelen[0m [1mlength[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 205/260 94% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 204/260 93% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              this interface.[m
+[36;1H[K[7m Manual page ifconfig(8) line 203/260 93% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              The  IP address to be assigned to[m
+[36;1H[K[7m Manual page ifconfig(8) line 202/260 93% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1maddress[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 201/260 92% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 200/260 92% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              selves.[m
+[36;1H[K[7m Manual page ifconfig(8) line 199/260 92% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              set  the  flag  correctly   them‐[m
+[36;1H[K[7m Manual page ifconfig(8) line 198/260 91% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              mally  be  needed  as the drivers[m
+[36;1H[K[7m Manual page ifconfig(8) line 197/260 91% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              interface. This should  not  nor‐[m
+[36;1H[K[7m Manual page ifconfig(8) line 196/260 91% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Set  the  multicast  flag  on the[m
+[36;1H[K[7m Manual page ifconfig(8) line 195/260 90% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mmulticast[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 194/260 89% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 193/260 88% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              (AMPR NET/ROM).[m
+[36;1H[K[7m Manual page ifconfig(8) line 192/260 87% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              (AMPR AX.25), [1mARCnet[0m  and  [1mnetrom[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 191/260 87% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              include  [1mether[0m  (Ethernet),  [1max25[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 190/260 87% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              classes    currently    supported[m
+[36;1H[K[7m Manual page ifconfig(8) line 189/260 86% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              the  hardware  address.  Hardware[m
+[36;1H[K[7m Manual page ifconfig(8) line 188/260 86% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              the printable ASCII equivalent of[m
+[36;1H[K[7m Manual page ifconfig(8) line 187/260 85% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              name  of  the  hardware class and[m
+[36;1H[K[7m Manual page ifconfig(8) line 186/260 85% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              keyword must be followed  by  the[m
+[36;1H[K[7m Manual page ifconfig(8) line 185/260 84% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              supports   this  operation.   The[m
+[36;1H[K[7m Manual page ifconfig(8) line 184/260 84% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              interface, if the  device  driver[m
+[36;1H[K[7m Manual page ifconfig(8) line 183/260 84% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Set  the hardware address of this[m
+[36;1H[K[7m Manual page ifconfig(8) line 182/260 83% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mhw[0m [1mclass[0m [1maddress[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 181/260 83% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 180/260 82% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              for the interface.[m
+[36;1H[K[7m Manual page ifconfig(8) line 179/260 82% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              clear  the  [1mIFF_POINTOPOINT[0m  flag[m
+[36;1H[K[7m Manual page ifconfig(8) line 178/260 82% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              keyword  does.  Otherwise, set or[m
+[36;1H[K[7m Manual page ifconfig(8) line 177/260 82% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              just like  the  obsolete  [1mdstaddr[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 176/260 81% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              of  the  other  side of the link,[m
+[36;1H[K[7m Manual page ifconfig(8) line 175/260 81% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              given, set the  protocol  address[m
+[36;1H[K[7m Manual page ifconfig(8) line 174/260 80% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              If  the  address argument is also[m
+[36;1H[K[7m Manual page ifconfig(8) line 173/260 80% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              else listening on it.[m
+[36;1H[K[7m Manual page ifconfig(8) line 172/260 79% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              between two machines with  nobody[m
+[36;1H[K[7m Manual page ifconfig(8) line 171/260 79% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              meaning  that it is a direct link[m
+[36;1H[K[7m Manual page ifconfig(8) line 170/260 78% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              [1mto-point[0m mode  of  an  interface,[m
+[36;1H[K[7m Manual page ifconfig(8) line 169/260 78% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              This  keyword  enables the [1mpoint-[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 168/260 78% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m[-]pointopoint[0m [1m[addr][0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 167/260 78% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 166/260 77% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              face.[m
+[36;1H[K[7m Manual page ifconfig(8) line 165/260 77% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              [1mIFF_BROADCAST[0m flag for the inter‐[m
+[36;1H[K[7m Manual page ifconfig(8) line 164/260 77% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              erwise,   set   (or   clear)  the[m
+[36;1H[K[7m Manual page ifconfig(8) line 163/260 77% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              address for this interface.  Oth‐[m
+[36;1H[K[7m Manual page ifconfig(8) line 162/260 76% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              set    the   protocol   broadcast[m
+[36;1H[K[7m Manual page ifconfig(8) line 161/260 76% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              If the address argument is given,[m
+[36;1H[K[7m Manual page ifconfig(8) line 160/260 75% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m[-]broadcast[0m [1m[addr][0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 159/260 75% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 158/260 75% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              this.[m
+[36;1H[K[7m Manual page ifconfig(8) line 157/260 75% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Again,  not  all  drivers  can do[m
+[36;1H[K[7m Manual page ifconfig(8) line 156/260 74% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              driver to auto-sense  the  media.[m
+[36;1H[K[7m Manual page ifconfig(8) line 155/260 73% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              [1mauto[0m  can  be  used  to  tell the[m
+[36;1H[K[7m Manual page ifconfig(8) line 154/260 73% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              on.  The special medium  type  of[m
+[36;1H[K[7m Manual page ifconfig(8) line 153/260 72% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              [1mAUI[0m (external transceiver) and so[m
+[36;1H[K[7m Manual page ifconfig(8) line 152/260 72% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              (twisted-pair  10Mbps  Ethernet),[m
+[36;1H[K[7m Manual page ifconfig(8) line 151/260 72% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              [1m10base2[0m  (thin Ethernet), [1m10baseT[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 150/260 71% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Typical  values  for   [1mtype[0m   are[m
+[36;1H[K[7m Manual page ifconfig(8) line 149/260 71% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              in   what  values  they  support.[m
+[36;1H[K[7m Manual page ifconfig(8) line 148/260 70% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              setting, and those that can  vary[m
+[36;1H[K[7m Manual page ifconfig(8) line 147/260 70% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Not  all  devices can change this[m
+[36;1H[K[7m Manual page ifconfig(8) line 146/260 69% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              type to be used  by  the  device.[m
+[36;1H[K[7m Manual page ifconfig(8) line 145/260 69% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Set  the  physical port or medium[m
+[36;1H[K[7m Manual page ifconfig(8) line 144/260 69% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mmedia[0m [1mtype[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 143/260 68% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 142/260 68% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              a few devices need this.[m
+[36;1H[K[7m Manual page ifconfig(8) line 141/260 67% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              memory used by this device.  Only[m
+[36;1H[K[7m Manual page ifconfig(8) line 140/260 67% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Set  the start address for shared[m
+[36;1H[K[7m Manual page ifconfig(8) line 139/260 66% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mmem_start[0m [1maddr[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 138/260 66% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 137/260 65% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              space for this device.[m
+[36;1H[K[7m Manual page ifconfig(8) line 136/260 65% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Set  the  start  address  in  I/O[m
+[36;1H[K[7m Manual page ifconfig(8) line 135/260 65% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mio_addr[0m [1maddr[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 134/260 64% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 133/260 63% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              ting.[m
+[36;1H[K[7m Manual page ifconfig(8) line 132/260 63% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              dynamically change their IRQ set‐[m
+[36;1H[K[7m Manual page ifconfig(8) line 131/260 63% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              this device.  Not all devices can[m
+[36;1H[K[7m Manual page ifconfig(8) line 130/260 63% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Set  the  interrupt  line used by[m
+[36;1H[K[7m Manual page ifconfig(8) line 129/260 62% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mirq[0m [1maddr[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 128/260 61% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 127/260 61% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              destination.[m
+[36;1H[K[7m Manual page ifconfig(8) line 126/260 60% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              device, tunnelling to  the  given[m
+[36;1H[K[7m Manual page ifconfig(8) line 125/260 60% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Create  a  new SIT (IPv6-in-IPv4)[m
+[36;1H[K[7m Manual page ifconfig(8) line 124/260 59% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mtunnel[0m [1maa.bb.cc.dd[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 123/260 59% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 122/260 59% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              interface.[m
+[36;1H[K[7m Manual page ifconfig(8) line 121/260 59% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Remove an IPv6  address  from  an[m
+[36;1H[K[7m Manual page ifconfig(8) line 120/260 58% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mdel[0m [1maddr/prefixlen[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 119/260 58% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 118/260 57% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              face.[m
+[36;1H[K[7m Manual page ifconfig(8) line 117/260 57% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Add  an IPv6 address to an inter‐[m
+[36;1H[K[7m Manual page ifconfig(8) line 116/260 56% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1madd[0m [1maddr/prefixlen[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 115/260 56% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 114/260 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              be set to any value.[m
+[36;1H[K[7m Manual page ifconfig(8) line 113/260 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              interface IP address), but it can[m
+[36;1H[K[7m Manual page ifconfig(8) line 112/260 54% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              work  mask  (as  derived from the[m
+[36;1H[K[7m Manual page ifconfig(8) line 111/260 54% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              to the usual class A, B or C net‐[m
+[36;1H[K[7m Manual page ifconfig(8) line 110/260 53% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              interface.   This  value defaults[m
+[36;1H[K[7m Manual page ifconfig(8) line 109/260 53% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Set the IP network mask for  this[m
+[36;1H[K[7m Manual page ifconfig(8) line 108/260 52% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mnetmask[0m [1maddr[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 107/260 52% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 106/260 52% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              instead.[m
+[36;1H[K[7m Manual page ifconfig(8) line 105/260 52% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              lete; use the [1mpointopoint[0m keyword[m
+[36;1H[K[7m Manual page ifconfig(8) line 104/260 51% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              PPP).  This keyword is now  obso‐[m
+[36;1H[K[7m Manual page ifconfig(8) line 103/260 51% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              point-to-point   link   (such  as[m
+[36;1H[K[7m Manual page ifconfig(8) line 102/260 51% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Set the remote IP address  for  a[m
+[36;1H[K[7m Manual page ifconfig(8) line 101/260 50% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mdstaddr[0m [1maddr[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 100/260 50% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 99/260 49% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              face.[m
+[36;1H[K[7m Manual page ifconfig(8) line 98/260 49% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Transfer  Unit (MTU) of an inter‐[m
+[36;1H[K[7m Manual page ifconfig(8) line 97/260 49% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mmtu[0m [1mN[0m  This parameter sets  the  Maximum[m
+[36;1H[K[7m Manual page ifconfig(8) line 96/260 49% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 95/260 48% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              metric.[m
+[36;1H[K[7m Manual page ifconfig(8) line 94/260 48% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              This parameter sets the interface[m
+[36;1H[K[7m Manual page ifconfig(8) line 93/260 48% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mmetric[0m [1mN[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 92/260 48% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 91/260 47% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              received by the interface.[m
+[36;1H[K[7m Manual page ifconfig(8) line 90/260 47% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              packets on the  network  will  be[m
+[36;1H[K[7m Manual page ifconfig(8) line 89/260 46% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              mode.  If selected, all multicast[m
+[36;1H[K[7m Manual page ifconfig(8) line 88/260 46% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Enable or  disable  [1mall-multicast[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 87/260 46% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m[-]allmulti[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 86/260 46% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 85/260 45% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              interface.[m
+[36;1H[K[7m Manual page ifconfig(8) line 84/260 45% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              work  will  be  received  by  the[m
+[36;1H[K[7m Manual page ifconfig(8) line 83/260 45% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              selected, all packets on the net‐[m
+[36;1H[K[7m Manual page ifconfig(8) line 82/260 44% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              mode   of   the   interface.   If[m
+[36;1H[K[7m Manual page ifconfig(8) line 81/260 44% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              Enable or disable the [1mpromiscuous[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 80/260 43% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m[-]promisc[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 79/260 43% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 78/260 43% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              ARP protocol on this interface.[m
+[36;1H[K[7m Manual page ifconfig(8) line 77/260 43% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m[-]arp[0m Enable  or disable the use of the[m
+[36;1H[K[7m Manual page ifconfig(8) line 76/260 42% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 75/260 42% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              this interface to be shut down.[m
+[36;1H[K[7m Manual page ifconfig(8) line 74/260 41% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mdown[0m   This flag causes the  driver  for[m
+[36;1H[K[7m Manual page ifconfig(8) line 73/260 41% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 72/260 40% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              assigned to the interface.[m
+[36;1H[K[7m Manual page ifconfig(8) line 71/260 40% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              specified   if   an   address  is[m
+[36;1H[K[7m Manual page ifconfig(8) line 70/260 40% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              be activated.  It  is  implicitly[m
+[36;1H[K[7m Manual page ifconfig(8) line 69/260 39% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mup[0m     This flag causes the interface to[m
+[36;1H[K[7m Manual page ifconfig(8) line 68/260 39% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 67/260 39% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              delete the first (primary).[m
+[36;1H[K[7m Manual page ifconfig(8) line 66/260 38% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              aliases  are  deleted,   if   you[m
+[36;1H[K[7m Manual page ifconfig(8) line 65/260 38% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              address/netmask  combination) all[m
+[36;1H[K[7m Manual page ifconfig(8) line 64/260 38% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              every scope (i.e. same  net  with[m
+[36;1H[K[7m Manual page ifconfig(8) line 63/260 37% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              [1mifconfig[0m  [1meth0:0[0m [1mdown[0m.  Note: for[m
+[36;1H[K[7m Manual page ifconfig(8) line 62/260 37% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              To delete an alias interface  use[m
+[36;1H[K[7m Manual page ifconfig(8) line 61/260 36% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              them  to assign a second address.[m
+[36;1H[K[7m Manual page ifconfig(8) line 60/260 36% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              first alias of eth0. You can  use[m
+[36;1H[K[7m Manual page ifconfig(8) line 59/260 36% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              specify  them with [1meth0:0[0m for the[m
+[36;1H[K[7m Manual page ifconfig(8) line 58/260 36% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              ports alias interfaces,  you  can[m
+[36;1H[K[7m Manual page ifconfig(8) line 57/260 36% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              interface.  If  your  kernel sup‐[m
+[36;1H[K[7m Manual page ifconfig(8) line 56/260 36% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              [1meth0[0m  for  the   first   Ethernet[m
+[36;1H[K[7m Manual page ifconfig(8) line 55/260 35% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              by  a  unit  number,  for example[m
+[36;1H[K[7m Manual page ifconfig(8) line 54/260 35% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              is usually a driver name followed[m
+[36;1H[K[7m Manual page ifconfig(8) line 53/260 34% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              The  name of the interface.  This[m
+[36;1H[K[7m Manual page ifconfig(8) line 52/260 34% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1minterface[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 51/260 33% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 50/260 33% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              conditions[m
+[36;1H[K[7m Manual page ifconfig(8) line 49/260 33% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-v[0m     be more verbose  for  some  error[m
+[36;1H[K[7m Manual page ifconfig(8) line 48/260 32% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 47/260 32% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              stat -i)[m
+[36;1H[K[7m Manual page ifconfig(8) line 46/260 32% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-s[0m     display  a  short list (like net‐[m
+[36;1H[K[7m Manual page ifconfig(8) line 45/260 31% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 44/260 30% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM              currently available, even if down[m
+[36;1H[K[7m Manual page ifconfig(8) line 43/260 30% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m-a[0m     display all interfaces which  are[m
+[36;1H[K[7m Manual page ifconfig(8) line 42/260 30% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mOPTIONS[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 41/260 29% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 40/260 29% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       (AMPR Packet radio).[m
+[36;1H[K[7m Manual page ifconfig(8) line 39/260 29% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       Phase  2),  [1mipx[0m  (Novell IPX) and [1mnetrom[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 38/260 29% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       (AMPR  Packet  Radio),  [1mddp[0m   (Appletalk[m
+[36;1H[K[7m Manual page ifconfig(8) line 37/260 29% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       (TCP/IP,  default),  [1minet6[0m  (IPv6), [1max25[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 36/260 28% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       supported address families include  [1minet[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 35/260 28% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       ing  all  protocol addresses.  Currently[m
+[36;1H[K[7m Manual page ifconfig(8) line 34/260 27% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       family is used for decoding and display‐[m
+[36;1H[K[7m Manual page ifconfig(8) line 33/260 27% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       supported  address  family, that address[m
+[36;1H[K[7m Manual page ifconfig(8) line 32/260 27% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       face name is recognized as the name of a[m
+[36;1H[K[7m Manual page ifconfig(8) line 31/260 26% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       If  the  first argument after the inter‐[m
+[36;1H[K[7m Manual page ifconfig(8) line 30/260 26% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mAddress[0m [1mFamilies[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 29/260 25% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 28/260 25% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       interface.[m
+[36;1H[K[7m Manual page ifconfig(8) line 27/260 24% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       are down.  Otherwise, it  configures  an[m
+[36;1H[K[7m Manual page ifconfig(8) line 26/260 24% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       tus  of  all interfaces, even those that[m
+[36;1H[K[7m Manual page ifconfig(8) line 25/260 23% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       argument is given, it displays the  sta‐[m
+[36;1H[K[7m Manual page ifconfig(8) line 24/260 23% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       the given interface only; if a single [1m-a[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 23/260 22% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       ment is given, it displays the status of[m
+[36;1H[K[7m Manual page ifconfig(8) line 22/260 22% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       interfaces.  If a single [1minterface[0m argu‐[m
+[36;1H[K[7m Manual page ifconfig(8) line 21/260 21% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       plays the status of the currently active[m
+[36;1H[K[7m Manual page ifconfig(8) line 20/260 21% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       If no arguments are given, [1mifconfig[0m dis‐[m
+[36;1H[K[7m Manual page ifconfig(8) line 19/260 20% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 18/260 20% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       tem tuning is needed.[m
+[36;1H[K[7m Manual page ifconfig(8) line 17/260 19% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       only needed when debugging or when  sys‐[m
+[36;1H[K[7m Manual page ifconfig(8) line 16/260 19% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       as necessary.  After that, it is usually[m
+[36;1H[K[7m Manual page ifconfig(8) line 15/260 19% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       used at boot time to set  up  interfaces[m
+[36;1H[K[7m Manual page ifconfig(8) line 14/260 19% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       nel-resident  network interfaces.  It is[m
+[36;1H[K[7m Manual page ifconfig(8) line 13/260 18% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mIfconfig[0m is used to configure  the  ker‐[m
+[36;1H[K[7m Manual page ifconfig(8) line 12/260 18% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mDESCRIPTION[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 11/260 18% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[36;1H[K[7m Manual page ifconfig(8) line 10/260 18% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m|[0m [1maddress[0m [1m...[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 9/260 18% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mifconfig[0m [1m[-v][0m [1minterface[0m [1m[aftype][0m [1moptions[0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 8/260 17% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mifconfig[0m [1m[-v][0m [1m[-a][0m [1m[-s][0m [1m[interface][0m[m
+[36;1H[K[7m Manual page ifconfig(8) line 7/260 17% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mSYN
