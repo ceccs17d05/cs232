@@ -1,0 +1,103 @@
+Script started on Thursday 09 May 2019 11:04:12 AM IST
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ sudo up[K[Kapt update
+[sudo] password for clab1: 
+[33m0% [Working][0m[33m0% [Waiting for headers] [Waiting for headers][0m                                              Hit:1 http://in.archive.ubuntu.com/ubuntu xenial InRelease
+[33m                                              0% [Waiting for headers][0m[33m0% [1 InRelease gpgv 247 kB] [Waiting for headers] [Waiting for headers][0m[33m                                                                        0% [Waiting for headers] [Waiting for headers][0m                                              Get:2 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]
+[33m0% [Waiting for headers] [2 InRelease 3,729 B/109 kB 3%][0m[33m                                                        0% [Waiting for headers][0m[33m0% [2 InRelease gpgv 109 kB] [Waiting for headers][0m[33m                                                  0% [Waiting for headers][0m                        Get:3 http://in.archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]
+[33m0% [3 InRelease 5,193 B/109 kB 5%][0m[33m                                  0% [Working][0m[33m0% [3 InRelease gpgv 109 kB] [Waiting for headers][0m[33m                                                  0% [Waiting for headers][0m                        Get:4 http://in.archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]
+[33m0% [4 InRelease 7,841 B/107 kB 7%][0m[33m                                  0% [Working][0m[33m0% [4 InRelease gpgv 107 kB][0m[33m                            100% [Working][0m              Fetched 325 kB in 1s (234 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 4%Reading package lists... 4%Reading package lists... 8%Reading package lists... 8%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 33%Reading package lists... 33%Reading package lists... 43%Reading package lists... 56%Reading package lists... 56%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 71%Reading package lists... 71%Reading package lists... 74%Reading package lists... 74%Reading package lists... 77%Reading package lists... 77%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 81%Reading package lists... 81%Reading package lists... 81%Reading package lists... 81%Reading package lists... 83%Reading package lists... 83%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 90%Reading package lists... 90%Reading package lists... 92%Reading package lists... 92%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 96%Reading package lists... 96%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 1%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 1%Reading state information... Done
+58 packages can be upgraded. Run 'apt list --upgradable' to see them.
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ sudo apt install ni[Kginx
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 1%Reading state information... Done
+nginx is already the newest version (1.10.3-0ubuntu0.16.04.3).
+The following packages were automatically installed and are no longer required:
+  linux-headers-4.8.0-36 linux-headers-4.8.0-36-generic
+  linux-image-4.8.0-36-generic linux-image-extra-4.8.0-36-generic
+  snapd-login-service
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 58 not upgraded.
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ sudo ufw app list 
+Available applications:
+  Apache
+  Apache Full
+  Apache Secure
+  CUPS
+  Nginx Full
+  Nginx HTTP
+  Nginx HTTPS
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ sudo ufw allow 'Nginx HTTP'
+Skipping adding existing rule
+Skipping adding existing rule (v6)
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ sudo ufw status
+\Status: inactive
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ \[K[K]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ systemctl statusnginx nginx
+[?1h=[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server[m
+   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: en[m
+   Active: [0;1;32mactive (running)[0m since Thu 2019-05-09 09:06:40 IST; 2h 1min ago[m
+  Process: 937 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=[m
+  Process: 888 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process o[m
+ Main PID: 939 (nginx)[m
+   CGroup: /system.slice/nginx.service[m
+           ├─939 nginx: master process /usr/sbin/nginx -g daemon on; master_proc[m
+           ├─940 nginx: worker process                           [m
+           ├─941 nginx: worker process                           [m
+           ├─942 nginx: worker process                           [m
+           └─943 nginx: worker process                           [m
+[m
+May 09 09:06:38 CC2-26 systemd[1]: Starting A high performance web server and a [m
+May 09 09:06:40 CC2-26 systemd[1]: Started A high performance web server and a r[m
+[7mlines 1-15/15 (END)[27m[K[K[?1l>
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ ifconfig
+enp2s0    Link encap:Ethernet  HWaddr 38:d5:47:b8:d1:a8  
+          inet addr:192.168.0.131  Bcast:192.168.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::73f7:bc84:acd6:bedd/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:183452 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:21326 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:37568096 (37.5 MB)  TX bytes:2870366 (2.8 MB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:288 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:288 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:24643 (24.6 KB)  TX bytes:24643 (24.6 KB)
+
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ cd/[K /
+]0;clab1@CC2-26: /[01;32mclab1@CC2-26[00m:[01;34m/[00m$ 
+]0;clab1@CC2-26: /[01;32mclab1@CC2-26[00m:[01;34m/[00m$ ls
+[0m[01;34mbin[0m    core  [01;34mhome[0m            [01;34mlib[0m         [01;34mmedia[0m  [01;34mproc[0m  [01;34msbin[0m  [01;34msys[0m  [01;34mvar[0m
+[01;34mboot[0m   [01;34mdev[0m   [01;36minitrd.img[0m      [01;34mlib64[0m       [01;34mmnt[0m    [01;34mroot[0m  [01;34msnap[0m  [30;42mtmp[0m  [01;36mvmlinuz[0m
+[01;34mcdrom[0m  [01;34metc[0m   [01;36minitrd.img.old[0m  [01;34mlost+found[0m  [01;34mopt[0m    [01;34mrun[0m   [01;34msrv[0m   [01;34musr[0m  [01;36mvmlinuz.old[0m
+]0;clab1@CC2-26: /[01;32mclab1@CC2-26[00m:[01;34m/[00m$ cd var
+]0;clab1@CC2-26: /var[01;32mclab1@CC2-26[00m:[01;34m/var[00m$ ls
+[0m[01;34mbackups[0m  [30;42mcrash[0m  [01;34mlocal[0m  [01;34mlog[0m   [30;42mmetrics[0m  [01;36mrun[0m   [01;34mspool[0m  [01;34mwww[0m
+[01;34mcache[0m    [01;34mlib[0m    [01;36mlock[0m   [01;34mmail[0m  [01;34mopt[0m      [01;34msnap[0m  [30;42mtmp[0m
+]0;clab1@CC2-26: /var[01;32mclab1@CC2-26[00m:[01;34m/var[00m$ cd www
+]0;clab1@CC2-26: /var/www[01;32mclab1@CC2-26[00m:[01;34m/var/www[00m$ ls
+[0m[01;34mgci[0m  [01;34mhtml[0m  [01;34mwonder.com[0m
+]0;clab1@CC2-26: /var/www[01;32mclab1@CC2-26[00m:[01;34m/var/www[00m$ cd html
+]0;clab1@CC2-26: /var/www/html[01;32mclab1@CC2-26[00m:[01;34m/var/www/html[00m$ sudo gedit index.html
+[sudo] password for clab1: 
+Sorry, try again.
+[sudo] password for clab1: 
+
+(gedit:9161): Gtk-WARNING **: Calling Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+
+** (gedit:9161): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-spell-enabled not supported
+
+** (gedit:9161): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:9161): WARNING **: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;clab1@CC2-26: /var/www/html[01;32mclab1@CC2-26[00m:[01;34m/var/www/html[00m$ exit
+exit
+
+Script done on Thursday 09 May 2019 11:46:37 AM IST
