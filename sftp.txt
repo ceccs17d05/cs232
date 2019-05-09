@@ -1,0 +1,55 @@
+Script started on Thursday 09 May 2019 11:50:53 AM IST
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ sft[p [K[K[Kp cs17d05@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d05@192.168.0.30's password: 
+Permission denied, please try again.
+cs17d05@192.168.0.30's password: 
+Permission denied, please try again.
+cs17d05@192.168.0.30's password: 
+Connected to 192.168.0.30.
+sftp> ls
+ammu.txt            amrita.txt          cs232-master        examples.desktop    
+sftp> lpwd
+Local working directory: /home/clab1
+sftp> lls
+a.out			   examples.desktop  nt.txt		    sftp.txt
+apache.txt		   ftpserver.txt     package		    ssh.txt
+ceccs17d05-04-04-2019.txt  ftpusage.txt      package_management.sh  sum.pl
+ceccs17d05-29-04-19.txt    hello.perl	     package.txt	    syscalls.c
+ceccs17d26.11.10.19.txt    hello.pl	     perl.txt		    Templates
+Desktop			   httpserver.tx     Pictures		    temp.txt
+Documents		   httpserver.txt    prn		    Videos
+Downloads		   lamp.txt	     Public
+employee.txt		   Music	     rsync.txt
+sftp> put projects/cs232 -r
+stat projects/cs232: No such file or directory
+sftp> put Desktop/cs232 -r
+stat Desktop/cs232: No such file or directory
+sftp> put home/[K[K[K[K[Kclab/[K1/musicusic[KMusic
+stat clab1/Music: No such file or directory
+sftp> put desktop[Pe[1@Deesktop/Task3
+Uploading Desktop/Task3/ to /home/cs17d05/Task3
+Desktop/Task3/ is not a regular file
+sftp> get Task3
+File "/home/cs17d05/Task3" not found.
+sftp> rm -r [7Gget Task3----[K[K[K[K[K3 -r
+File "/home/cs17d05/Task3" not found.
+sftp> get Task3 -r[K[K[K[K[K[K[KMusi c -r
+File "/home/cs17d05/Music" not found.
+sftp> get Music -r[K[K[K[K[K[K[Kcs232-master
+Fetching /home/cs17d05/cs232-master/ to cs232-master
+Cannot download non-regular file: /home/cs17d05/cs232-master/
+sftp> rmj [K -r cs232-master
+rm: Invalid flag -r
+sftp> rm -r cs232-masterr[P [P 
+Removing /home/cs17d05/cs232-master
+Couldn't delete file: Failure
+sftp> exir[Kt
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ exit
+exit
+
+Script done on Thursday 09 May 2019 11:57:27 AM IST
