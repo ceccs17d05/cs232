@@ -1,0 +1,1168 @@
+Script started on Thursday 09 May 2019 11:17:03 AM IST
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ sudo apt update
+[sudo] password for clab1: 
+[33m0% [Working][0m[33m0% [Waiting for headers] [Waiting for headers][0m                                              Hit:1 http://in.archive.ubuntu.com/ubuntu xenial InRelease
+[33m                                              0% [Waiting for headers][0m[33m0% [1 InRelease gpgv 247 kB] [Waiting for headers] [Waiting for headers][0m                                                                        Get:2 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]
+[33m0% [1 InRelease gpgv 247 kB] [Waiting for headers] [2 InRelease 3,729 B/109 kB [0m[33m                                                                               0% [1 InRelease gpgv 247 kB] [Waiting for headers][0m[33m                                                  0% [Waiting for headers][0m[33m0% [2 InRelease gpgv 109 kB] [Waiting for headers][0m[33m                                                  0% [Waiting for headers][0m                        Get:3 http://in.archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]
+[33m0% [3 InRelease 7,841 B/109 kB 7%][0m[33m                                  0% [Working][0m[33m0% [3 InRelease gpgv 109 kB] [Waiting for headers][0m[33m                                                  0% [Waiting for headers][0m                        Get:4 http://in.archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]
+[33m0% [4 InRelease 3,745 B/107 kB 4%][0m[33m                                  0% [Working][0m[33m0% [4 InRelease gpgv 107 kB][0m[33m                            100% [Working][0m              Fetched 325 kB in 1s (233 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 4%Reading package lists... 4%Reading package lists... 8%Reading package lists... 8%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 10%Reading package lists... 33%Reading package lists... 33%Reading package lists... 43%Reading package lists... 56%Reading package lists... 56%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 70%Reading package lists... 71%Reading package lists... 71%Reading package lists... 74%Reading package lists... 74%Reading package lists... 77%Reading package lists... 77%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 80%Reading package lists... 81%Reading package lists... 81%Reading package lists... 81%Reading package lists... 81%Reading package lists... 83%Reading package lists... 83%Reading package lists... 86%Reading package lists... 86%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 87%Reading package lists... 90%Reading package lists... 90%Reading package lists... 92%Reading package lists... 92%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 94%Reading package lists... 96%Reading package lists... 96%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 1%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 1%Reading state information... Done
+58 packages can be upgraded. Run 'apt list --upgradable' to see them.
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ sudo apt update[K[K[K[Kgrade
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 1%Reading state information... Done
+Calculating upgrade... 0%Calculating upgrade... 10%Calculating upgrade... Done
+The following packages were automatically installed and are no longer required:
+  linux-headers-4.8.0-36 linux-headers-4.8.0-36-generic
+  linux-image-4.8.0-36-generic linux-image-extra-4.8.0-36-generic
+  snapd-login-service
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  linux-headers-4.15.0-48 linux-headers-4.15.0-48-generic
+  linux-image-4.15.0-48-generic linux-modules-4.15.0-48-generic
+  linux-modules-extra-4.15.0-48-generic
+The following packages will be upgraded:
+  bind9-host console-setup console-setup-linux distro-info-data dnsutils
+  evince evince-common firefox firefox-locale-en firefox-locale-ml ghostscript
+  ghostscript-x gir1.2-gst-plugins-base-1.0 grub-common grub-pc grub-pc-bin
+  grub2-common gstreamer1.0-alsa gstreamer1.0-plugins-base
+  gstreamer1.0-plugins-base-apps gstreamer1.0-x iproute2
+  keyboard-configuration libbind9-140 libdns-export162 libdns162
+  libevdocument3-4 libevview3-3 libgs9 libgs9-common
+  libgstreamer-plugins-base1.0-0 libisc-export160 libisc160 libisccc140
+  libisccfg140 libldap-2.4-2 liblwres141 libunity-core-6.0-9 libxslt1.1
+  linux-generic-hwe-16.04 linux-headers-generic-hwe-16.04
+  linux-image-generic-hwe-16.04 linux-libc-dev login ntfs-3g passwd snapd sudo
+  tzdata ubuntu-core-launcher ubuntu-desktop ubuntu-minimal ubuntu-standard
+  unity unity-schemas unity-services ureadahead wpasupplicant
+58 upgraded, 5 newly installed, 0 to remove and 0 not upgraded.
+Need to get 152 MB of archives.
+After this operation, 306 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+[33m0% [Working][0m            Get:1 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 login amd64 1:4.2-3.1ubuntu5.4 [304 kB]
+[33m0% [1 login 3,758 B/304 kB 1%][0m[33m                              0% [Working][0m            Get:2 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 ntfs-3g amd64 1:2015.3.14AR.1-1ubuntu0.3 [465 kB]
+[33m0% [2 ntfs-3g 3,758 B/465 kB 1%][0m[33m                                1% [Working][0m            Get:3 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 grub-pc amd64 2.02~beta2-36ubuntu3.22 [198 kB]
+[33m1% [3 grub-pc 2,557 B/198 kB 1%][0m[33m1% [3 grub-pc 92.3 kB/198 kB 47%][0m[33m                                 1% [Working][0m            Get:4 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 grub-pc-bin amd64 2.02~beta2-36ubuntu3.22 [889 kB]
+[33m1% [4 grub-pc-bin 2,558 B/889 kB 0%][0m[33m                                    2% [Working][0m            Get:5 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 grub2-common amd64 2.02~beta2-36ubuntu3.22 [511 kB]
+[33m2% [5 grub2-common 11.9 kB/511 kB 2%][0m[33m                                     3% [Working][0m            Get:6 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 grub-common amd64 2.02~beta2-36ubuntu3.22 [1,775 kB]
+[33m3% [6 grub-common 1,448 B/1,775 kB 0%][0m[33m4% [6 grub-common 1,619 kB/1,775 kB 91%][0m[33m                                        4% [Working][0m            Get:7 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 ubuntu-core-launcher amd64 2.38 [1,560 B]
+[33m4% [7 ubuntu-core-launcher 1,560 B/1,560 B 100%][0m[33m                                                4% [Working][0m            Get:8 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 snapd amd64 2.38 [13.9 MB]
+[33m4% [8 snapd 1,448 B/13.9 MB 0%][0m[33m5% [8 snapd 1,810 kB/13.9 MB 13%][0m[33m6% [8 snapd 3,945 kB/13.9 MB 28%][0m[33m9% [8 snapd 8,319 kB/13.9 MB 60%][0m[33m11% [8 snapd 12.4 MB/13.9 MB 89%][0m[33m                                 12% [Waiting for headers][0m                         Get:9 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 passwd amd64 1:4.2-3.1ubuntu5.4 [780 kB]
+[33m12% [9 passwd 5,454 B/780 kB 1%][0m[33m                                13% [Working][0m             Get:10 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 tzdata all 2019a-0ubuntu0.16.04 [167 kB]
+[33m13% [10 tzdata 9,117 B/167 kB 5%][0m[33m                                 13% [Working][0m             Get:11 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 console-setup-linux all 1.108ubuntu15.5 [984 kB]
+[33m13% [11 console-setup-linux 6,902 B/984 kB 1%][0m[33m                                              14% [Working][0m             Get:12 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 console-setup all 1.108ubuntu15.5 [117 kB]
+[33m14% [12 console-setup 13.4 kB/117 kB 11%][0m[33m                                         14% [Working][0m             Get:13 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 keyboard-configuration all 1.108ubuntu15.5 [658 kB]
+[33m14% [13 keyboard-configuration 3,746 B/658 kB 1%][0m[33m                                                 15% [Working][0m             Get:14 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 distro-info-data all 0.28ubuntu0.12 [4,638 B]
+[33m15% [Working][0m             Get:15 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 iproute2 amd64 4.3.0-1ubuntu3.16.04.5 [523 kB]
+[33m15% [15 iproute2 13.4 kB/523 kB 3%][0m[33m                                   16% [Working][0m             Get:16 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libisc-export160 amd64 1:9.10.3.dfsg.P4-8ubuntu1.14 [153 kB]
+[33m16% [16 libisc-export160 6,902 B/153 kB 5%]                      3,478 kB/s 37s[0m[33m16% [Working]                                                    3,478 kB/s 37s[0m                                                                               Get:17 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libdns-export162 amd64 1:9.10.3.dfsg.P4-8ubuntu1.14 [667 kB]
+[33m16% [17 libdns-export162 5,454 B/667 kB 1%]                      3,478 kB/s 37s[0m[33m17% [Waiting for headers]                                        3,478 kB/s 37s[0m                                                                               Get:18 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 sudo amd64 1.8.16-0ubuntu1.6 [390 kB]
+[33m17% [18 sudo 9,716 B/390 kB 2%]                                  3,478 kB/s 37s[0m[33m17% [Working]                                                    3,478 kB/s 37s[0m                                                                               Get:19 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 ureadahead amd64 0.100.0-19.1 [19.4 kB]
+[33m18% [19 ureadahead 19.4 kB/19.4 kB 100%]                         3,478 kB/s 37s[0m[33m18% [Working]                                                    3,478 kB/s 37s[0m                                                                               Get:20 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 ubuntu-minimal amd64 1.361.3 [2,696 B]
+[33m18% [20 ubuntu-minimal 2,696 B/2,696 B 100%]                     3,478 kB/s 37s[0m[33m18% [Working]                                                    3,478 kB/s 37s[0m                                                                               Get:21 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 bind9-host amd64 1:9.10.3.dfsg.P4-8ubuntu1.14 [38.4 kB]
+[33m18% [21 bind9-host 8,057 B/38.4 kB 21%]                          3,478 kB/s 37s[0m[33m18% [Working]                                                    3,478 kB/s 37s[0m                                                                               Get:22 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 dnsutils amd64 1:9.10.3.dfsg.P4-8ubuntu1.14 [89.0 kB]
+[33m18% [22 dnsutils 15.5 kB/89.0 kB 17%]                            3,478 kB/s 37s[0m[33m19% [Waiting for headers]                                        3,478 kB/s 37s[0m                                                                               Get:23 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libisc160 amd64 1:9.10.3.dfsg.P4-8ubuntu1.14 [216 kB]
+[33m19% [23 libisc160 4,230 B/216 kB 2%]                             3,478 kB/s 37s[0m[33m19% [Working]                                                    3,478 kB/s 37s[0m                                                                               Get:24 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libdns162 amd64 1:9.10.3.dfsg.P4-8ubuntu1.14 [880 kB]
+[33m19% [24 libdns162 6,902 B/880 kB 1%]                             3,478 kB/s 37s[0m[33m20% [Working]                                                    3,478 kB/s 37s[0m                                                                               Get:25 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libisccc140 amd64 1:9.10.3.dfsg.P4-8ubuntu1.14 [16.3 kB]
+[33m20% [25 libisccc140 9,552 B/16.3 kB 59%]                         3,478 kB/s 36s[0m[33m20% [Working]                                                    3,478 kB/s 36s[0m                                                                               Get:26 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libisccfg140 amd64 1:9.10.3.dfsg.P4-8ubuntu1.14 [40.5 kB]
+[33m20% [26 libisccfg140 11.3 kB/40.5 kB 28%]                        3,478 kB/s 36s[0m[33m21% [Working]                                                    3,478 kB/s 36s[0m                                                                               Get:27 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 liblwres141 amd64 1:9.10.3.dfsg.P4-8ubuntu1.14 [34.1 kB]
+[33m21% [27 liblwres141 9,719 B/34.1 kB 29%]                         3,478 kB/s 36s[0m[33m21% [Working]                                                    3,478 kB/s 36s[0m                                                                               Get:28 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libbind9-140 amd64 1:9.10.3.dfsg.P4-8ubuntu1.14 [23.6 kB]
+[33m21% [28 libbind9-140 5,375 B/23.6 kB 23%]                        3,478 kB/s 36s[0m[33m21% [Working]                                                    3,478 kB/s 36s[0m                                                                               Get:29 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libldap-2.4-2 amd64 2.4.42+dfsg-2ubuntu3.5 [161 kB]
+[33m21% [29 libldap-2.4-2 6,654 B/161 kB 4%]                         3,478 kB/s 36s[0m[33m22% [Working]                                                    3,478 kB/s 36s[0m                                                                               Get:30 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 ubuntu-standard amd64 1.361.3 [2,744 B]
+[33m22% [30 ubuntu-standard 2,744 B/2,744 B 100%]                    3,478 kB/s 36s[0m[33m22% [Waiting for headers]                                        3,478 kB/s 36s[0m                                                                               Get:31 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 evince amd64 3.18.2-1ubuntu4.4 [153 kB]
+[33m22% [31 evince 3,782 B/153 kB 2%]                                3,478 kB/s 36s[0m[33m23% [Waiting for headers]                                        3,478 kB/s 36s[0m                                                                               Get:32 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libevdocument3-4 amd64 3.18.2-1ubuntu4.4 [228 kB]
+[33m23% [32 libevdocument3-4 52.7 kB/228 kB 23%]                     3,478 kB/s 36s[0m[33m23% [Waiting for headers]                                        3,478 kB/s 36s[0m                                                                               Get:33 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgstreamer-plugins-base1.0-0 amd64 1.8.3-1ubuntu0.3 [593 kB]
+[33m23% [33 libgstreamer-plugins-base1.0-0 1,448 B/593 kB 0%]        3,478 kB/s 36s[0m[33m24% [Working]                                                    3,478 kB/s 36s[0m                                                                               Get:34 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 gstreamer1.0-plugins-base amd64 1.8.3-1ubuntu0.3 [496 kB]
+[33m24% [34 gstreamer1.0-plugins-base 5,206 B/496 kB 1%]             3,478 kB/s 36s[0m[33m24% [Working]                                                    3,478 kB/s 36s[0m                                                                               Get:35 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libevview3-3 amd64 3.18.2-1ubuntu4.4 [118 kB]
+[33m24% [35 libevview3-3 7,732 B/118 kB 7%]                          3,478 kB/s 36s[0m[33m25% [Working]                                                    3,478 kB/s 36s[0m                                                                               Get:36 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 evince-common all 3.18.2-1ubuntu4.4 [405 kB]
+[33m25% [36 evince-common 7,046 B/405 kB 2%]                         3,478 kB/s 36s[0m[33m25% [Working]                                                    3,478 kB/s 36s[0m                                                                               Get:37 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 firefox amd64 66.0.4+build3-0ubuntu0.16.04.1 [47.7 MB]
+[33m25% [37 firefox 1,448 B/47.7 MB 0%]                              3,478 kB/s 36s[0m[33m27% [37 firefox 3,231 kB/47.7 MB 7%]                             3,478 kB/s 35s[0m[33m29% [37 firefox 7,154 kB/47.7 MB 15%]                            3,478 kB/s 34s[0m[33m31% [37 firefox 12.2 MB/47.7 MB 26%]                             3,478 kB/s 32s[0m[33m34% [37 firefox 16.2 MB/47.7 MB 34%]                             3,478 kB/s 31s[0m[33m35% [37 firefox 19.1 MB/47.7 MB 40%]                             3,478 kB/s 30s[0m[33m36% [37 firefox 21.7 MB/47.7 MB 46%]                             3,478 kB/s 30s[0m[33m38% [37 firefox 24.3 MB/47.7 MB 51%]                             3,478 kB/s 29s[0m[33m40% [37 firefox 28.2 MB/47.7 MB 59%]                             3,478 kB/s 28s[0m[33m42% [37 firefox 31.8 MB/47.7 MB 67%]                             3,478 kB/s 27s[0m[33m44% [37 firefox 36.6 MB/47.7 MB 77%]                             6,727 kB/s 13s[0m[33m47% [37 firefox 41.2 MB/47.7 MB 86%]                             6,727 kB/s 12s[0m[33m47% [37 firefox 42.2 MB/47.7 MB 88%]                             6,727 kB/s 12s[0m[33m50% [37 firefox 46.7 MB/47.7 MB 98%]                             6,727 kB/s 11s[0m[33m50% [Working]                                                    6,727 kB/s 11s[0m                                                                               Get:38 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 firefox-locale-en amd64 66.0.4+build3-0ubuntu0.16.04.1 [932 kB]
+[33m50% [38 firefox-locale-en 5,454 B/932 kB 1%]                     6,727 kB/s 11s[0m[33m51% [Waiting for headers]                                        6,727 kB/s 11s[0m                                                                               Get:39 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 firefox-locale-ml amd64 66.0.4+build3-0ubuntu0.16.04.1 [491 kB]
+[33m51% [39 firefox-locale-ml 8,102 B/491 kB 2%]                     6,727 kB/s 11s[0m[33m52% [Working]                                                    6,727 kB/s 11s[0m                                                                               Get:40 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 ghostscript amd64 9.26~dfsg+0-0ubuntu0.16.04.9 [47.3 kB]
+[33m52% [40 ghostscript 9,010 B/47.3 kB 19%]                         6,727 kB/s 11s[0m[33m52% [Waiting for headers]                                        6,727 kB/s 11s[0m                                                                               Get:41 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 ghostscript-x amd64 9.26~dfsg+0-0ubuntu0.16.04.9 [43.0 kB]
+[33m52% [41 ghostscript-x 4,772 B/43.0 kB 11%]                       6,727 kB/s 11s[0m[33m52% [Waiting for headers]                                        6,727 kB/s 11s[0m                                                                               Get:42 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgs9 amd64 9.26~dfsg+0-0ubuntu0.16.04.9 [2,277 kB]
+[33m52% [42 libgs9 5,452 B/2,277 kB 0%]                              6,727 kB/s 11s[0m[33m54% [Waiting for headers]                                        6,727 kB/s 11s[0m                                                                               Get:43 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgs9-common all 9.26~dfsg+0-0ubuntu0.16.04.9 [5,096 kB]
+[33m54% [43 libgs9-common 5,452 B/5,096 kB 0%]                       6,727 kB/s 11s[0m[33m56% [43 libgs9-common 3,743 kB/5,096 kB 73%]                     6,727 kB/s 10s[0m[33m57% [Working]                                                    6,727 kB/s 10s[0m                                                                               Get:44 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 gir1.2-gst-plugins-base-1.0 amd64 1.8.3-1ubuntu0.3 [63.5 kB]
+[33m57% [44 gir1.2-gst-plugins-base-1.0 11.6 kB/63.5 kB 18%]         6,727 kB/s 10s[0m[33m57% [Working]                                                    6,727 kB/s 10s[0m                                                                               Get:45 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 gstreamer1.0-alsa amd64 1.8.3-1ubuntu0.3 [33.4 kB]
+[33m57% [45 gstreamer1.0-alsa 7,640 B/33.4 kB 23%]                   6,727 kB/s 10s[0m[33m58% [Working]                                                    6,727 kB/s 10s[0m                                                                               Get:46 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 gstreamer1.0-plugins-base-apps amd64 1.8.3-1ubuntu0.3 [29.6 kB]
+[33m58% [46 gstreamer1.0-plugins-base-apps 8,592 B/29.6 kB 29%]      6,727 kB/s 10s[0m[33m58% [Working]                                                    6,727 kB/s 10s[0m                                                                               Get:47 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 gstreamer1.0-x amd64 1.8.3-1ubuntu0.3 [71.0 kB]
+[33m58% [47 gstreamer1.0-x 4,675 B/71.0 kB 7%]                       6,727 kB/s 10s[0m[33m58% [Working]                                                    6,727 kB/s 10s[0m                                                                               Get:48 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 unity amd64 7.4.5+16.04.20190312-0ubuntu1 [1,614 kB]
+[33m58% [48 unity 5,452 B/1,614 kB 0%]                               6,727 kB/s 10s[0m[33m60% [Working]                                                    6,727 kB/s 10s[0m                                                                               Get:49 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libunity-core-6.0-9 amd64 7.4.5+16.04.20190312-0ubuntu1 [437 kB]
+[33m60% [49 libunity-core-6.0-9 5,454 B/437 kB 1%]                   6,727 kB/s 10s[0m[33m60% [Working]                                                    6,727 kB/s 10s[0m                                                                               Get:50 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 unity-schemas all 7.4.5+16.04.20190312-0ubuntu1 [13.0 kB]
+[33m60% [50 unity-schemas 9,552 B/13.0 kB 74%]                       6,727 kB/s 10s[0m[33m60% [Working]                                                    6,727 kB/s 10s[0m                                                                               Get:51 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 unity-services amd64 7.4.5+16.04.20190312-0ubuntu1 [33.4 kB]
+[33m60% [51 unity-services 21.6 kB/33.4 kB 65%]                      6,727 kB/s 10s[0m[33m61% [Working]                                                    6,727 kB/s 10s[0m                                                                               Get:52 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libxslt1.1 amd64 1.1.28-2.1ubuntu0.2 [146 kB]
+[33m61% [52 libxslt1.1 7,149 B/146 kB 5%]                            6,727 kB/s 10s[0m[33m61% [Working]                                                    6,727 kB/s 10s[0m                                                                               Get:53 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 linux-modules-4.15.0-48-generic amd64 4.15.0-48.51~16.04.1 [12.9 MB]
+[33m61% [53 linux-modules-4.15.0-48-generic 5,451 B/12.9 MB 0%]      6,727 kB/s 10s[0m[33m63% [53 linux-modules-4.15.0-48-generic 3,676 kB/12.9 MB 29%]     6,727 kB/s 9s[0m[33m65% [53 linux-modules-4.15.0-48-generic 7,855 kB/12.9 MB 61%]     6,727 kB/s 8s[0m[33m67% [53 linux-modules-4.15.0-48-generic 11.8 MB/12.9 MB 92%]      6,727 kB/s 8s[0m[33m68% [Waiting for headers]                                         6,727 kB/s 8s[0m                                                                               Get:54 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 linux-image-4.15.0-48-generic amd64 4.15.0-48.51~16.04.1 [7,919 kB]
+[33m68% [54 linux-image-4.15.0-48-generic 5,452 B/7,919 kB 0%]        6,727 kB/s 8s[0m[33m70% [54 linux-image-4.15.0-48-generic 3,227 kB/7,919 kB 41%]      6,369 kB/s 8s[0m[33m72% [54 linux-image-4.15.0-48-generic 7,403 kB/7,919 kB 93%]      6,369 kB/s 7s[0m[33m73% [Working]                                                     6,369 kB/s 7s[0m                                                                               Get:55 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 linux-modules-extra-4.15.0-48-generic amd64 4.15.0-48.51~16.04.1 [32.6 MB]
+[33m                                                                               73% [55 linux-modules-extra-4.15.0-48-generic 6,898 B/32.6 MB 0%][0m[33m75% [55 linux-modules-extra-4.15.0-48-generic 3,629 kB/32.6 MB 11%][0m[33m77% [55 linux-modules-extra-4.15.0-48-generic 7,454 kB/32.6 MB 23%][0m[33m                                                                   79% [55 linux-modules-extra-4.15.0-48-generic 11.3 MB/32.6 MB 35%][0m[33m81% [55 linux-modules-extra-4.15.0-48-generic 15.2 MB/32.6 MB 47%][0m[33m83% [55 linux-modules-extra-4.15.0-48-generic 19.3 MB/32.6 MB 59%][0m[33m85% [55 linux-modules-extra-4.15.0-48-generic 23.3 MB/32.6 MB 71%][0m[33m87% [55 linux-modules-extra-4.15.0-48-generic 27.3 MB/32.6 MB 84%][0m[33m89% [55 linux-modules-extra-4.15.0-48-generic 31.6 MB/32.6 MB 97%][0m[33m90% [Working]                                                     6,369 kB/s 2s[0m                                                                               Get:56 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 linux-generic-hwe-16.04 amd64 4.15.0.48.69 [1,804 B]
+                                                                               Get:57 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 linux-image-generic-hwe-16.04 amd64 4.15.0.48.69 [2,394 B]
+[33m90% [57 linux-image-generic-hwe-16.04 2,394 B/2,394 B 100%]       6,369 kB/s 2s[0m[33m91% [Waiting for headers]                                         6,369 kB/s 2s[0m                                                                               Get:58 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 linux-headers-4.15.0-48 all 4.15.0-48.51~16.04.1 [11.1 MB]
+[33m91% [58 linux-headers-4.15.0-48 1,448 B/11.1 MB 0%]               6,369 kB/s 2s[0m[33m93% [58 linux-headers-4.15.0-48 4,332 kB/11.1 MB 39%]             6,369 kB/s 1s[0m[33m95% [58 linux-headers-4.15.0-48 8,398 kB/11.1 MB 76%]             7,389 kB/s 0s[0m[33m97% [Waiting for headers]                                         7,389 kB/s 0s[0m                                                                               Get:59 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 linux-headers-4.15.0-48-generic amd64 4.15.0-48.51~16.04.1 [1,117 kB]
+[33m97% [59 linux-headers-4.15.0-48-generic 1,448 B/1,117 kB 0%]      7,389 kB/s 0s[0m[33m98% [Working]                                                     7,389 kB/s 0s[0m                                                                               Get:60 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 linux-headers-generic-hwe-16.04 amd64 4.15.0.48.69 [2,344 B]
+[33m98% [Waiting for headers]                                         7,389 kB/s 0s[0m                                                                               Get:61 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 linux-libc-dev amd64 4.4.0-146.172 [877 kB]
+[33m98% [61 linux-libc-dev 0 B/877 kB 0%]                             7,389 kB/s 0s[0m[33m99% [Working]                                                     7,389 kB/s 0s[0m                                                                               Get:62 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 wpasupplicant amd64 2.4-0ubuntu6.5 [903 kB]
+[33m99% [62 wpasupplicant 1,448 B/903 kB 0%]                          7,389 kB/s 0s[0m[33m100% [Waiting for headers]                                        7,389 kB/s 0s[0m                                                                               Get:63 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 ubuntu-desktop amd64 1.361.3 [3,772 B]
+[33m100% [63 ubuntu-desktop 3,772 B/3,772 B 100%]                     7,389 kB/s 0s[0m[33m100% [Working]                                                    7,389 kB/s 0s[0m                                                                               Fetched 152 MB in 25s (5,949 kB/s)
+Extracting templates from packages: 47%Extracting templates from packages: 95%Extracting templates from packages: 100%
+Preconfiguring packages ...
+
+7[0;23r8[1A(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 248204 files and directories currently installed.)
+Preparing to unpack .../login_1%3a4.2-3.1ubuntu5.4_amd64.deb ...
+7[24;0f[42m[30mProgress: [  0%][49m[39m [..........................................................] 8Unpacking login (1:4.2-3.1ubuntu5.4) over (1:4.2-3.1ubuntu5.3) ...
+Processing triggers for man-db (2.7.5-1) ...
+Setting up login (1:4.2-3.1ubuntu5.4) ...
+7[24;0f[42m[30mProgress: [  1%][49m[39m [#.........................................................] 8(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 248204 files and directories currently installed.)
+Preparing to unpack .../ntfs-3g_1%3a2015.3.14AR.1-1ubuntu0.3_amd64.deb ...
+Unpacking ntfs-3g (1:2015.3.14AR.1-1ubuntu0.3) over (1:2015.3.14AR.1-1ubuntu0.2) ...
+7[24;0f[42m[30mProgress: [  2%][49m[39m [##........................................................] 8Preparing to unpack .../grub-pc_2.02~beta2-36ubuntu3.22_amd64.deb ...
+Unpacking grub-pc (2.02~beta2-36ubuntu3.22) over (2.02~beta2-36ubuntu3.21) ...
+7[24;0f[42m[30mProgress: [  3%][49m[39m [##........................................................] 8Preparing to unpack .../grub-pc-bin_2.02~beta2-36ubuntu3.22_amd64.deb ...
+Unpacking grub-pc-bin (2.02~beta2-36ubuntu3.22) over (2.02~beta2-36ubuntu3.21) ...
+7[24;0f[42m[30mProgress: [  4%][49m[39m [###.......................................................] 8Preparing to unpack .../grub2-common_2.02~beta2-36ubuntu3.22_amd64.deb ...
+Unpacking grub2-common (2.02~beta2-36ubuntu3.22) over (2.02~beta2-36ubuntu3.21) ...
+7[24;0f[42m[30mProgress: [  5%][49m[39m [###.......................................................] 8Preparing to unpack .../grub-common_2.02~beta2-36ubuntu3.22_amd64.deb ...
+Unpacking grub-common (2.02~beta2-36ubuntu3.22) over (2.02~beta2-36ubuntu3.21) ...
+7[24;0f[42m[30mProgress: [  6%][49m[39m [####......................................................] 8Preparing to unpack .../ubuntu-core-launcher_2.38_amd64.deb ...
+Unpacking ubuntu-core-launcher (2.38) over (2.37.4ubuntu0.1) ...
+7[24;0f[42m[30mProgress: [  7%][49m[39m [#####.....................................................] 8Preparing to unpack .../archives/snapd_2.38_amd64.deb ...
+Unpacking snapd (2.38) over (2.37.4ubuntu0.1) ...
+7[24;0f[42m[30mProgress: [  8%][49m[39m [#####.....................................................] 8Preparing to unpack .../passwd_1%3a4.2-3.1ubuntu5.4_amd64.deb ...
+Unpacking passwd (1:4.2-3.1ubuntu5.4) over (1:4.2-3.1ubuntu5.3) ...
+7[24;0f[42m[30mProgress: [  9%][49m[39m [######....................................................] 8Processing triggers for initramfs-tools (0.122ubuntu8.14) ...
+update-initramfs: Generating /boot/initrd.img-4.15.0-47-generic
+W: Possible missing firmware /lib/firmware/i915/kbl_guc_ver9_14.bin for module i915
+W: Possible missing firmware /lib/firmware/i915/bxt_guc_ver8_7.bin for module i915
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for install-info (6.1.0.dfsg.1-5) ...
+Processing triggers for systemd (229-4ubuntu21.21) ...
+Processing triggers for ureadahead (0.100.0-19) ...
+ureadahead will be reprofiled on next reboot
+Processing triggers for bamfdaemon (0.5.3~bzr0+16.04.20180209-0ubuntu1) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+Processing triggers for desktop-file-utils (0.22-1ubuntu5.2) ...
+Processing triggers for gnome-menus (3.13.3-6ubuntu3.1) ...
+Processing triggers for mime-support (3.59ubuntu1) ...
+Setting up passwd (1:4.2-3.1ubuntu5.4) ...
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 248204 files and directories currently installed.)
+Preparing to unpack .../tzdata_2019a-0ubuntu0.16.04_all.deb ...
+7[24;0f[42m[30mProgress: [ 10%][49m[39m [######....................................................] 8Unpacking tzdata (2019a-0ubuntu0.16.04) over (2018i-0ubuntu0.16.04) ...
+Preparing to unpack .../console-setup-linux_1.108ubuntu15.5_all.deb ...
+7[24;0f[42m[30mProgress: [ 11%][49m[39m [#######...................................................] 8Unpacking console-setup-linux (1.108ubuntu15.5) over (1.108ubuntu15.4) ...
+Preparing to unpack .../console-setup_1.108ubuntu15.5_all.deb ...
+7[24;0f[42m[30mProgress: [ 12%][49m[39m [#######...................................................] 8Unpacking console-setup (1.108ubuntu15.5) over (1.108ubuntu15.4) ...
+Preparing to unpack .../keyboard-configuration_1.108ubuntu15.5_all.deb ...
+Unpacking keyboard-configuration (1.108ubuntu15.5) over (1.108ubuntu15.4) ...
+7[24;0f[42m[30mProgress: [ 13%][49m[39m [########..................................................] 8Preparing to unpack .../distro-info-data_0.28ubuntu0.12_all.deb ...
+Unpacking distro-info-data (0.28ubuntu0.12) over (0.28ubuntu0.10) ...
+7[24;0f[42m[30mProgress: [ 14%][49m[39m [#########.................................................] 8Preparing to unpack .../iproute2_4.3.0-1ubuntu3.16.04.5_amd64.deb ...
+Unpacking iproute2 (4.3.0-1ubuntu3.16.04.5) over (4.3.0-1ubuntu3.16.04.4) ...
+7[24;0f[42m[30mProgress: [ 15%][49m[39m [#########.................................................] 8Preparing to unpack .../libisc-export160_1%3a9.10.3.dfsg.P4-8ubuntu1.14_amd64.deb ...
+Unpacking libisc-export160 (1:9.10.3.dfsg.P4-8ubuntu1.14) over (1:9.10.3.dfsg.P4-8ubuntu1.12) ...
+7[24;0f[42m[30mProgress: [ 16%][49m[39m [##########................................................] 8Preparing to unpack .../libdns-export162_1%3a9.10.3.dfsg.P4-8ubuntu1.14_amd64.deb ...
+Unpacking libdns-export162 (1:9.10.3.dfsg.P4-8ubuntu1.14) over (1:9.10.3.dfsg.P4-8ubuntu1.12) ...
+7[24;0f[42m[30mProgress: [ 17%][49m[39m [##########................................................] 8Preparing to unpack .../sudo_1.8.16-0ubuntu1.6_amd64.deb ...
+Unpacking sudo (1.8.16-0ubuntu1.6) over (1.8.16-0ubuntu1.5) ...
+7[24;0f[42m[30mProgress: [ 18%][49m[39m [###########...............................................] 8Preparing to unpack .../ureadahead_0.100.0-19.1_amd64.deb ...
+Unpacking ureadahead (0.100.0-19.1) over (0.100.0-19) ...
+7[24;0f[42m[30mProgress: [ 19%][49m[39m [############..............................................] 8Preparing to unpack .../ubuntu-minimal_1.361.3_amd64.deb ...
+Unpacking ubuntu-minimal (1.361.3) over (1.361.2) ...
+7[24;0f[42m[30mProgress: [ 20%][49m[39m [############..............................................] 8Preparing to unpack .../bind9-host_1%3a9.10.3.dfsg.P4-8ubuntu1.14_amd64.deb ...
+Unpacking bind9-host (1:9.10.3.dfsg.P4-8ubuntu1.14) over (1:9.10.3.dfsg.P4-8ubuntu1.12) ...
+7[24;0f[42m[30mProgress: [ 21%][49m[39m [#############.............................................] 8Preparing to unpack .../dnsutils_1%3a9.10.3.dfsg.P4-8ubuntu1.14_amd64.deb ...
+Unpacking dnsutils (1:9.10.3.dfsg.P4-8ubuntu1.14) over (1:9.10.3.dfsg.P4-8ubuntu1.12) ...
+7[24;0f[42m[30mProgress: [ 22%][49m[39m [#############.............................................] 8Preparing to unpack .../libisc160_1%3a9.10.3.dfsg.P4-8ubuntu1.14_amd64.deb ...
+Unpacking libisc160:amd64 (1:9.10.3.dfsg.P4-8ubuntu1.14) over (1:9.10.3.dfsg.P4-8ubuntu1.12) ...
+7[24;0f[42m[30mProgress: [ 23%][49m[39m [##############............................................] 8Preparing to unpack .../libdns162_1%3a9.10.3.dfsg.P4-8ubuntu1.14_amd64.deb ...
+Unpacking libdns162:amd64 (1:9.10.3.dfsg.P4-8ubuntu1.14) over (1:9.10.3.dfsg.P4-8ubuntu1.12) ...
+7[24;0f[42m[30mProgress: [ 24%][49m[39m [##############............................................] 8Preparing to unpack .../libisccc140_1%3a9.10.3.dfsg.P4-8ubuntu1.14_amd64.deb ...
+Unpacking libisccc140:amd64 (1:9.10.3.dfsg.P4-8ubuntu1.14) over (1:9.10.3.dfsg.P4-8ubuntu1.12) ...
+7[24;0f[42m[30mProgress: [ 25%][49m[39m [###############...........................................] 8Preparing to unpack .../libisccfg140_1%3a9.10.3.dfsg.P4-8ubuntu1.14_amd64.deb ...
+Unpacking libisccfg140:amd64 (1:9.10.3.dfsg.P4-8ubuntu1.14) over (1:9.10.3.dfsg.P4-8ubuntu1.12) ...
+Preparing to unpack .../liblwres141_1%3a9.10.3.dfsg.P4-8ubuntu1.14_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 26%][49m[39m [################..........................................] 8Unpacking liblwres141:amd64 (1:9.10.3.dfsg.P4-8ubuntu1.14) over (1:9.10.3.dfsg.P4-8ubuntu1.12) ...
+Preparing to unpack .../libbind9-140_1%3a9.10.3.dfsg.P4-8ubuntu1.14_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 27%][49m[39m [################..........................................] 8Unpacking libbind9-140:amd64 (1:9.10.3.dfsg.P4-8ubuntu1.14) over (1:9.10.3.dfsg.P4-8ubuntu1.12) ...
+Preparing to unpack .../libldap-2.4-2_2.4.42+dfsg-2ubuntu3.5_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 28%][49m[39m [#################.........................................] 8Unpacking libldap-2.4-2:amd64 (2.4.42+dfsg-2ubuntu3.5) over (2.4.42+dfsg-2ubuntu3.4) ...
+Preparing to unpack .../ubuntu-standard_1.361.3_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 29%][49m[39m [#################.........................................] 8Unpacking ubuntu-standard (1.361.3) over (1.361.2) ...
+Preparing to unpack .../evince_3.18.2-1ubuntu4.4_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 30%][49m[39m [##################........................................] 8Unpacking evince (3.18.2-1ubuntu4.4) over (3.18.2-1ubuntu4.3) ...
+Preparing to unpack .../libevdocument3-4_3.18.2-1ubuntu4.4_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 31%][49m[39m [##################........................................] 8Unpacking libevdocument3-4:amd64 (3.18.2-1ubuntu4.4) over (3.18.2-1ubuntu4.3) ...
+Preparing to unpack .../libgstreamer-plugins-base1.0-0_1.8.3-1ubuntu0.3_amd64.deb ...
+Unpacking libgstreamer-plugins-base1.0-0:amd64 (1.8.3-1ubuntu0.3) over (1.8.3-1ubuntu0.2) ...
+7[24;0f[42m[30mProgress: [ 32%][49m[39m [###################.......................................] 8Preparing to unpack .../gstreamer1.0-plugins-base_1.8.3-1ubuntu0.3_amd64.deb ...
+Unpacking gstreamer1.0-plugins-base:amd64 (1.8.3-1ubuntu0.3) over (1.8.3-1ubuntu0.2) ...
+7[24;0f[42m[30mProgress: [ 33%][49m[39m [####################......................................] 8Preparing to unpack .../libevview3-3_3.18.2-1ubuntu4.4_amd64.deb ...
+Unpacking libevview3-3:amd64 (3.18.2-1ubuntu4.4) over (3.18.2-1ubuntu4.3) ...
+7[24;0f[42m[30mProgress: [ 34%][49m[39m [####################......................................] 8Preparing to unpack .../evince-common_3.18.2-1ubuntu4.4_all.deb ...
+Unpacking evince-common (3.18.2-1ubuntu4.4) over (3.18.2-1ubuntu4.3) ...
+7[24;0f[42m[30mProgress: [ 35%][49m[39m [#####################.....................................] 8Preparing to unpack .../firefox_66.0.4+build3-0ubuntu0.16.04.1_amd64.deb ...
+Unpacking firefox (66.0.4+build3-0ubuntu0.16.04.1) over (66.0.2+build1-0ubuntu0.16.04.1) ...
+7[24;0f[42m[30mProgress: [ 36%][49m[39m [#####################.....................................] 8Preparing to unpack .../firefox-locale-en_66.0.4+build3-0ubuntu0.16.04.1_amd64.deb ...
+Unpacking firefox-locale-en (66.0.4+build3-0ubuntu0.16.04.1) over (66.0.2+build1-0ubuntu0.16.04.1) ...
+7[24;0f[42m[30mProgress: [ 37%][49m[39m [######################....................................] 8Preparing to unpack .../firefox-locale-ml_66.0.4+build3-0ubuntu0.16.04.1_amd64.deb ...
+Unpacking firefox-locale-ml (66.0.4+build3-0ubuntu0.16.04.1) over (66.0.2+build1-0ubuntu0.16.04.1) ...
+7[24;0f[42m[30mProgress: [ 38%][49m[39m [#######################...................................] 8Preparing to unpack .../ghostscript_9.26~dfsg+0-0ubuntu0.16.04.9_amd64.deb ...
+Unpacking ghostscript (9.26~dfsg+0-0ubuntu0.16.04.9) over (9.26~dfsg+0-0ubuntu0.16.04.8) ...
+7[24;0f[42m[30mProgress: [ 39%][49m[39m [#######################...................................] 8Preparing to unpack .../ghostscript-x_9.26~dfsg+0-0ubuntu0.16.04.9_amd64.deb ...
+Unpacking ghostscript-x (9.26~dfsg+0-0ubuntu0.16.04.9) over (9.26~dfsg+0-0ubuntu0.16.04.8) ...
+7[24;0f[42m[30mProgress: [ 40%][49m[39m [########################..................................] 8Preparing to unpack .../libgs9_9.26~dfsg+0-0ubuntu0.16.04.9_amd64.deb ...
+Unpacking libgs9:amd64 (9.26~dfsg+0-0ubuntu0.16.04.9) over (9.26~dfsg+0-0ubuntu0.16.04.8) ...
+7[24;0f[42m[30mProgress: [ 41%][49m[39m [########################..................................] 8Preparing to unpack .../libgs9-common_9.26~dfsg+0-0ubuntu0.16.04.9_all.deb ...
+Unpacking libgs9-common (9.26~dfsg+0-0ubuntu0.16.04.9) over (9.26~dfsg+0-0ubuntu0.16.04.8) ...
+7[24;0f[42m[30mProgress: [ 42%][49m[39m [#########################.................................] 8Preparing to unpack .../gir1.2-gst-plugins-base-1.0_1.8.3-1ubuntu0.3_amd64.deb ...
+Unpacking gir1.2-gst-plugins-base-1.0 (1.8.3-1ubuntu0.3) over (1.8.3-1ubuntu0.2) ...
+7[24;0f[42m[30mProgress: [ 43%][49m[39m [#########################.................................] 8Preparing to unpack .../gstreamer1.0-alsa_1.8.3-1ubuntu0.3_amd64.deb ...
+Unpacking gstreamer1.0-alsa:amd64 (1.8.3-1ubuntu0.3) over (1.8.3-1ubuntu0.2) ...
+Preparing to unpack .../gstreamer1.0-plugins-base-apps_1.8.3-1ubuntu0.3_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 44%][49m[39m [##########################................................] 8Unpacking gstreamer1.0-plugins-base-apps (1.8.3-1ubuntu0.3) over (1.8.3-1ubuntu0.2) ...
+Preparing to unpack .../gstreamer1.0-x_1.8.3-1ubuntu0.3_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 45%][49m[39m [###########################...............................] 8Unpacking gstreamer1.0-x:amd64 (1.8.3-1ubuntu0.3) over (1.8.3-1ubuntu0.2) ...
+Preparing to unpack .../unity_7.4.5+16.04.20190312-0ubuntu1_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 46%][49m[39m [###########################...............................] 8Unpacking unity (7.4.5+16.04.20190312-0ubuntu1) over (7.4.5+16.04.20180221-0ubuntu1) ...
+Preparing to unpack .../libunity-core-6.0-9_7.4.5+16.04.20190312-0ubuntu1_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 47%][49m[39m [############################..............................] 8Unpacking libunity-core-6.0-9:amd64 (7.4.5+16.04.20190312-0ubuntu1) over (7.4.5+16.04.20180221-0ubuntu1) ...
+Preparing to unpack .../unity-schemas_7.4.5+16.04.20190312-0ubuntu1_all.deb ...
+7[24;0f[42m[30mProgress: [ 48%][49m[39m [############################..............................] 8Unpacking unity-schemas (7.4.5+16.04.20190312-0ubuntu1) over (7.4.5+16.04.20180221-0ubuntu1) ...
+Preparing to unpack .../unity-services_7.4.5+16.04.20190312-0ubuntu1_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 49%][49m[39m [#############################.............................] 8Unpacking unity-services (7.4.5+16.04.20190312-0ubuntu1) over (7.4.5+16.04.20180221-0ubuntu1) ...
+Preparing to unpack .../libxslt1.1_1.1.28-2.1ubuntu0.2_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 50%][49m[39m [#############################.............................] 8Unpacking libxslt1.1:amd64 (1.1.28-2.1ubuntu0.2) over (1.1.28-2.1ubuntu0.1) ...
+Selecting previously unselected package linux-modules-4.15.0-48-generic.
+Preparing to unpack .../linux-modules-4.15.0-48-generic_4.15.0-48.51~16.04.1_amd64.deb ...
+Unpacking linux-modules-4.15.0-48-generic (4.15.0-48.51~16.04.1) ...
+7[24;0f[42m[30mProgress: [ 51%][49m[39m [##############################............................] 8Selecting previously unselected package linux-image-4.15.0-48-generic.
+Preparing to unpack .../linux-image-4.15.0-48-generic_4.15.0-48.51~16.04.1_amd64.deb ...
+Unpacking linux-image-4.15.0-48-generic (4.15.0-48.51~16.04.1) ...
+7[24;0f[42m[30mProgress: [ 52%][49m[39m [###############################...........................] 8Selecting previously unselected package linux-modules-extra-4.15.0-48-generic.
+Preparing to unpack .../linux-modules-extra-4.15.0-48-generic_4.15.0-48.51~16.04.1_amd64.deb ...
+Unpacking linux-modules-extra-4.15.0-48-generic (4.15.0-48.51~16.04.1) ...
+7[24;0f[42m[30mProgress: [ 53%][49m[39m [###############################...........................] 8Preparing to unpack .../linux-generic-hwe-16.04_4.15.0.48.69_amd64.deb ...
+Unpacking linux-generic-hwe-16.04 (4.15.0.48.69) over (4.15.0.47.68) ...
+7[24;0f[42m[30mProgress: [ 54%][49m[39m [################################..........................] 8Preparing to unpack .../linux-image-generic-hwe-16.04_4.15.0.48.69_amd64.deb ...
+Unpacking linux-image-generic-hwe-16.04 (4.15.0.48.69) over (4.15.0.47.68) ...
+7[24;0f[42m[30mProgress: [ 55%][49m[39m [################################..........................] 8Selecting previously unselected package linux-headers-4.15.0-48.
+Preparing to unpack .../linux-headers-4.15.0-48_4.15.0-48.51~16.04.1_all.deb ...
+Unpacking linux-headers-4.15.0-48 (4.15.0-48.51~16.04.1) ...
+7[24;0f[42m[30mProgress: [ 56%][49m[39m [#################################.........................] 8Selecting previously unselected package linux-headers-4.15.0-48-generic.
+Preparing to unpack .../linux-headers-4.15.0-48-generic_4.15.0-48.51~16.04.1_amd64.deb ...
+Unpacking linux-headers-4.15.0-48-generic (4.15.0-48.51~16.04.1) ...
+7[24;0f[42m[30mProgress: [ 57%][49m[39m [##################################........................] 8Preparing to unpack .../linux-headers-generic-hwe-16.04_4.15.0.48.69_amd64.deb ...
+Unpacking linux-headers-generic-hwe-16.04 (4.15.0.48.69) over (4.15.0.47.68) ...
+7[24;0f[42m[30mProgress: [ 58%][49m[39m [##################################........................] 8Preparing to unpack .../linux-libc-dev_4.4.0-146.172_amd64.deb ...
+Unpacking linux-libc-dev:amd64 (4.4.0-146.172) over (4.4.0-145.171) ...
+7[24;0f[42m[30mProgress: [ 59%][49m[39m [###################################.......................] 8Preparing to unpack .../wpasupplicant_2.4-0ubuntu6.5_amd64.deb ...
+Unpacking wpasupplicant (2.4-0ubuntu6.5) over (2.4-0ubuntu6.4) ...
+7[24;0f[42m[30mProgress: [ 60%][49m[39m [###################################.......................] 8Preparing to unpack .../ubuntu-desktop_1.361.3_amd64.deb ...
+Unpacking ubuntu-desktop (1.361.3) over (1.361.2) ...
+7[24;0f[42m[30mProgress: [ 61%][49m[39m [####################################......................] 8Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for systemd (229-4ubuntu21.21) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Processing triggers for mime-support (3.59ubuntu1) ...
+Processing triggers for bamfdaemon (0.5.3~bzr0+16.04.20180209-0ubuntu1) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+Processing triggers for desktop-file-utils (0.22-1ubuntu5.2) ...
+Processing triggers for gnome-menus (3.13.3-6ubuntu3.1) ...
+Processing triggers for libglib2.0-0:amd64 (2.48.2-0ubuntu4.1) ...
+Processing triggers for hicolor-icon-theme (0.15-0ubuntu1.1) ...
+Processing triggers for gconf2 (3.2.6-3ubuntu6) ...
+Processing triggers for dbus (1.10.6-1ubuntu3.3) ...
+Setting up ntfs-3g (1:2015.3.14AR.1-1ubuntu0.3) ...
+Setting up grub-common (2.02~beta2-36ubuntu3.22) ...
+update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+7[24;0f[42m[30mProgress: [ 62%][49m[39m [####################################......................] 8Setting up grub2-common (2.02~beta2-36ubuntu3.22) ...
+Setting up grub-pc-bin (2.02~beta2-36ubuntu3.22) ...
+7[24;0f[42m[30mProgress: [ 63%][49m[39m [#####################################.....................] 8Setting up grub-pc (2.02~beta2-36ubuntu3.22) ...
+Installing for i386-pc platform.
+Installation finished. No error reported.
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-4.15.0-48-generic
+Found linux image: /boot/vmlinuz-4.15.0-47-generic
+Found initrd image: /boot/initrd.img-4.15.0-47-generic
+Found linux image: /boot/vmlinuz-4.15.0-46-generic
+Found initrd image: /boot/initrd.img-4.15.0-46-generic
+Found linux image: /boot/vmlinuz-4.8.0-36-generic
+Found initrd image: /boot/initrd.img-4.8.0-36-generic
+Found memtest86+ image: /boot/memtest86+.elf
+Found memtest86+ image: /boot/memtest86+.bin
+Found Windows 10 (loader) on /dev/sda1
+done
+Setting up snapd (2.38) ...
+Installing new version of config file /etc/apparmor.d/usr.lib.snapd.snap-confine.real ...
+7[24;0f[42m[30mProgress: [ 64%][49m[39m [######################################....................] 8md5sum: /etc/apparmor.d/usr.lib.snapd.snap-confine: No such file or directory
+snapd.failure.service is a disabled or a static unit, not starting it.
+snapd.snap-repair.service is a disabled or a static unit, not starting it.
+Setting up ubuntu-core-launcher (2.38) ...
+7[24;0f[42m[30mProgress: [ 65%][49m[39m [######################################....................] 8Setting up tzdata (2019a-0ubuntu0.16.04) ...
+
+Current default time zone: 'Asia/Kolkata'
+Local time is now:      Thu May  9 11:21:39 IST 2019.
+Universal Time is now:  Thu May  9 05:51:39 UTC 2019.
+Run 'dpkg-reconfigure tzdata' if you wish to change it.
+
+Setting up keyboard-configuration (1.108ubuntu15.5) ...
+7[24;0f[42m[30mProgress: [ 66%][49m[39m [#######################################...................] 8Your console font configuration will be updated the next time your system
+boots. If you want to update it now, run 'setupcon' from a virtual console.
+update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults
+update-initramfs: deferring update (trigger activated)
+Setting up console-setup-linux (1.108ubuntu15.5) ...
+Installing new version of config file /etc/console-setup/compose.ISO-8859-1.inc ...
+Installing new version of config file /etc/console-setup/compose.ISO-8859-13.inc ...
+Installing new version of config file /etc/console-setup/compose.ISO-8859-14.inc ...
+Installing new version of config file /etc/console-setup/compose.ISO-8859-15.inc ...
+Installing new version of config file /etc/console-setup/compose.ISO-8859-2.inc ...
+Installing new version of config file /etc/console-setup/compose.ISO-8859-3.inc ...
+Installing new version of config file /etc/console-setup/compose.ISO-8859-4.inc ...
+Installing new version of config file /etc/console-setup/compose.ISO-8859-7.inc ...
+Installing new version of config file /etc/console-setup/compose.ISO-8859-9.inc ...
+7[24;0f[42m[30mProgress: [ 67%][49m[39m [#######################################...................] 8Setting up console-setup (1.108ubuntu15.5) ...
+Your console font configuration will be updated the next time your system
+boots. If you want to update it now, run 'setupcon' from a virtual console.
+update-initramfs: deferring update (trigger activated)
+Setting up distro-info-data (0.28ubuntu0.12) ...
+7[24;0f[42m[30mProgress: [ 68%][49m[39m [########################################..................] 8Setting up iproute2 (4.3.0-1ubuntu3.16.04.5) ...
+Setting up libisc-export160 (1:9.10.3.dfsg.P4-8ubuntu1.14) ...
+7[24;0f[42m[30mProgress: [ 69%][49m[39m [#########################################.................] 8Setting up libdns-export162 (1:9.10.3.dfsg.P4-8ubuntu1.14) ...
+7[24;0f[42m[30mProgress: [ 70%][49m[39m [#########################################.................] 8Setting up sudo (1.8.16-0ubuntu1.6) ...
+Setting up ureadahead (0.100.0-19.1) ...
+7[24;0f[42m[30mProgress: [ 71%][49m[39m [##########################################................] 8Setting up ubuntu-minimal (1.361.3) ...
+7[24;0f[42m[30mProgress: [ 72%][49m[39m [##########################################................] 8Setting up libisc160:amd64 (1:9.10.3.dfsg.P4-8ubuntu1.14) ...
+Setting up libdns162:amd64 (1:9.10.3.dfsg.P4-8ubuntu1.14) ...
+7[24;0f[42m[30mProgress: [ 73%][49m[39m [###########################################...............] 8Setting up libisccc140:amd64 (1:9.10.3.dfsg.P4-8ubuntu1.14) ...
+7[24;0f[42m[30mProgress: [ 74%][49m[39m [###########################################...............] 8Setting up libisccfg140:amd64 (1:9.10.3.dfsg.P4-8ubuntu1.14) ...
+Setting up libbind9-140:amd64 (1:9.10.3.dfsg.P4-8ubuntu1.14) ...
+7[24;0f[42m[30mProgress: [ 75%][49m[39m [############################################..............] 8Setting up liblwres141:amd64 (1:9.10.3.dfsg.P4-8ubuntu1.14) ...
+Setting up bind9-host (1:9.10.3.dfsg.P4-8ubuntu1.14) ...
+7[24;0f[42m[30mProgress: [ 76%][49m[39m [#############################################.............] 8Setting up dnsutils (1:9.10.3.dfsg.P4-8ubuntu1.14) ...
+7[24;0f[42m[30mProgress: [ 77%][49m[39m [#############################################.............] 8Setting up libldap-2.4-2:amd64 (2.4.42+dfsg-2ubuntu3.5) ...
+Setting up ubuntu-standard (1.361.3) ...
+7[24;0f[42m[30mProgress: [ 78%][49m[39m [##############################################............] 8Setting up libevdocument3-4:amd64 (3.18.2-1ubuntu4.4) ...
+7[24;0f[42m[30mProgress: [ 79%][49m[39m [##############################################............] 8Setting up libgstreamer-plugins-base1.0-0:amd64 (1.8.3-1ubuntu0.3) ...
+Setting up gstreamer1.0-plugins-base:amd64 (1.8.3-1ubuntu0.3) ...
+7[24;0f[42m[30mProgress: [ 80%][49m[39m [###############################################...........] 8Setting up libevview3-3:amd64 (3.18.2-1ubuntu4.4) ...
+7[24;0f[42m[30mProgress: [ 81%][49m[39m [###############################################...........] 8Setting up evince-common (3.18.2-1ubuntu4.4) ...
+Setting up evince (3.18.2-1ubuntu4.4) ...
+7[24;0f[42m[30mProgress: [ 82%][49m[39m [################################################..........] 8Setting up firefox (66.0.4+build3-0ubuntu0.16.04.1) ...
+Please restart all running instances of firefox, or you will experience problems.
+Setting up firefox-locale-en (66.0.4+build3-0ubuntu0.16.04.1) ...
+7[24;0f[42m[30mProgress: [ 83%][49m[39m [#################################################.........] 8Setting up firefox-locale-ml (66.0.4+build3-0ubuntu0.16.04.1) ...
+7[24;0f[42m[30mProgress: [ 84%][49m[39m [#################################################.........] 8Setting up libgs9-common (9.26~dfsg+0-0ubuntu0.16.04.9) ...
+Setting up libgs9:amd64 (9.26~dfsg+0-0ubuntu0.16.04.9) ...
+7[24;0f[42m[30mProgress: [ 85%][49m[39m [##################################################........] 8Setting up ghostscript (9.26~dfsg+0-0ubuntu0.16.04.9) ...
+7[24;0f[42m[30mProgress: [ 86%][49m[39m [##################################################........] 8Setting up ghostscript-x (9.26~dfsg+0-0ubuntu0.16.04.9) ...
+Setting up gir1.2-gst-plugins-base-1.0 (1.8.3-1ubuntu0.3) ...
+7[24;0f[42m[30mProgress: [ 87%][49m[39m [###################################################.......] 8Setting up gstreamer1.0-alsa:amd64 (1.8.3-1ubuntu0.3) ...
+Setting up gstreamer1.0-plugins-base-apps (1.8.3-1ubuntu0.3) ...
+7[24;0f[42m[30mProgress: [ 88%][49m[39m [####################################################......] 8Setting up gstreamer1.0-x:amd64 (1.8.3-1ubuntu0.3) ...
+7[24;0f[42m[30mProgress: [ 89%][49m[39m [####################################################......] 8Setting up unity-services (7.4.5+16.04.20190312-0ubuntu1) ...
+Setting up unity-schemas (7.4.5+16.04.20190312-0ubuntu1) ...
+7[24;0f[42m[30mProgress: [ 90%][49m[39m [#####################################################.....] 8Setting up libunity-core-6.0-9:amd64 (7.4.5+16.04.20190312-0ubuntu1) ...
+7[24;0f[42m[30mProgress: [ 91%][49m[39m [#####################################################.....] 8Setting up unity (7.4.5+16.04.20190312-0ubuntu1) ...
+Setting up libxslt1.1:amd64 (1.1.28-2.1ubuntu0.2) ...
+7[24;0f[42m[30mProgress: [ 92%][49m[39m [######################################################....] 8Setting up linux-modules-4.15.0-48-generic (4.15.0-48.51~16.04.1) ...
+7[24;0f[42m[30mProgress: [ 93%][49m[39m [######################################################....] 8Setting up linux-image-4.15.0-48-generic (4.15.0-48.51~16.04.1) ...
+I: /vmlinuz.old is now a symlink to boot/vmlinuz-4.15.0-47-generic
+I: /initrd.img.old is now a symlink to boot/initrd.img-4.15.0-47-generic
+I: /vmlinuz is now a symlink to boot/vmlinuz-4.15.0-48-generic
+I: /initrd.img is now a symlink to boot/initrd.img-4.15.0-48-generic
+Setting up linux-modules-extra-4.15.0-48-generic (4.15.0-48.51~16.04.1) ...
+7[24;0f[42m[30mProgress: [ 94%][49m[39m [#######################################################...] 8Setting up linux-image-generic-hwe-16.04 (4.15.0.48.69) ...
+Setting up linux-headers-4.15.0-48 (4.15.0-48.51~16.04.1) ...
+7[24;0f[42m[30mProgress: [ 95%][49m[39m [########################################################..] 8Setting up linux-headers-4.15.0-48-generic (4.15.0-48.51~16.04.1) ...
+7[24;0f[42m[30mProgress: [ 96%][49m[39m [########################################################..] 8Setting up linux-headers-generic-hwe-16.04 (4.15.0.48.69) ...
+Setting up linux-generic-hwe-16.04 (4.15.0.48.69) ...
+7[24;0f[42m[30mProgress: [ 97%][49m[39m [#########################################################.] 8Setting up linux-libc-dev:amd64 (4.4.0-146.172) ...
+7[24;0f[42m[30mProgress: [ 98%][49m[39m [#########################################################.] 8Setting up wpasupplicant (2.4-0ubuntu6.5) ...
+Setting up ubuntu-desktop (1.361.3) ...
+7[24;0f[42m[30mProgress: [ 99%][49m[39m [##########################################################] 8Processing triggers for initramfs-tools (0.122ubuntu8.14) ...
+update-initramfs: Generating /boot/initrd.img-4.15.0-47-generic
+W: Possible missing firmware /lib/firmware/i915/kbl_guc_ver9_14.bin for module i915
+W: Possible missing firmware /lib/firmware/i915/bxt_guc_ver8_7.bin for module i915
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Processing triggers for linux-image-4.15.0-48-generic (4.15.0-48.51~16.04.1) ...
+/etc/kernel/postinst.d/initramfs-tools:
+update-initramfs: Generating /boot/initrd.img-4.15.0-48-generic
+W: Possible missing firmware /lib/firmware/i915/kbl_guc_ver9_14.bin for module i915
+W: Possible missing firmware /lib/firmware/i915/bxt_guc_ver8_7.bin for module i915
+/etc/kernel/postinst.d/zz-update-grub:
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-4.15.0-48-generic
+Found initrd image: /boot/initrd.img-4.15.0-48-generic
+Found linux image: /boot/vmlinuz-4.15.0-47-generic
+Found initrd image: /boot/initrd.img-4.15.0-47-generic
+Found linux image: /boot/vmlinuz-4.15.0-46-generic
+Found initrd image: /boot/initrd.img-4.15.0-46-generic
+Found linux image: /boot/vmlinuz-4.8.0-36-generic
+Found initrd image: /boot/initrd.img-4.8.0-36-generic
+Found memtest86+ image: /boot/memtest86+.elf
+Found memtest86+ image: /boot/memtest86+.bin
+Found Windows 10 (loader) on /dev/sda1
+done
+
+7[0;24r8[1A[J]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ sudo apt upgrade[1Pdatecript httpserver.tx[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cme.txt[4P]srsyn -zvh cs17d0@192.168.0.30:/home/cs17do5/home/cecme.text /hhome/cec[A]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ [C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscript rsync.txtftpserverexit[Kftp localhostsudo apt-get install vsftpdgedit/etc/nginx/sites enabled/default[1Penabled/default[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[24Pnginx statusmkdir -p /var/www/wonder.com/html[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9PUSER:/var/www/wonder.com/html[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo chown -R [2Pchown --helpsudo chown -R mkdir -p /var/www/wonder.com/html[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Pystemctl status nginx[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pudo ufw status\sudo ufw allow 'Nginx HTTP'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Psudo ufw app listnginx statusapt install nginxnix[7Pupdatecript cs17d05-09-05-2019[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pudo apt install nginx-get install ngnix[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pcript cs17d05-09-05-2019[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Ksudo apt-get install ngnix[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Perevr ngnix statusudo apt-get install ngnix[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[Kftp localhostsudo apt-get install vsftpd[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pcript cs17d05-09-05-2019[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cftp cs17d34@192.168.0.30[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Psh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K[K[K[K[K[Kssh cs17d34@192.168.0.30[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo search vlc[1@a[1P[C[1@ [1@a[1@p[1@t[C[1@ [1P
+Sorting... 0%Sorting... 0%Sorting... 1%Sorting... Done
+Full Text Search... 50%Full Text Search... 50%Full Text Search... Done
+[32mbrowser-plugin-vlc[0m/xenial 2.0.6-4 amd64
+  multimedia plugin for web browsers based on VLC
+
+[32mcubemap[0m/xenial 1.2.1-1 amd64
+  scalable video reflector, designed to be used with VLC
+
+[32mdvblast[0m/xenial 3.0-1 amd64
+  Simple and powerful dvb-streaming application
+
+[32mfp-units-multimedia[0m/xenial 3.0.0+dfsg-2 amd64
+  Free Pascal - multimedia units dependency package
+
+[32mfp-units-multimedia-3.0.0[0m/xenial 3.0.0+dfsg-2 amd64
+  Free Pascal - multimedia units
+
+[32mfreeplayer[0m/xenial,xenial 20070531+dfsg.1-5 all
+  wrapper around vlc for French ADSL FreeBox
+
+[32mfreetuxtv[0m/xenial 0.6.6~dfsg1-1 amd64
+  Internet television and radio player
+
+[32mgetstream[0m/xenial 20081204-1.2ubuntu1 amd64
+  DVB streaming application
+
+[32mhdhomerun-config[0m/xenial 20150826-2 amd64
+  Configuration utility for Silicon Dust HD HomeRun
+
+[32mhdhomerun-config-gui[0m/xenial-updates 20150826-0ubuntu1.16.04.0 amd64
+  GUI Configuration utility for Silicon Dust HD HomeRun
+
+[32mladitools[0m/xenial,xenial 1.1.0-2 all
+  Linux Audio Desktop Integration Tools
+
+[32mlibbluray-bdj[0m/xenial,xenial 1:0.9.2-2 all
+  Blu-ray Disc Java support library (BD-J library)
+
+[32mlibbluray-bin[0m/xenial 1:0.9.2-2 amd64
+  Blu-ray disc playback support library (tools)
+
+[32mlibbluray-dev[0m/xenial 1:0.9.2-2 amd64
+  Blu-ray disc playback support library (development files)
+
+[32mlibbluray-doc[0m/xenial,xenial 1:0.9.2-2 all
+  Blu-ray disc playback support library (documentation)
+
+[32mlibbluray1[0m/xenial 1:0.9.2-2 amd64
+  Blu-ray disc playback support library (shared library)
+
+[32mlibdvd-pkg[0m/xenial,xenial 1.4.0-1-1 all
+  DVD-Video playing library - installer
+
+[32mlibhdhomerun-dev[0m/xenial 20150826-2 amd64
+  Development library for Silicon Dust HD HomeRun
+
+[32mlibhdhomerun2[0m/xenial 20150826-2 amd64
+  Library for Silicon Dust HD HomeRun
+
+[32mlibvcdinfo-dev[0m/xenial 0.7.24+dfsg-0.2 amd64
+  library to extract information from VideoCD (development files)
+
+[32mlibvcdinfo0[0m/xenial 0.7.24+dfsg-0.2 amd64
+  library to extract information from VideoCD
+
+[32mlibvlc-dev[0m/xenial-updates,xenial-security 2.2.2-5ubuntu0.16.04.4 amd64
+  development files for libvlc
+
+[32mlibvlc5[0m/xenial-updates,xenial-security 2.2.2-5ubuntu0.16.04.4 amd64
+  multimedia player and streamer library
+
+[32mlibvlccore-dev[0m/xenial-updates,xenial-security 2.2.2-5ubuntu0.16.04.4 amd64
+  development files for libvlccore
+
+[32mlibvlccore8[0m/xenial-updates,xenial-security 2.2.2-5ubuntu0.16.04.4 amd64
+  base library for VLC and its modules
+
+[32mlivestreamer[0m/xenial,xenial 1.12.2-1 all
+  CLI that pipes video streams to video players
+
+[32mmimms[0m/xenial,xenial 3.2.2-1.1 all
+  mms (e.g. mms://) stream downloader
+
+[32mmpris-remote[0m/xenial,xenial 0.0~1.gpb7c7f5c6-1.1 all
+  command-line interface for mpris compatible media players
+
+[32mmythbuntu-lirc-generator[0m/xenial,xenial 0.26-0ubuntu2 all
+  Mythbuntu Lirc Configuration Generator
+
+[32mphonon-backend-vlc[0m/xenial 0.8.2-1ubuntu3 amd64
+  Phonon VLC backend
+
+[32mphonon-backend-vlc-dbg[0m/xenial 0.8.2-1ubuntu3 amd64
+  Phonon VLC backend debugging symbols
+
+[32mphonon4qt5-backend-vlc[0m/xenial 0.8.2-1ubuntu3 amd64
+  Phonon4Qt5 VLC backend
+
+[32mphonon4qt5-backend-vlc-dbg[0m/xenial 0.8.2-1ubuntu3 amd64
+  Phonon4Qt5 VLC backend debugging symbols
+
+[32mpidgin-mpris[0m/xenial 0.2.3-2 amd64
+  sets your available message to your currently playing track
+
+[32mpython3-pafy[0m/xenial,xenial 0.3.80-1build1 all
+  Download videos and retrieve metadata from YouTube
+
+[32msmtube[0m/xenial 15.5.10-1 amd64
+  YouTube videos browser
+
+[32mvlc[0m/xenial-updates,xenial-security 2.2.2-5ubuntu0.16.04.4 amd64
+  multimedia player and streamer
+
+[32mvlc-data[0m/xenial-updates,xenial-updates,xenial-security,xenial-security 2.2.2-5ubuntu0.16.04.4 all
+  Common data for VLC
+
+[32mvlc-nox[0m/xenial-updates,xenial-security 2.2.2-5ubuntu0.16.04.4 amd64
+  multimedia player and streamer (without X support)
+
+[32mvlc-plugin-fluidsynth[0m/xenial-updates,xenial-security 2.2.2-5ubuntu0.16.04.4 amd64
+  FluidSynth plugin for VLC
+
+[32mvlc-plugin-jack[0m/xenial-updates,xenial-security 2.2.2-5ubuntu0.16.04.4 amd64
+  Jack audio plugins for VLC
+
+[32mvlc-plugin-notify[0m/xenial-updates,xenial-security 2.2.2-5ubuntu0.16.04.4 amd64
+  LibNotify plugin for VLC
+
+[32mvlc-plugin-samba[0m/xenial-updates,xenial-security 2.2.2-5ubuntu0.16.04.4 amd64
+  Samba plugin for VLC
+
+[32mvlc-plugin-sdl[0m/xenial-updates,xenial-security 2.2.2-5ubuntu0.16.04.4 amd64
+  SDL video and audio output plugin for VLC
+
+[32mvlc-plugin-svg[0m/xenial-updates,xenial-security 2.2.2-5ubuntu0.16.04.4 amd64
+  SVG plugin for VLC
+
+[32mvlc-plugin-vlsub[0m/xenial,xenial 0.9.13-1 all
+  VLC extension to download subtitles from opensubtitles.org
+
+[32mvlc-plugin-zvbi[0m/xenial-updates,xenial-security 2.2.2-5ubuntu0.16.04.4 amd64
+  VBI teletext plugin for VLC
+
+[32mx264[0m/xenial 2:0.148.2643+git5c65704-1 amd64
+  video encoder for the H.264/MPEG-4 AVC standard
+
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ sudo apt show vlc
+Package: vlc
+Version: 2.2.2-5ubuntu0.16.04.4
+Priority: optional
+Section: universe/graphics
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 4,944 kB
+Provides: mp3-decoder
+Pre-Depends: dpkg (>= 1.17.14)
+Depends: fonts-freefont-ttf, vlc-nox (= 2.2.2-5ubuntu0.16.04.4), libaa1 (>= 1.4p5), libavcodec-ffmpeg56 (>= 7:2.4) | libavcodec-ffmpeg-extra56 (>= 7:2.4), libavutil-ffmpeg54 (>= 7:2.4), libc6 (>= 2.16), libcaca0 (>= 0.99.beta17-1), libcairo2 (>= 1.13.1), libegl1-mesa (>= 7.8.1) | libegl1-x11, libfreerdp-client1.1 (>= 1.1.0~beta1+git20130629), libfreerdp-core1.1 (>= 1.1.0~beta1+git20130629), libfreerdp-gdi1.1 (>= 1.1.0~beta1+git20130629), libfreetype6 (>= 2.2.1), libfribidi0 (>= 0.19.2), libgcc1 (>= 1:3.0), libgl1-mesa-glx | libgl1, libgles2-mesa (>= 7.8.1) | libgles2, libglib2.0-0 (>= 2.12.0), libpulse0 (>= 0.99.4), libqt5core5a (>= 5.5.1), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5widgets5 (>= 5.2.0), libqt5x11extras5 (>= 5.1.0), librsvg2-2 (>= 2.14.4), libsdl-image1.2 (>= 1.2.10), libsdl1.2debian (>= 1.2.11), libstdc++6 (>= 5.2), libva-drm1 (>= 1.1.0), libva-x11-1 (>= 1.0.3), libva1 (>= 1.2.0), libvlccore8 (>= 2.2.0), libvncclient1 (>= 0.9.10), libx11-6, libxcb-composite0, libxcb-keysyms1 (>= 0.4.0), libxcb-randr0 (>= 1.1), libxcb-shm0, libxcb-xv0 (>= 1.2), libxcb1 (>= 1.6), libxext6, libxi6 (>= 2:1.2.99.4), libxinerama1, libxpm4, zlib1g (>= 1:1.1.4)
+Recommends: vlc-plugin-notify (= 2.2.2-5ubuntu0.16.04.4), vlc-plugin-samba (= 2.2.2-5ubuntu0.16.04.4), xdg-utils
+Breaks: vlc-nox (<< 2.2.0~pre2-2~), vlc-plugin-pulse (<< 2.2.1-4~)
+Replaces: vlc-nox (<< 2.2.0~pre2-2~), vlc-plugin-pulse (<< 2.2.1-4~)
+Homepage: http://www.videolan.org/vlc/
+Task: mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-master, ubuntu-mate-desktop, ubuntu-mate-cloudtop
+Supported: 3y
+Download-Size: 1,505 kB
+APT-Sources: http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages
+Description: multimedia player and streamer
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ VLC can also be used as a streaming server that duplicates the stream it
+ reads and multicasts them through the network to other clients, or serves
+ them through HTTP.
+ .
+ VLC has support for on-the-fly transcoding of audio and video formats, either
+ for broadcasting purposes or for movie format transformations. Support for
+ most output methods is provided by this package, but features can be added by
+ installing additional plugins (vlc-plugin-fluidsynth, vlc-plugin-jack,
+ vlc-plugin-notify, vlc-plugin-samba, vlc-plugin-sdl, vlc-plugin-svg,
+ vlc-plugin-zvbi).
+
+N: There is 1 additional record. Please use the '-a' switch to see it
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ sudo apt show vlc[2@earch[C[C[C[C[1P vlc[1P vlc[1P vlc[1P vlc[1P vlc[1P vlci vlcn vlcs vlct vlca vlcl vlcl vlc
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  linux-headers-4.15.0-46 linux-headers-4.15.0-46-generic
+  linux-headers-4.8.0-36 linux-headers-4.8.0-36-generic
+  linux-image-4.15.0-46-generic linux-image-4.8.0-36-generic
+  linux-image-extra-4.8.0-36-generic linux-modules-4.15.0-46-generic
+  linux-modules-extra-4.15.0-46-generic snapd-login-service
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  i965-va-driver liba52-0.7.4 libaacs0 libass5 libavcodec-ffmpeg56
+  libavformat-ffmpeg56 libavutil-ffmpeg54 libbasicusageenvironment1 libbdplus0
+  libbluray1 libcddb2 libchromaprint0 libcrystalhd3 libdc1394-22 libdca0
+  libdirectfb-1.2-9 libdvbpsi10 libdvdnav4 libdvdread4 libebml4v5 libfaad2
+  libgles2-mesa libgme0 libgroupsock8 libgsm1 libiso9660-8 libkate1
+  liblivemedia50 libmad0 libmatroska6v5 libmodplug1 libmp3lame0 libmpcdec6
+  libmpeg2-4 libopenjpeg5 libpostproc-ffmpeg53 libproxy-tools libqt5x11extras5
+  libresid-builder0c2a libschroedinger-1.0-0 libsdl-image1.2 libsdl1.2debian
+  libshine3 libsidplay2v5 libsnappy1v5 libsoxr0 libssh-gcrypt-4 libssh2-1
+  libswresample-ffmpeg1 libswscale-ffmpeg3 libtwolame0 libupnp6
+  libusageenvironment3 libva-drm1 libva-x11-1 libva1 libvcdinfo0 libvlc5
+  libvlccore8 libx264-148 libx265-79 libxcb-composite0 libxcb-xv0 libxvidcore4
+  libzvbi-common libzvbi0 mesa-va-drivers va-driver-all vlc-data vlc-nox
+  vlc-plugin-notify vlc-plugin-samba
+Suggested packages:
+  libbluray-bdj libchromaprint-tools python-acoustid firmware-crystalhd
+  libdvdcss2 libfglrx-amdxvba1
+The following NEW packages will be installed:
+  i965-va-driver liba52-0.7.4 libaacs0 libass5 libavcodec-ffmpeg56
+  libavformat-ffmpeg56 libavutil-ffmpeg54 libbasicusageenvironment1 libbdplus0
+  libbluray1 libcddb2 libchromaprint0 libcrystalhd3 libdc1394-22 libdca0
+  libdirectfb-1.2-9 libdvbpsi10 libdvdnav4 libdvdread4 libebml4v5 libfaad2
+  libgles2-mesa libgme0 libgroupsock8 libgsm1 libiso9660-8 libkate1
+  liblivemedia50 libmad0 libmatroska6v5 libmodplug1 libmp3lame0 libmpcdec6
+  libmpeg2-4 libopenjpeg5 libpostproc-ffmpeg53 libproxy-tools libqt5x11extras5
+  libresid-builder0c2a libschroedinger-1.0-0 libsdl-image1.2 libsdl1.2debian
+  libshine3 libsidplay2v5 libsnappy1v5 libsoxr0 libssh-gcrypt-4 libssh2-1
+  libswresample-ffmpeg1 libswscale-ffmpeg3 libtwolame0 libupnp6
+  libusageenvironment3 libva-drm1 libva-x11-1 libva1 libvcdinfo0 libvlc5
+  libvlccore8 libx264-148 libx265-79 libxcb-composite0 libxcb-xv0 libxvidcore4
+  libzvbi-common libzvbi0 mesa-va-drivers va-driver-all vlc vlc-data vlc-nox
+  vlc-plugin-notify vlc-plugin-samba
+0 upgraded, 73 newly installed, 0 to remove and 0 not upgraded.
+Need to get 23.7 MB of archives.
+After this operation, 119 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+[33m0% [Working][0m            Get:1 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libcrystalhd3 amd64 1:0.0~git20110715.fdd2f19-11build1 [46.1 kB]
+[33m0% [1 libcrystalhd3 2,559 B/46.1 kB 6%][0m[33m                                       0% [Working][0m            Get:2 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libdirectfb-1.2-9 amd64 1.2.10.0-5.1 [606 kB]
+[33m0% [2 libdirectfb-1.2-9 2,558 B/606 kB 0%][0m[33m2% [2 libdirectfb-1.2-9 373 kB/606 kB 62%][0m[33m                                          3% [Working][0m            Get:3 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libgsm1 amd64 1.0.13-4 [27.1 kB]
+[33m3% [3 libgsm1 4,008 B/27.1 kB 15%][0m[33m                                  3% [Waiting for headers][0m                        Get:4 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libmpcdec6 amd64 2:0.1~r459-4.1build1 [32.0 kB]
+[33m3% [4 libmpcdec6 4,008 B/32.0 kB 13%][0m[33m                                     3% [Working][0m            Get:5 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libmpeg2-4 amd64 0.5.1-7 [59.1 kB]
+[33m4% [5 libmpeg2-4 4,008 B/59.1 kB 7%][0m[33m                                    4% [Working][0m            Get:6 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libschroedinger-1.0-0 amd64 1.0.11-2.1build1 [293 kB]
+[33m4% [6 libschroedinger-1.0-0 4,006 B/293 kB 1%][0m[33m                                              5% [Working][0m            Get:7 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libproxy-tools amd64 0.4.11-5ubuntu1 [5,226 B]
+[33m5% [7 libproxy-tools 4,009 B/5,226 B 77%][0m[33m                                         6% [Working][0m            Get:8 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 vlc-data all 2.2.2-5ubuntu0.16.04.4 [5,903 kB]
+[33m6% [8 vlc-data 4,004 B/5,903 kB 0%][0m[33m13% [8 vlc-data 2,121 kB/5,903 kB 36%][0m[33m24% [8 vlc-data 5,411 kB/5,903 kB 92%][0m[33m                                      26% [Working][0m             Get:9 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libvlccore8 amd64 2.2.2-5ubuntu0.16.04.4 [406 kB]
+[33m26% [9 libvlccore8 5,454 B/406 kB 1%][0m[33m                                     27% [Working][0m             Get:10 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libvlc5 amd64 2.2.2-5ubuntu0.16.04.4 [60.0 kB]
+[33m27% [10 libvlc5 5,456 B/60.0 kB 9%][0m[33m                                   28% [Waiting for headers][0m                         Get:11 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 liba52-0.7.4 amd64 0.7.4-18 [33.8 kB]
+[33m28% [11 liba52-0.7.4 5,456 B/33.8 kB 16%][0m[33m                                         28% [Working][0m             Get:12 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libass5 amd64 0.13.1-1 [82.6 kB]
+[33m28% [12 libass5 5,455 B/82.6 kB 7%][0m[33m                                   29% [Working][0m             Get:13 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libavutil-ffmpeg54 amd64 7:2.8.15-0ubuntu0.16.04.1 [166 kB]
+[33m29% [13 libavutil-ffmpeg54 5,454 B/166 kB 3%][0m[33m                                             30% [Working][0m             Get:14 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libmp3lame0 amd64 3.99.5+repack1-9build1 [127 kB]
+[33m30% [14 libmp3lame0 5,454 B/127 kB 4%][0m[33m                                      30% [Working][0m             Get:15 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libopenjpeg5 amd64 1:1.5.2-3.1 [104 kB]
+[33m30% [15 libopenjpeg5 5,454 B/104 kB 5%][0m[33m                                       31% [Waiting for headers][0m                         Get:16 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libshine3 amd64 3.1.0-4 [25.5 kB]
+[33m31% [16 libshine3 5,456 B/25.5 kB 21%][0m[33m                                      31% [Working][0m             Get:17 http://in.archive.ubuntu.com/ubuntu xenial/main amd64 libsnappy1v5 amd64 1.1.3-2 [16.0 kB]
+[33m31% [17 libsnappy1v5 5,456 B/16.0 kB 34%][0m[33m                                         32% [Working][0m             Get:18 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libsoxr0 amd64 0.1.2-1 [70.2 kB]
+[33m32% [18 libsoxr0 5,455 B/70.2 kB 8%][0m[33m                                    32% [Working][0m             Get:19 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libswresample-ffmpeg1 amd64 7:2.8.15-0ubuntu0.16.04.1 [51.7 kB]
+[33m32% [19 libswresample-ffmpeg1 5,456 B/51.7 kB 11%][0m[33m                                                  33% [Working][0m             Get:20 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libtwolame0 amd64 0.3.13-1.2 [49.2 kB]
+[33m33% [20 libtwolame0 3,827 B/49.2 kB 8%][0m[33m                                       33% [Working][0m             Get:21 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libva1 amd64 1.7.0-1ubuntu0.1 [45.4 kB]
+[33m33% [21 libva1 5,456 B/45.4 kB 12%]                              1,354 kB/s 11s[0m[33m33% [Working]                                                    1,354 kB/s 11s[0m                                                                               Get:22 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libx264-148 amd64 2:0.148.2643+git5c65704-1 [606 kB]
+[33m33% [22 libx264-148 6,902 B/606 kB 1%]                           1,354 kB/s 11s[0m[33m36% [Working]                                                    1,354 kB/s 10s[0m                                                                               Get:23 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libx265-79 amd64 1.9-3 [965 kB]
+[33m36% [23 libx265-79 5,454 B/965 kB 1%]                            1,354 kB/s 10s[0m[33m39% [Working]                                                    1,354 kB/s 10s[0m                                                                               Get:24 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libxvidcore4 amd64 2:1.3.4-1 [206 kB]
+[33m39% [24 libxvidcore4 2,558 B/206 kB 1%]                          1,354 kB/s 10s[0m[33m40% [Working]                                                    1,354 kB/s 10s[0m                                                                               Get:25 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libzvbi-common all 0.2.35-10 [32.5 kB]
+[33m40% [25 libzvbi-common 2,560 B/32.5 kB 8%]                       1,354 kB/s 10s[0m[33m41% [Working]                                                    1,354 kB/s 10s[0m                                                                               Get:26 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libzvbi0 amd64 0.2.35-10 [235 kB]
+[33m41% [26 libzvbi0 2,558 B/235 kB 1%]                              1,354 kB/s 10s[0m[33m42% [Working]                                                     1,354 kB/s 9s[0m                                                                               Get:27 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libavcodec-ffmpeg56 amd64 7:2.8.15-0ubuntu0.16.04.1 [4,087 kB]
+[33m42% [27 libavcodec-ffmpeg56 2,556 B/4,087 kB 0%]                  1,354 kB/s 9s[0m[33m46% [27 libavcodec-ffmpeg56 1,162 kB/4,087 kB 28%]                1,354 kB/s 9s[0m[33m52% [27 libavcodec-ffmpeg56 3,026 kB/4,087 kB 74%]                1,354 kB/s 7s[0m[33m56% [Working]                                                     1,354 kB/s 6s[0m                                                                               Get:28 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libbluray1 amd64 1:0.9.2-2 [127 kB]
+[33m56% [28 libbluray1 5,454 B/127 kB 4%]                             1,354 kB/s 6s[0m[33m56% [Working]                                                     1,354 kB/s 6s[0m                                                                               Get:29 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libgme0 amd64 0.6.0-3ubuntu0.16.04.1 [122 kB]
+[33m57% [29 libgme0 5,044 B/122 kB 4%]                                1,354 kB/s 6s[0m[33m57% [Working]                                                     1,354 kB/s 6s[0m                                                                               Get:30 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libmodplug1 amd64 1:0.8.8.5-2 [153 kB]
+[33m57% [30 libmodplug1 5,454 B/153 kB 4%]                            1,354 kB/s 6s[0m[33m58% [Working]                                                     1,354 kB/s 6s[0m                                                                               Get:31 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libssh-gcrypt-4 amd64 0.6.3-4.3ubuntu0.2 [119 kB]
+[33m58% [31 libssh-gcrypt-4 5,454 B/119 kB 5%]                        1,354 kB/s 6s[0m[33m59% [Working]                                                     1,354 kB/s 6s[0m                                                                               Get:32 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libavformat-ffmpeg56 amd64 7:2.8.15-0ubuntu0.16.04.1 [810 kB]
+[33m59% [32 libavformat-ffmpeg56 2,843 B/810 kB 0%]                   1,354 kB/s 6s[0m[33m62% [Working]                                                     1,354 kB/s 5s[0m                                                                               Get:33 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libbasicusageenvironment1 amd64 2016.02.09-1 [16.2 kB]
+[33m62% [33 libbasicusageenvironment1 4,008 B/16.2 kB 25%]            1,354 kB/s 5s[0m[33m62% [Working]                                                     1,354 kB/s 5s[0m                                                                               Get:34 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libcddb2 amd64 1.3.2-5fakesync1 [33.9 kB]
+[33m62% [34 libcddb2 5,456 B/33.9 kB 16%]                             1,354 kB/s 5s[0m[33m62% [Working]                                                     1,354 kB/s 5s[0m                                                                               Get:35 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libchromaprint0 amd64 1.3-1 [33.0 kB]
+[33m62% [35 libchromaprint0 5,456 B/33.0 kB 17%]                      1,354 kB/s 5s[0m[33m63% [Working]                                                     1,354 kB/s 5s[0m                                                                               Get:36 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libdc1394-22 amd64 2.2.4-1 [78.8 kB]
+[33m63% [36 libdc1394-22 5,455 B/78.8 kB 7%]                          1,354 kB/s 5s[0m[33m63% [Working]                                                     1,354 kB/s 5s[0m                                                                               Get:37 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libdca0 amd64 0.0.5-7build1 [93.7 kB]
+[33m63% [37 libdca0 5,455 B/93.7 kB 6%]                               1,354 kB/s 5s[0m[33m64% [Working]                                                     1,354 kB/s 5s[0m                                                                               Get:38 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libdvbpsi10 amd64 1.3.0-4 [47.7 kB]
+[33m64% [38 libdvbpsi10 5,456 B/47.7 kB 11%]                          1,354 kB/s 5s[0m[33m64% [Working]                                                     1,354 kB/s 5s[0m                                                                               Get:39 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libdvdread4 amd64 5.0.3-1 [49.6 kB]
+[33m64% [39 libdvdread4 5,456 B/49.6 kB 11%]                          1,354 kB/s 5s[0m[33m65% [Working]                                                     1,354 kB/s 5s[0m                                                                               Get:40 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libdvdnav4 amd64 5.0.3-1 [37.3 kB]
+[33m65% [40 libdvdnav4 5,456 B/37.3 kB 15%]                           1,354 kB/s 5s[0m[33m65% [Working]                                                     1,354 kB/s 5s[0m                                                                               Get:41 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libebml4v5 amd64 1.3.3-1 [44.8 kB]
+[33m65% [41 libebml4v5 5,456 B/44.8 kB 12%]                           1,354 kB/s 5s[0m[33m66% [Working]                                                     1,354 kB/s 5s[0m                                                                               Get:42 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libfaad2 amd64 2.8.0~cvs20150510-1ubuntu0.1 [163 kB]
+[33m66% [42 libfaad2 5,454 B/163 kB 3%]                               1,354 kB/s 5s[0m[33m66% [Working]                                                     1,354 kB/s 5s[0m                                                                               Get:43 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libgroupsock8 amd64 2016.02.09-1 [21.5 kB]
+[33m66% [43 libgroupsock8 5,456 B/21.5 kB 25%]                        1,354 kB/s 5s[0m[33m67% [Working]                                                     1,354 kB/s 5s[0m                                                                               Get:44 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libkate1 amd64 0.4.1-7 [38.1 kB]
+[33m67% [44 libkate1 5,456 B/38.1 kB 14%]                             1,354 kB/s 5s[0m[33m67% [Waiting for headers]                                         1,354 kB/s 5s[0m                                                                               Get:45 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 liblivemedia50 amd64 2016.02.09-1 [294 kB]
+[33m67% [45 liblivemedia50 4,006 B/294 kB 1%]                         1,359 kB/s 5s[0m[33m68% [Working]                                                     1,359 kB/s 5s[0m                                                                               Get:46 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libmad0 amd64 0.15.1b-9ubuntu16.04.1 [64.7 kB]
+[33m68% [46 libmad0 4,419 B/64.7 kB 7%]                               1,359 kB/s 5s[0m[33m69% [Working]                                                     1,359 kB/s 5s[0m                                                                               Get:47 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libmatroska6v5 amd64 1.4.4-1 [109 kB]
+[33m69% [47 libmatroska6v5 4,096 B/109 kB 4%]                         1,359 kB/s 5s[0m[33m70% [Working]                                                     1,359 kB/s 5s[0m                                                                               Get:48 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libpostproc-ffmpeg53 amd64 7:2.8.15-0ubuntu0.16.04.1 [48.9 kB]
+[33m70% [48 libpostproc-ffmpeg53 5,456 B/48.9 kB 11%]                 1,359 kB/s 5s[0m[33m70% [Working]                                                     1,359 kB/s 5s[0m                                                                               Get:49 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libresid-builder0c2a amd64 2.1.1-14ubuntu2 [31.3 kB]
+[33m70% [49 libresid-builder0c2a 4,008 B/31.3 kB 13%]                 1,359 kB/s 5s[0m[33m70% [Working]                                                     1,359 kB/s 5s[0m                                                                               Get:50 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libsidplay2v5 amd64 2.1.1-14ubuntu2 [87.6 kB]
+[33m70% [50 libsidplay2v5 4,007 B/87.6 kB 5%]                         1,359 kB/s 5s[0m[33m71% [Working]                                                     1,359 kB/s 4s[0m                                                                               Get:51 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libssh2-1 amd64 1.5.0-2ubuntu0.1 [70.2 kB]
+[33m71% [51 libssh2-1 4,007 B/70.2 kB 6%]                             1,359 kB/s 4s[0m[33m71% [Waiting for headers]                                         1,359 kB/s 4s[0m                                                                               Get:52 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libswscale-ffmpeg3 amd64 7:2.8.15-0ubuntu0.16.04.1 [146 kB]
+[33m71% [52 libswscale-ffmpeg3 5,454 B/146 kB 4%]                     1,359 kB/s 4s[0m[33m72% [Working]                                                     1,359 kB/s 4s[0m                                                                               Get:53 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libupnp6 amd64 1:1.6.19+git20160116-1 [121 kB]
+[33m72% [53 libupnp6 5,454 B/121 kB 5%]                               1,359 kB/s 4s[0m[33m73% [Working]                                                     1,359 kB/s 4s[0m                                                                               Get:54 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libusageenvironment3 amd64 2016.02.09-1 [7,120 B]
+[33m73% [54 libusageenvironment3 5,457 B/7,120 B 77%]                 1,359 kB/s 4s[0m[33m73% [Working]                                                     1,359 kB/s 4s[0m                                                                               Get:55 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libiso9660-8 amd64 0.83-4.2ubuntu1 [18.4 kB]
+[33m73% [55 libiso9660-8 5,456 B/18.4 kB 30%]                         1,359 kB/s 4s[0m[33m74% [Working]                                                     1,359 kB/s 4s[0m                                                                               Get:56 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libvcdinfo0 amd64 0.7.24+dfsg-0.2 [90.7 kB]
+[33m74% [56 libvcdinfo0 5,455 B/90.7 kB 6%]                           1,359 kB/s 4s[0m[33m74% [Working]                                                     1,359 kB/s 4s[0m                                                                               Get:57 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 vlc-nox amd64 2.2.2-5ubuntu0.16.04.4 [2,325 kB]
+[33m74% [57 vlc-nox 5,452 B/2,325 kB 0%]                              1,359 kB/s 4s[0m[33m82% [Working]                                                     1,359 kB/s 2s[0m                                                                               Get:58 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 libgles2-mesa amd64 18.0.5-0ubuntu0~16.04.1 [13.4 kB]
+[33m82% [58 libgles2-mesa 13.4 kB/13.4 kB 100%]                       1,359 kB/s 2s[0m[33m83% [Working]                                                     1,359 kB/s 2s[0m                                                                               Get:59 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libqt5x11extras5 amd64 5.5.1-3build1 [7,876 B]
+[33m83% [59 libqt5x11extras5 5,457 B/7,876 B 69%]                     1,359 kB/s 2s[0m[33m83% [Working]                                                     1,359 kB/s 2s[0m                                                                               Get:60 http://in.archive.ubuntu.com/ubuntu xenial/main amd64 libsdl1.2debian amd64 1.2.15+dfsg1-3 [168 kB]
+[33m83% [60 libsdl1.2debian 4,739 B/168 kB 3%]                        1,359 kB/s 2s[0m[33m84% [Working]                                                     1,359 kB/s 2s[0m                                                                               Get:61 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libsdl-image1.2 amd64 1.2.12-5+deb9u1build0.16.04.1 [29.1 kB]
+[33m84% [61 libsdl-image1.2 5,456 B/29.1 kB 19%]                      1,359 kB/s 2s[0m[33m84% [Working]                                                     1,359 kB/s 2s[0m                                                                               Get:62 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libva-drm1 amd64 1.7.0-1ubuntu0.1 [8,336 B]
+[33m84% [62 libva-drm1 3,858 B/8,336 B 46%]                           1,359 kB/s 2s[0m[33m84% [Working]                                                     1,359 kB/s 2s[0m                                                                               Get:63 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 libva-x11-1 amd64 1.7.0-1ubuntu0.1 [11.9 kB]
+[33m84% [63 libva-x11-1 5,456 B/11.9 kB 46%]                          1,359 kB/s 2s[0m[33m85% [Working]                                                     1,359 kB/s 2s[0m                                                                               Get:64 http://in.archive.ubuntu.com/ubuntu xenial/main amd64 libxcb-composite0 amd64 1.11.1-1ubuntu1 [5,100 B]
+[33m85% [64 libxcb-composite0 5,100 B/5,100 B 100%]                   1,359 kB/s 2s[0m[33m85% [Working]                                                     1,359 kB/s 2s[0m                                                                               Get:65 http://in.archive.ubuntu.com/ubuntu xenial/main amd64 libxcb-xv0 amd64 1.11.1-1ubuntu1 [8,994 B]
+[33m85% [65 libxcb-xv0 6,905 B/8,994 B 77%]                           1,359 kB/s 2s[0m[33m85% [Working]                                                     1,359 kB/s 2s[0m                                                                               Get:66 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 vlc amd64 2.2.2-5ubuntu0.16.04.4 [1,505 kB]
+[33m85% [66 vlc 5,452 B/1,505 kB 0%]                                  1,359 kB/s 2s[0m[33m91% [Working]                                                     1,359 kB/s 1s[0m                                                                               Get:67 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 vlc-plugin-notify amd64 2.2.2-5ubuntu0.16.04.4 [6,222 B]
+[33m91% [67 vlc-plugin-notify 6,222 B/6,222 B 100%]                   1,359 kB/s 1s[0m[33m91% [Working]                                                     1,359 kB/s 1s[0m                                                                               Get:68 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 vlc-plugin-samba amd64 2.2.2-5ubuntu0.16.04.4 [5,938 B]
+[33m91% [68 vlc-plugin-samba 5,938 B/5,938 B 100%]                    1,359 kB/s 1s[0m[33m91% [Working]                                                     1,359 kB/s 1s[0m                                                                               Get:69 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libaacs0 amd64 0.8.1-1 [47.4 kB]
+[33m91% [69 libaacs0 1,448 B/47.4 kB 3%]                              1,359 kB/s 1s[0m[33m92% [Working]                                                     1,359 kB/s 1s[0m                                                                               Get:70 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 libbdplus0 amd64 0.1.2-1 [47.1 kB]
+[33m92% [70 libbdplus0 5,456 B/47.1 kB 12%]                           1,359 kB/s 1s[0m[33m92% [Waiting for headers]                                         1,359 kB/s 1s[0m                                                                               Get:71 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 mesa-va-drivers amd64 18.0.5-0ubuntu0~16.04.1 [1,826 kB]
+[33m92% [71 mesa-va-drivers 5,452 B/1,826 kB 0%]                      1,359 kB/s 1s[0m[33m99% [Working]                                                     1,359 kB/s 0s[0m                                                                               Get:72 http://in.archive.ubuntu.com/ubuntu xenial/universe amd64 i965-va-driver amd64 1.7.0-1 [272 kB]
+[33m99% [72 i965-va-driver 5,454 B/272 kB 2%]                         1,359 kB/s 0s[0m[33m100% [Waiting for headers]                                        1,359 kB/s 0s[0m                                                                               Get:73 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 va-driver-all amd64 1.7.0-1ubuntu0.1 [4,534 B]
+[33m100% [73 va-driver-all 4,534 B/4,534 B 100%]                      1,359 kB/s 0s[0m[33m100% [Working]                                                    1,359 kB/s 0s[0m                                                                               Fetched 23.7 MB in 17s (1,351 kB/s)
+Extracting templates from packages: 41%Extracting templates from packages: 82%Extracting templates from packages: 100%
+
+7[0;23r8[1ASelecting previously unselected package libcrystalhd3:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 283829 files and directories currently installed.)
+Preparing to unpack .../libcrystalhd3_1%3a0.0~git20110715.fdd2f19-11build1_amd64.deb ...
+7[24;0f[42m[30mProgress: [  0%][49m[39m [..........................................................] 8Unpacking libcrystalhd3:amd64 (1:0.0~git20110715.fdd2f19-11build1) ...
+Selecting previously unselected package libdirectfb-1.2-9:amd64.
+Preparing to unpack .../libdirectfb-1.2-9_1.2.10.0-5.1_amd64.deb ...
+7[24;0f[42m[30mProgress: [  1%][49m[39m [#.........................................................] 8Unpacking libdirectfb-1.2-9:amd64 (1.2.10.0-5.1) ...
+Selecting previously unselected package libgsm1:amd64.
+Preparing to unpack .../libgsm1_1.0.13-4_amd64.deb ...
+Unpacking libgsm1:amd64 (1.0.13-4) ...
+7[24;0f[42m[30mProgress: [  2%][49m[39m [##........................................................] 8Selecting previously unselected package libmpcdec6:amd64.
+Preparing to unpack .../libmpcdec6_2%3a0.1~r459-4.1build1_amd64.deb ...
+Unpacking libmpcdec6:amd64 (2:0.1~r459-4.1build1) ...
+7[24;0f[42m[30mProgress: [  3%][49m[39m [##........................................................] 8Selecting previously unselected package libmpeg2-4:amd64.
+Preparing to unpack .../libmpeg2-4_0.5.1-7_amd64.deb ...
+Unpacking libmpeg2-4:amd64 (0.5.1-7) ...
+7[24;0f[42m[30mProgress: [  4%][49m[39m [###.......................................................] 8Selecting previously unselected package libschroedinger-1.0-0:amd64.
+Preparing to unpack .../libschroedinger-1.0-0_1.0.11-2.1build1_amd64.deb ...
+Unpacking libschroedinger-1.0-0:amd64 (1.0.11-2.1build1) ...
+Selecting previously unselected package libproxy-tools.
+Preparing to unpack .../libproxy-tools_0.4.11-5ubuntu1_amd64.deb ...
+7[24;0f[42m[30mProgress: [  5%][49m[39m [####......................................................] 8Unpacking libproxy-tools (0.4.11-5ubuntu1) ...
+Selecting previously unselected package vlc-data.
+Preparing to unpack .../vlc-data_2.2.2-5ubuntu0.16.04.4_all.deb ...
+7[24;0f[42m[30mProgress: [  6%][49m[39m [####......................................................] 8Unpacking vlc-data (2.2.2-5ubuntu0.16.04.4) ...
+Selecting previously unselected package libvlccore8.
+Preparing to unpack .../libvlccore8_2.2.2-5ubuntu0.16.04.4_amd64.deb ...
+Unpacking libvlccore8 (2.2.2-5ubuntu0.16.04.4) ...
+7[24;0f[42m[30mProgress: [  7%][49m[39m [#####.....................................................] 8Selecting previously unselected package libvlc5.
+Preparing to unpack .../libvlc5_2.2.2-5ubuntu0.16.04.4_amd64.deb ...
+Unpacking libvlc5 (2.2.2-5ubuntu0.16.04.4) ...
+7[24;0f[42m[30mProgress: [  8%][49m[39m [#####.....................................................] 8Selecting previously unselected package liba52-0.7.4:amd64.
+Preparing to unpack .../liba52-0.7.4_0.7.4-18_amd64.deb ...
+Unpacking liba52-0.7.4:amd64 (0.7.4-18) ...
+7[24;0f[42m[30mProgress: [  9%][49m[39m [######....................................................] 8Selecting previously unselected package libass5:amd64.
+Preparing to unpack .../libass5_0.13.1-1_amd64.deb ...
+Unpacking libass5:amd64 (0.13.1-1) ...
+Selecting previously unselected package libavutil-ffmpeg54:amd64.
+Preparing to unpack .../libavutil-ffmpeg54_7%3a2.8.15-0ubuntu0.16.04.1_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 10%][49m[39m [######....................................................] 8Unpacking libavutil-ffmpeg54:amd64 (7:2.8.15-0ubuntu0.16.04.1) ...
+Selecting previously unselected package libmp3lame0:amd64.
+Preparing to unpack .../libmp3lame0_3.99.5+repack1-9build1_amd64.deb ...
+Unpacking libmp3lame0:amd64 (3.99.5+repack1-9build1) ...
+7[24;0f[42m[30mProgress: [ 11%][49m[39m [#######...................................................] 8Selecting previously unselected package libopenjpeg5:amd64.
+Preparing to unpack .../libopenjpeg5_1%3a1.5.2-3.1_amd64.deb ...
+Unpacking libopenjpeg5:amd64 (1:1.5.2-3.1) ...
+7[24;0f[42m[30mProgress: [ 12%][49m[39m [#######...................................................] 8Selecting previously unselected package libshine3:amd64.
+Preparing to unpack .../libshine3_3.1.0-4_amd64.deb ...
+Unpacking libshine3:amd64 (3.1.0-4) ...
+7[24;0f[42m[30mProgress: [ 13%][49m[39m [########..................................................] 8Selecting previously unselected package libsnappy1v5:amd64.
+Preparing to unpack .../libsnappy1v5_1.1.3-2_amd64.deb ...
+Unpacking libsnappy1v5:amd64 (1.1.3-2) ...
+Selecting previously unselected package libsoxr0:amd64.
+Preparing to unpack .../libsoxr0_0.1.2-1_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 14%][49m[39m [#########.................................................] 8Unpacking libsoxr0:amd64 (0.1.2-1) ...
+Selecting previously unselected package libswresample-ffmpeg1:amd64.
+Preparing to unpack .../libswresample-ffmpeg1_7%3a2.8.15-0ubuntu0.16.04.1_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 15%][49m[39m [#########.................................................] 8Unpacking libswresample-ffmpeg1:amd64 (7:2.8.15-0ubuntu0.16.04.1) ...
+Selecting previously unselected package libtwolame0:amd64.
+Preparing to unpack .../libtwolame0_0.3.13-1.2_amd64.deb ...
+Unpacking libtwolame0:amd64 (0.3.13-1.2) ...
+7[24;0f[42m[30mProgress: [ 16%][49m[39m [##########................................................] 8Selecting previously unselected package libva1:amd64.
+Preparing to unpack .../libva1_1.7.0-1ubuntu0.1_amd64.deb ...
+Unpacking libva1:amd64 (1.7.0-1ubuntu0.1) ...
+7[24;0f[42m[30mProgress: [ 17%][49m[39m [##########................................................] 8Selecting previously unselected package libx264-148:amd64.
+Preparing to unpack .../libx264-148_2%3a0.148.2643+git5c65704-1_amd64.deb ...
+Unpacking libx264-148:amd64 (2:0.148.2643+git5c65704-1) ...
+7[24;0f[42m[30mProgress: [ 18%][49m[39m [###########...............................................] 8Selecting previously unselected package libx265-79:amd64.
+Preparing to unpack .../libx265-79_1.9-3_amd64.deb ...
+Unpacking libx265-79:amd64 (1.9-3) ...
+Selecting previously unselected package libxvidcore4:amd64.
+Preparing to unpack .../libxvidcore4_2%3a1.3.4-1_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 19%][49m[39m [############..............................................] 8Unpacking libxvidcore4:amd64 (2:1.3.4-1) ...
+Selecting previously unselected package libzvbi-common.
+Preparing to unpack .../libzvbi-common_0.2.35-10_all.deb ...
+Unpacking libzvbi-common (0.2.35-10) ...
+7[24;0f[42m[30mProgress: [ 20%][49m[39m [############..............................................] 8Selecting previously unselected package libzvbi0:amd64.
+Preparing to unpack .../libzvbi0_0.2.35-10_amd64.deb ...
+Unpacking libzvbi0:amd64 (0.2.35-10) ...
+7[24;0f[42m[30mProgress: [ 21%][49m[39m [#############.............................................] 8Selecting previously unselected package libavcodec-ffmpeg56:amd64.
+Preparing to unpack .../libavcodec-ffmpeg56_7%3a2.8.15-0ubuntu0.16.04.1_amd64.deb ...
+Unpacking libavcodec-ffmpeg56:amd64 (7:2.8.15-0ubuntu0.16.04.1) ...
+7[24;0f[42m[30mProgress: [ 22%][49m[39m [#############.............................................] 8Selecting previously unselected package libbluray1:amd64.
+Preparing to unpack .../libbluray1_1%3a0.9.2-2_amd64.deb ...
+Unpacking libbluray1:amd64 (1:0.9.2-2) ...
+Selecting previously unselected package libgme0:amd64.
+Preparing to unpack .../libgme0_0.6.0-3ubuntu0.16.04.1_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 23%][49m[39m [##############............................................] 8Unpacking libgme0:amd64 (0.6.0-3ubuntu0.16.04.1) ...
+Selecting previously unselected package libmodplug1:amd64.
+Preparing to unpack .../libmodplug1_1%3a0.8.8.5-2_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 24%][49m[39m [##############............................................] 8Unpacking libmodplug1:amd64 (1:0.8.8.5-2) ...
+Selecting previously unselected package libssh-gcrypt-4:amd64.
+Preparing to unpack .../libssh-gcrypt-4_0.6.3-4.3ubuntu0.2_amd64.deb ...
+Unpacking libssh-gcrypt-4:amd64 (0.6.3-4.3ubuntu0.2) ...
+7[24;0f[42m[30mProgress: [ 25%][49m[39m [###############...........................................] 8Selecting previously unselected package libavformat-ffmpeg56:amd64.
+Preparing to unpack .../libavformat-ffmpeg56_7%3a2.8.15-0ubuntu0.16.04.1_amd64.deb ...
+Unpacking libavformat-ffmpeg56:amd64 (7:2.8.15-0ubuntu0.16.04.1) ...
+7[24;0f[42m[30mProgress: [ 26%][49m[39m [################..........................................] 8Selecting previously unselected package libbasicusageenvironment1:amd64.
+Preparing to unpack .../libbasicusageenvironment1_2016.02.09-1_amd64.deb ...
+Unpacking libbasicusageenvironment1:amd64 (2016.02.09-1) ...
+7[24;0f[42m[30mProgress: [ 27%][49m[39m [################..........................................] 8Selecting previously unselected package libcddb2.
+Preparing to unpack .../libcddb2_1.3.2-5fakesync1_amd64.deb ...
+Unpacking libcddb2 (1.3.2-5fakesync1) ...
+Selecting previously unselected package libchromaprint0:amd64.
+Preparing to unpack .../libchromaprint0_1.3-1_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 28%][49m[39m [#################.........................................] 8Unpacking libchromaprint0:amd64 (1.3-1) ...
+Selecting previously unselected package libdc1394-22:amd64.
+Preparing to unpack .../libdc1394-22_2.2.4-1_amd64.deb ...
+Unpacking libdc1394-22:amd64 (2.2.4-1) ...
+7[24;0f[42m[30mProgress: [ 29%][49m[39m [#################.........................................] 8Selecting previously unselected package libdca0:amd64.
+Preparing to unpack .../libdca0_0.0.5-7build1_amd64.deb ...
+Unpacking libdca0:amd64 (0.0.5-7build1) ...
+7[24;0f[42m[30mProgress: [ 30%][49m[39m [##################........................................] 8Selecting previously unselected package libdvbpsi10:amd64.
+Preparing to unpack .../libdvbpsi10_1.3.0-4_amd64.deb ...
+Unpacking libdvbpsi10:amd64 (1.3.0-4) ...
+7[24;0f[42m[30mProgress: [ 31%][49m[39m [###################.......................................] 8Selecting previously unselected package libdvdread4:amd64.
+Preparing to unpack .../libdvdread4_5.0.3-1_amd64.deb ...
+Unpacking libdvdread4:amd64 (5.0.3-1) ...
+Selecting previously unselected package libdvdnav4:amd64.
+Preparing to unpack .../libdvdnav4_5.0.3-1_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 32%][49m[39m [###################.......................................] 8Unpacking libdvdnav4:amd64 (5.0.3-1) ...
+Selecting previously unselected package libebml4v5:amd64.
+Preparing to unpack .../libebml4v5_1.3.3-1_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 33%][49m[39m [####################......................................] 8Unpacking libebml4v5:amd64 (1.3.3-1) ...
+Selecting previously unselected package libfaad2:amd64.
+Preparing to unpack .../libfaad2_2.8.0~cvs20150510-1ubuntu0.1_amd64.deb ...
+Unpacking libfaad2:amd64 (2.8.0~cvs20150510-1ubuntu0.1) ...
+7[24;0f[42m[30mProgress: [ 34%][49m[39m [####################......................................] 8Selecting previously unselected package libgroupsock8:amd64.
+Preparing to unpack .../libgroupsock8_2016.02.09-1_amd64.deb ...
+Unpacking libgroupsock8:amd64 (2016.02.09-1) ...
+7[24;0f[42m[30mProgress: [ 35%][49m[39m [#####################.....................................] 8Selecting previously unselected package libkate1:amd64.
+Preparing to unpack .../libkate1_0.4.1-7_amd64.deb ...
+Unpacking libkate1:amd64 (0.4.1-7) ...
+7[24;0f[42m[30mProgress: [ 36%][49m[39m [#####################.....................................] 8Selecting previously unselected package liblivemedia50:amd64.
+Preparing to unpack .../liblivemedia50_2016.02.09-1_amd64.deb ...
+Unpacking liblivemedia50:amd64 (2016.02.09-1) ...
+Selecting previously unselected package libmad0:amd64.
+Preparing to unpack .../libmad0_0.15.1b-9ubuntu16.04.1_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 37%][49m[39m [######################....................................] 8Unpacking libmad0:amd64 (0.15.1b-9ubuntu16.04.1) ...
+Selecting previously unselected package libmatroska6v5:amd64.
+Preparing to unpack .../libmatroska6v5_1.4.4-1_amd64.deb ...
+Unpacking libmatroska6v5:amd64 (1.4.4-1) ...
+7[24;0f[42m[30mProgress: [ 38%][49m[39m [#######################...................................] 8Selecting previously unselected package libpostproc-ffmpeg53:amd64.
+Preparing to unpack .../libpostproc-ffmpeg53_7%3a2.8.15-0ubuntu0.16.04.1_amd64.deb ...
+Unpacking libpostproc-ffmpeg53:amd64 (7:2.8.15-0ubuntu0.16.04.1) ...
+7[24;0f[42m[30mProgress: [ 39%][49m[39m [#######################...................................] 8Selecting previously unselected package libresid-builder0c2a.
+Preparing to unpack .../libresid-builder0c2a_2.1.1-14ubuntu2_amd64.deb ...
+Unpacking libresid-builder0c2a (2.1.1-14ubuntu2) ...
+7[24;0f[42m[30mProgress: [ 40%][49m[39m [########################..................................] 8Selecting previously unselected package libsidplay2v5.
+Preparing to unpack .../libsidplay2v5_2.1.1-14ubuntu2_amd64.deb ...
+Unpacking libsidplay2v5 (2.1.1-14ubuntu2) ...
+Selecting previously unselected package libssh2-1:amd64.
+Preparing to unpack .../libssh2-1_1.5.0-2ubuntu0.1_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 41%][49m[39m [########################..................................] 8Unpacking libssh2-1:amd64 (1.5.0-2ubuntu0.1) ...
+Selecting previously unselected package libswscale-ffmpeg3:amd64.
+Preparing to unpack .../libswscale-ffmpeg3_7%3a2.8.15-0ubuntu0.16.04.1_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 42%][49m[39m [#########################.................................] 8Unpacking libswscale-ffmpeg3:amd64 (7:2.8.15-0ubuntu0.16.04.1) ...
+Selecting previously unselected package libupnp6.
+Preparing to unpack .../libupnp6_1%3a1.6.19+git20160116-1_amd64.deb ...
+Unpacking libupnp6 (1:1.6.19+git20160116-1) ...
+7[24;0f[42m[30mProgress: [ 43%][49m[39m [##########################................................] 8Selecting previously unselected package libusageenvironment3:amd64.
+Preparing to unpack .../libusageenvironment3_2016.02.09-1_amd64.deb ...
+Unpacking libusageenvironment3:amd64 (2016.02.09-1) ...
+7[24;0f[42m[30mProgress: [ 44%][49m[39m [##########################................................] 8Selecting previously unselected package libiso9660-8:amd64.
+Preparing to unpack .../libiso9660-8_0.83-4.2ubuntu1_amd64.deb ...
+Unpacking libiso9660-8:amd64 (0.83-4.2ubuntu1) ...
+7[24;0f[42m[30mProgress: [ 45%][49m[39m [###########################...............................] 8Selecting previously unselected package libvcdinfo0.
+Preparing to unpack .../libvcdinfo0_0.7.24+dfsg-0.2_amd64.deb ...
+Unpacking libvcdinfo0 (0.7.24+dfsg-0.2) ...
+Selecting previously unselected package vlc-nox.
+Preparing to unpack .../vlc-nox_2.2.2-5ubuntu0.16.04.4_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 46%][49m[39m [###########################...............................] 8Unpacking vlc-nox (2.2.2-5ubuntu0.16.04.4) ...
+Selecting previously unselected package libgles2-mesa:amd64.
+Preparing to unpack .../libgles2-mesa_18.0.5-0ubuntu0~16.04.1_amd64.deb ...
+Unpacking libgles2-mesa:amd64 (18.0.5-0ubuntu0~16.04.1) ...
+7[24;0f[42m[30mProgress: [ 47%][49m[39m [############################..............................] 8Selecting previously unselected package libqt5x11extras5:amd64.
+Preparing to unpack .../libqt5x11extras5_5.5.1-3build1_amd64.deb ...
+Unpacking libqt5x11extras5:amd64 (5.5.1-3build1) ...
+7[24;0f[42m[30mProgress: [ 48%][49m[39m [############################..............................] 8Selecting previously unselected package libsdl1.2debian:amd64.
+Preparing to unpack .../libsdl1.2debian_1.2.15+dfsg1-3_amd64.deb ...
+Unpacking libsdl1.2debian:amd64 (1.2.15+dfsg1-3) ...
+7[24;0f[42m[30mProgress: [ 49%][49m[39m [#############################.............................] 8Selecting previously unselected package libsdl-image1.2:amd64.
+Preparing to unpack .../libsdl-image1.2_1.2.12-5+deb9u1build0.16.04.1_amd64.deb ...
+Unpacking libsdl-image1.2:amd64 (1.2.12-5+deb9u1build0.16.04.1) ...
+7[24;0f[42m[30mProgress: [ 50%][49m[39m [#############################.............................] 8Selecting previously unselected package libva-drm1:amd64.
+Preparing to unpack .../libva-drm1_1.7.0-1ubuntu0.1_amd64.deb ...
+Unpacking libva-drm1:amd64 (1.7.0-1ubuntu0.1) ...
+Selecting previously unselected package libva-x11-1:amd64.
+Preparing to unpack .../libva-x11-1_1.7.0-1ubuntu0.1_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 51%][49m[39m [##############################............................] 8Unpacking libva-x11-1:amd64 (1.7.0-1ubuntu0.1) ...
+Selecting previously unselected package libxcb-composite0:amd64.
+Preparing to unpack .../libxcb-composite0_1.11.1-1ubuntu1_amd64.deb ...
+Unpacking libxcb-composite0:amd64 (1.11.1-1ubuntu1) ...
+7[24;0f[42m[30mProgress: [ 52%][49m[39m [###############################...........................] 8Selecting previously unselected package libxcb-xv0:amd64.
+Preparing to unpack .../libxcb-xv0_1.11.1-1ubuntu1_amd64.deb ...
+Unpacking libxcb-xv0:amd64 (1.11.1-1ubuntu1) ...
+7[24;0f[42m[30mProgress: [ 53%][49m[39m [###############################...........................] 8Selecting previously unselected package vlc.
+Preparing to unpack .../vlc_2.2.2-5ubuntu0.16.04.4_amd64.deb ...
+Unpacking vlc (2.2.2-5ubuntu0.16.04.4) ...
+7[24;0f[42m[30mProgress: [ 54%][49m[39m [################################..........................] 8Selecting previously unselected package vlc-plugin-notify.
+Preparing to unpack .../vlc-plugin-notify_2.2.2-5ubuntu0.16.04.4_amd64.deb ...
+Unpacking vlc-plugin-notify (2.2.2-5ubuntu0.16.04.4) ...
+Selecting previously unselected package vlc-plugin-samba.
+Preparing to unpack .../vlc-plugin-samba_2.2.2-5ubuntu0.16.04.4_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 55%][49m[39m [#################################.........................] 8Unpacking vlc-plugin-samba (2.2.2-5ubuntu0.16.04.4) ...
+Selecting previously unselected package libaacs0:amd64.
+Preparing to unpack .../libaacs0_0.8.1-1_amd64.deb ...
+7[24;0f[42m[30mProgress: [ 56%][49m[39m [#################################.........................] 8Unpacking libaacs0:amd64 (0.8.1-1) ...
+Selecting previously unselected package libbdplus0:amd64.
+Preparing to unpack .../libbdplus0_0.1.2-1_amd64.deb ...
+Unpacking libbdplus0:amd64 (0.1.2-1) ...
+7[24;0f[42m[30mProgress: [ 57%][49m[39m [##################################........................] 8Selecting previously unselected package mesa-va-drivers:amd64.
+Preparing to unpack .../mesa-va-drivers_18.0.5-0ubuntu0~16.04.1_amd64.deb ...
+Unpacking mesa-va-drivers:amd64 (18.0.5-0ubuntu0~16.04.1) ...
+7[24;0f[42m[30mProgress: [ 58%][49m[39m [##################################........................] 8Selecting previously unselected package i965-va-driver:amd64.
+Preparing to unpack .../i965-va-driver_1.7.0-1_amd64.deb ...
+Unpacking i965-va-driver:amd64 (1.7.0-1) ...
+7[24;0f[42m[30mProgress: [ 59%][49m[39m [###################################.......................] 8Selecting previously unselected package va-driver-all:amd64.
+Preparing to unpack .../va-driver-all_1.7.0-1ubuntu0.1_amd64.deb ...
+Unpacking va-driver-all:amd64 (1.7.0-1ubuntu0.1) ...
+Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for hicolor-icon-theme (0.15-0ubuntu1.1) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Processing triggers for bamfdaemon (0.5.3~bzr0+16.04.20180209-0ubuntu1) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+Processing triggers for desktop-file-utils (0.22-1ubuntu5.2) ...
+Processing triggers for gnome-menus (3.13.3-6ubuntu3.1) ...
+Processing triggers for mime-support (3.59ubuntu1) ...
+Setting up libcrystalhd3:amd64 (1:0.0~git20110715.fdd2f19-11build1) ...
+7[24;0f[42m[30mProgress: [ 60%][49m[39m [###################################.......................] 8Setting up libdirectfb-1.2-9:amd64 (1.2.10.0-5.1) ...
+Setting up libgsm1:amd64 (1.0.13-4) ...
+7[24;0f[42m[30mProgress: [ 61%][49m[39m [####################################......................] 8Setting up libmpcdec6:amd64 (2:0.1~r459-4.1build1) ...
+7[24;0f[42m[30mProgress: [ 62%][49m[39m [####################################......................] 8Setting up libmpeg2-4:amd64 (0.5.1-7) ...
+Setting up libschroedinger-1.0-0:amd64 (1.0.11-2.1build1) ...
+7[24;0f[42m[30mProgress: [ 63%][49m[39m [#####################################.....................] 8Setting up libproxy-tools (0.4.11-5ubuntu1) ...
+Setting up vlc-data (2.2.2-5ubuntu0.16.04.4) ...
+7[24;0f[42m[30mProgress: [ 64%][49m[39m [######################################....................] 8Setting up libvlccore8 (2.2.2-5ubuntu0.16.04.4) ...
+Setting up libvlc5 (2.2.2-5ubuntu0.16.04.4) ...
+7[24;0f[42m[30mProgress: [ 65%][49m[39m [######################################....................] 8Setting up liba52-0.7.4:amd64 (0.7.4-18) ...
+Setting up libass5:amd64 (0.13.1-1) ...
+7[24;0f[42m[30mProgress: [ 66%][49m[39m [#######################################...................] 8Setting up libavutil-ffmpeg54:amd64 (7:2.8.15-0ubuntu0.16.04.1) ...
+Setting up libmp3lame0:amd64 (3.99.5+repack1-9build1) ...
+7[24;0f[42m[30mProgress: [ 67%][49m[39m [#######################################...................] 8Setting up libopenjpeg5:amd64 (1:1.5.2-3.1) ...
+7[24;0f[42m[30mProgress: [ 68%][49m[39m [########################################..................] 8Setting up libshine3:amd64 (3.1.0-4) ...
+Setting up libsnappy1v5:amd64 (1.1.3-2) ...
+7[24;0f[42m[30mProgress: [ 69%][49m[39m [#########################################.................] 8Setting up libsoxr0:amd64 (0.1.2-1) ...
+Setting up libswresample-ffmpeg1:amd64 (7:2.8.15-0ubuntu0.16.04.1) ...
+7[24;0f[42m[30mProgress: [ 70%][49m[39m [#########################################.................] 8Setting up libtwolame0:amd64 (0.3.13-1.2) ...
+Setting up libva1:amd64 (1.7.0-1ubuntu0.1) ...
+7[24;0f[42m[30mProgress: [ 71%][49m[39m [##########################################................] 8Setting up libx264-148:amd64 (2:0.148.2643+git5c65704-1) ...
+Setting up libx265-79:amd64 (1.9-3) ...
+7[24;0f[42m[30mProgress: [ 72%][49m[39m [##########################################................] 8Setting up libxvidcore4:amd64 (2:1.3.4-1) ...
+Setting up libzvbi-common (0.2.35-10) ...
+7[24;0f[42m[30mProgress: [ 73%][49m[39m [###########################################...............] 8Setting up libzvbi0:amd64 (0.2.35-10) ...
+7[24;0f[42m[30mProgress: [ 74%][49m[39m [###########################################...............] 8Setting up libavcodec-ffmpeg56:amd64 (7:2.8.15-0ubuntu0.16.04.1) ...
+Setting up libbluray1:amd64 (1:0.9.2-2) ...
+7[24;0f[42m[30mProgress: [ 75%][49m[39m [############################################..............] 8Setting up libgme0:amd64 (0.6.0-3ubuntu0.16.04.1) ...
+Setting up libmodplug1:amd64 (1:0.8.8.5-2) ...
+7[24;0f[42m[30mProgress: [ 76%][49m[39m [#############################################.............] 8Setting up libssh-gcrypt-4:amd64 (0.6.3-4.3ubuntu0.2) ...
+Setting up libavformat-ffmpeg56:amd64 (7:2.8.15-0ubuntu0.16.04.1) ...
+7[24;0f[42m[30mProgress: [ 77%][49m[39m [#############################################.............] 8Setting up libbasicusageenvironment1:amd64 (2016.02.09-1) ...
+Setting up libcddb2 (1.3.2-5fakesync1) ...
+7[24;0f[42m[30mProgress: [ 78%][49m[39m [##############################################............] 8Setting up libchromaprint0:amd64 (1.3-1) ...
+Setting up libdc1394-22:amd64 (2.2.4-1) ...
+7[24;0f[42m[30mProgress: [ 79%][49m[39m [##############################################............] 8Setting up libdca0:amd64 (0.0.5-7build1) ...
+7[24;0f[42m[30mProgress: [ 80%][49m[39m [###############################################...........] 8Setting up libdvbpsi10:amd64 (1.3.0-4) ...
+Setting up libdvdread4:amd64 (5.0.3-1) ...
+7[24;0f[42m[30mProgress: [ 81%][49m[39m [################################################..........] 8Setting up libdvdnav4:amd64 (5.0.3-1) ...
+Setting up libebml4v5:amd64 (1.3.3-1) ...
+7[24;0f[42m[30mProgress: [ 82%][49m[39m [################################################..........] 8Setting up libfaad2:amd64 (2.8.0~cvs20150510-1ubuntu0.1) ...
+Setting up libgroupsock8:amd64 (2016.02.09-1) ...
+7[24;0f[42m[30mProgress: [ 83%][49m[39m [#################################################.........] 8Setting up libkate1:amd64 (0.4.1-7) ...
+Setting up liblivemedia50:amd64 (2016.02.09-1) ...
+7[24;0f[42m[30mProgress: [ 84%][49m[39m [#################################################.........] 8Setting up libmad0:amd64 (0.15.1b-9ubuntu16.04.1) ...
+Setting up libmatroska6v5:amd64 (1.4.4-1) ...
+7[24;0f[42m[30mProgress: [ 85%][49m[39m [##################################################........] 8Setting up libpostproc-ffmpeg53:amd64 (7:2.8.15-0ubuntu0.16.04.1) ...
+7[24;0f[42m[30mProgress: [ 86%][49m[39m [##################################################........] 8Setting up libresid-builder0c2a (2.1.1-14ubuntu2) ...
+Setting up libsidplay2v5 (2.1.1-14ubuntu2) ...
+7[24;0f[42m[30mProgress: [ 87%][49m[39m [###################################################.......] 8Setting up libssh2-1:amd64 (1.5.0-2ubuntu0.1) ...
+Setting up libswscale-ffmpeg3:amd64 (7:2.8.15-0ubuntu0.16.04.1) ...
+7[24;0f[42m[30mProgress: [ 88%][49m[39m [####################################################......] 8Setting up libupnp6 (1:1.6.19+git20160116-1) ...
+Setting up libusageenvironment3:amd64 (2016.02.09-1) ...
+7[24;0f[42m[30mProgress: [ 89%][49m[39m [####################################################......] 8Setting up libiso9660-8:amd64 (0.83-4.2ubuntu1) ...
+Setting up libvcdinfo0 (0.7.24+dfsg-0.2) ...
+7[24;0f[42m[30mProgress: [ 90%][49m[39m [#####################################################.....] 8Setting up vlc-nox (2.2.2-5ubuntu0.16.04.4) ...
+Setting up libgles2-mesa:amd64 (18.0.5-0ubuntu0~16.04.1) ...
+7[24;0f[42m[30mProgress: [ 91%][49m[39m [#####################################################.....] 8Setting up libqt5x11extras5:amd64 (5.5.1-3build1) ...
+7[24;0f[42m[30mProgress: [ 92%][49m[39m [######################################################....] 8Setting up libsdl1.2debian:amd64 (1.2.15+dfsg1-3) ...
+Setting up libsdl-image1.2:amd64 (1.2.12-5+deb9u1build0.16.04.1) ...
+7[24;0f[42m[30mProgress: [ 93%][49m[39m [#######################################################...] 8Setting up libva-drm1:amd64 (1.7.0-1ubuntu0.1) ...
+Setting up libva-x11-1:amd64 (1.7.0-1ubuntu0.1) ...
+7[24;0f[42m[30mProgress: [ 94%][49m[39m [#######################################################...] 8Setting up libxcb-composite0:amd64 (1.11.1-1ubuntu1) ...
+Setting up libxcb-xv0:amd64 (1.11.1-1ubuntu1) ...
+7[24;0f[42m[30mProgress: [ 95%][49m[39m [########################################################..] 8Setting up vlc (2.2.2-5ubuntu0.16.04.4) ...
+Setting up vlc-plugin-notify (2.2.2-5ubuntu0.16.04.4) ...
+7[24;0f[42m[30mProgress: [ 96%][49m[39m [########################################################..] 8Setting up vlc-plugin-samba (2.2.2-5ubuntu0.16.04.4) ...
+Setting up libaacs0:amd64 (0.8.1-1) ...
+7[24;0f[42m[30mProgress: [ 97%][49m[39m [#########################################################.] 8Setting up libbdplus0:amd64 (0.1.2-1) ...
+7[24;0f[42m[30mProgress: [ 98%][49m[39m [#########################################################.] 8Setting up mesa-va-drivers:amd64 (18.0.5-0ubuntu0~16.04.1) ...
+Setting up i965-va-driver:amd64 (1.7.0-1) ...
+7[24;0f[42m[30mProgress: [ 99%][49m[39m [##########################################################] 8Setting up va-driver-all:amd64 (1.7.0-1ubuntu0.1) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Processing triggers for vlc-nox (2.2.2-5ubuntu0.16.04.4) ...
+
+7[0;24r8[1A[J]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ sudo apt install vlc[3Pshow[C[C[C[C
+Package: vlc
+Version: 2.2.2-5ubuntu0.16.04.4
+Priority: optional
+Section: universe/graphics
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 4,944 kB
+Provides: mp3-decoder
+Pre-Depends: dpkg (>= 1.17.14)
+Depends: fonts-freefont-ttf, vlc-nox (= 2.2.2-5ubuntu0.16.04.4), libaa1 (>= 1.4p5), libavcodec-ffmpeg56 (>= 7:2.4) | libavcodec-ffmpeg-extra56 (>= 7:2.4), libavutil-ffmpeg54 (>= 7:2.4), libc6 (>= 2.16), libcaca0 (>= 0.99.beta17-1), libcairo2 (>= 1.13.1), libegl1-mesa (>= 7.8.1) | libegl1-x11, libfreerdp-client1.1 (>= 1.1.0~beta1+git20130629), libfreerdp-core1.1 (>= 1.1.0~beta1+git20130629), libfreerdp-gdi1.1 (>= 1.1.0~beta1+git20130629), libfreetype6 (>= 2.2.1), libfribidi0 (>= 0.19.2), libgcc1 (>= 1:3.0), libgl1-mesa-glx | libgl1, libgles2-mesa (>= 7.8.1) | libgles2, libglib2.0-0 (>= 2.12.0), libpulse0 (>= 0.99.4), libqt5core5a (>= 5.5.1), libqt5gui5 (>= 5.0.2) | libqt5gui5-gles (>= 5.0.2), libqt5widgets5 (>= 5.2.0), libqt5x11extras5 (>= 5.1.0), librsvg2-2 (>= 2.14.4), libsdl-image1.2 (>= 1.2.10), libsdl1.2debian (>= 1.2.11), libstdc++6 (>= 5.2), libva-drm1 (>= 1.1.0), libva-x11-1 (>= 1.0.3), libva1 (>= 1.2.0), libvlccore8 (>= 2.2.0), libvncclient1 (>= 0.9.10), libx11-6, libxcb-composite0, libxcb-keysyms1 (>= 0.4.0), libxcb-randr0 (>= 1.1), libxcb-shm0, libxcb-xv0 (>= 1.2), libxcb1 (>= 1.6), libxext6, libxi6 (>= 2:1.2.99.4), libxinerama1, libxpm4, zlib1g (>= 1:1.1.4)
+Recommends: vlc-plugin-notify (= 2.2.2-5ubuntu0.16.04.4), vlc-plugin-samba (= 2.2.2-5ubuntu0.16.04.4), xdg-utils
+Breaks: vlc-nox (<< 2.2.0~pre2-2~), vlc-plugin-pulse (<< 2.2.1-4~)
+Replaces: vlc-nox (<< 2.2.0~pre2-2~), vlc-plugin-pulse (<< 2.2.1-4~)
+Homepage: http://www.videolan.org/vlc/
+Task: mythbuntu-frontend, mythbuntu-desktop, mythbuntu-backend-slave, mythbuntu-backend-master, ubuntu-mate-desktop, ubuntu-mate-cloudtop
+Supported: 3y
+Download-Size: 1,505 kB
+APT-Manual-Installed: yes
+APT-Sources: http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages
+Description: multimedia player and streamer
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ VLC can also be used as a streaming server that duplicates the stream it
+ reads and multicasts them through the network to other clients, or serves
+ them through HTTP.
+ .
+ VLC has support for on-the-fly transcoding of audio and video formats, either
+ for broadcasting purposes or for movie format transformations. Support for
+ most output methods is provided by this package, but features can be added by
+ installing additional plugins (vlc-plugin-fluidsynth, vlc-plugin-jack,
+ vlc-plugin-notify, vlc-plugin-samba, vlc-plugin-sdl, vlc-plugin-svg,
+ vlc-plugin-zvbi).
+
+N: There is 1 additional record. Please use the '-a' switch to see it
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ sudo apt show vlc[K[K[K[K[K[K[K[Kfull-upgrade
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+Calculating upgrade... 0%Calculating upgrade... 10%Calculating upgrade... Done
+The following packages were automatically installed and are no longer required:
+  linux-headers-4.15.0-46 linux-headers-4.15.0-46-generic
+  linux-headers-4.8.0-36 linux-headers-4.8.0-36-generic
+  linux-image-4.15.0-46-generic linux-image-4.8.0-36-generic
+  linux-image-extra-4.8.0-36-generic linux-modules-4.15.0-46-generic
+  linux-modules-extra-4.15.0-46-generic snapd-login-service
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ sudo apt full-upgrade[K[K[K[K[K[K[K[K[K[K[K[Kremov e[K[Ke vlc
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libqt5x11extras5 libsdl-image1.2 libsdl1.2debian libva-drm1 libva-x11-1
+  libxcb-composite0 libxcb-xv0 linux-headers-4.15.0-46
+  linux-headers-4.15.0-46-generic linux-headers-4.8.0-36
+  linux-headers-4.8.0-36-generic linux-image-4.15.0-46-generic
+  linux-image-4.8.0-36-generic linux-image-extra-4.8.0-36-generic
+  linux-modules-4.15.0-46-generic linux-modules-extra-4.15.0-46-generic
+  snapd-login-service vlc-plugin-notify vlc-plugin-samba
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  vlc
+0 upgraded, 0 newly installed, 1 to remove and 0 not upgraded.
+After this operation, 4,944 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+
+7[0;23r8[1A(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 285073 files and directories currently installed.)
+Removing vlc (2.2.2-5ubuntu0.16.04.4) ...
+7[24;0f[42m[30mProgress: [  0%][49m[39m [..........................................................] 87[24;0f[42m[30mProgress: [ 25%][49m[39m [###############...........................................] 87[24;0f[42m[30mProgress: [ 50%][49m[39m [#############################.............................] 87[24;0f[42m[30mProgress: [ 75%][49m[39m [############################################..............] 8Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for vlc-nox (2.2.2-5ubuntu0.16.04.4) ...
+Processing triggers for mime-support (3.59ubuntu1) ...
+Processing triggers for bamfdaemon (0.5.3~bzr0+16.04.20180209-0ubuntu1) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+Processing triggers for desktop-file-utils (0.22-1ubuntu5.2) ...
+Processing triggers for gnome-menus (3.13.3-6ubuntu3.1) ...
+
+7[0;24r8[1A[J]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ sudo apt install vlc
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  linux-headers-4.15.0-46 linux-headers-4.15.0-46-generic
+  linux-headers-4.8.0-36 linux-headers-4.8.0-36-generic
+  linux-image-4.15.0-46-generic linux-image-4.8.0-36-generic
+  linux-image-extra-4.8.0-36-generic linux-modules-4.15.0-46-generic
+  linux-modules-extra-4.15.0-46-generic snapd-login-service
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  vlc
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1,505 kB of archives.
+After this operation, 4,944 kB of additional disk space will be used.
+[33m0% [Working][0m            Get:1 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 vlc amd64 2.2.2-5ubuntu0.16.04.4 [1,505 kB]
+[33m0% [1 vlc 2,555 B/1,505 kB 0%][0m[33m                              6% [1 vlc 115 kB/1,505 kB 8%][0m[33m58% [1 vlc 1,089 kB/1,505 kB 72%][0m[33m                                 100% [Working][0m              Fetched 1,505 kB in 1s (988 kB/s)
+
+7[0;23r8[1ASelecting previously unselected package vlc.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 285011 files and directories currently installed.)
+Preparing to unpack .../vlc_2.2.2-5ubuntu0.16.04.4_amd64.deb ...
+7[24;0f[42m[30mProgress: [  0%][49m[39m [..........................................................] 87[24;0f[42m[30mProgress: [ 16%][49m[39m [##########................................................] 8Unpacking vlc (2.2.2-5ubuntu0.16.04.4) ...
+7[24;0f[42m[30mProgress: [ 33%][49m[39m [####################......................................] 87[24;0f[42m[30mProgress: [ 50%][49m[39m [#############################.............................] 8Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for bamfdaemon (0.5.3~bzr0+16.04.20180209-0ubuntu1) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+Processing triggers for desktop-file-utils (0.22-1ubuntu5.2) ...
+Processing triggers for gnome-menus (3.13.3-6ubuntu3.1) ...
+Processing triggers for mime-support (3.59ubuntu1) ...
+Processing triggers for vlc-nox (2.2.2-5ubuntu0.16.04.4) ...
+Setting up vlc (2.2.2-5ubuntu0.16.04.4) ...
+7[24;0f[42m[30mProgress: [ 66%][49m[39m [#######################################...................] 87[24;0f[42m[30mProgress: [ 83%][49m[39m [#################################################.........] 8
+7[0;24r8[1A[J]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ sudo apt purge vlc
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libqt5x11extras5 libsdl-image1.2 libsdl1.2debian libva-drm1 libva-x11-1
+  libxcb-composite0 libxcb-xv0 linux-headers-4.15.0-46
+  linux-headers-4.15.0-46-generic linux-headers-4.8.0-36
+  linux-headers-4.8.0-36-generic linux-image-4.15.0-46-generic
+  linux-image-4.8.0-36-generic linux-image-extra-4.8.0-36-generic
+  linux-modules-4.15.0-46-generic linux-modules-extra-4.15.0-46-generic
+  snapd-login-service vlc-plugin-notify vlc-plugin-samba
+Use 'sudo apt autoremove' to remove them.
+The following packages will be REMOVED:
+  vlc*
+0 upgraded, 0 newly installed, 1 to remove and 0 not upgraded.
+After this operation, 4,944 kB disk space will be freed.
+Do you want to continue? [Y/n] y
+
+7[0;23r8[1A(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 285073 files and directories currently installed.)
+Removing vlc (2.2.2-5ubuntu0.16.04.4) ...
+7[24;0f[42m[30mProgress: [  0%][49m[39m [..........................................................] 87[24;0f[42m[30mProgress: [ 33%][49m[39m [####################......................................] 8Purging configuration files for vlc (2.2.2-5ubuntu0.16.04.4) ...
+7[24;0f[42m[30mProgress: [ 66%][49m[39m [#######################################...................] 8Processing triggers for man-db (2.7.5-1) ...
+Processing triggers for vlc-nox (2.2.2-5ubuntu0.16.04.4) ...
+Processing triggers for mime-support (3.59ubuntu1) ...
+Processing triggers for bamfdaemon (0.5.3~bzr0+16.04.20180209-0ubuntu1) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+Processing triggers for desktop-file-utils (0.22-1ubuntu5.2) ...
+Processing triggers for gnome-menus (3.13.3-6ubuntu3.1) ...
+
+7[0;24r8[1A[J]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ exit
+exit
+
+Script done on Thursday 09 May 2019 11:28:24 AM IST
