@@ -1,0 +1,41 @@
+Script started on Thursday 09 May 2019 12:00:06 PM IST
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ ssh cs17d05@192.168.0.30
+.
+              |
+.  .    . .-. | .-..-. .--.--. .-.
+ \  \  / (.-' |(  (   )|  |  |(.-'
+  `' `'   `--'` `-'`-' '  '  ` `--'
+cs17d05@192.168.0.30's password: 
+Welcome to elementary OS 0.4.1 Loki (GNU/Linux 4.13.0-32-generic x86_64)
+
+ * Website:  http://elementary.io/
+
+55 packages can be updated.
+0 updates are security updates.
+
+Last login: Thu Apr  4 11:44:33 2019 from 192.168.0.148
+$ ls
+ammu.txt  amrita.txt  cs232-master  examples.desktop
+$ rsync -ah --info=progress2 abc cs17d05@192.168.03 .30
+rsync: link_stat "/home/cs17d05/abc" failed: No such file or directory (2)
+              0 100%    0.00kB/s    0:00:00 (xfr#0, to-chk=0/0)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1183) [sender=3.1.1]
+$ ^[[A    rsync -ah --info=progress2 ammu cs17d052192.168.0.30: /
+Unexpected remote arg: cs17d052192.168.0.30:
+rsync error: syntax or usage error (code 1) at main.c(1348) [sender=3.1.1]
+$ rsync -ah --info=progress2 ammu cs17d052192.168.0.30
+rsync: link_stat "/home/cs17d05/ammu" failed: No such file or directory (2)
+              0 100%    0.00kB/s    0:00:00 (xfr#0, to-chk=0/0)
+rsync error: some files/attrs were not transferred (see previous errors) (code 23) at main.c(1183) [sender=3.1.1]
+$ scp cs17d05@192.168.0.30
+usage: scp [-12346BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]
+           [-l limit] [-o ssh_option] [-P port] [-S program]
+           [[user@]host1:]file1 ... [[user@]host2:]file2
+$ ls
+ammu.txt  amrita.txt  cs232-master  examples.desktop
+$ exit 
+Connection to 192.168.0.30 closed.
+]0;clab1@CC2-26: ~[01;32mclab1@CC2-26[00m:[01;34m~[00m$ exit
+exit
+
+Script done on Thursday 09 May 2019 12:03:52 PM IST
